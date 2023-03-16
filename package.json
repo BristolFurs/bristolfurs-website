@@ -1,0 +1,28 @@
+{
+  "name": "bristolfurs-eleventy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run clean && ENVIRONMENT=dev npx @11ty/eleventy --serve",
+    "clean": "rm -rf _site",
+    "build": "npm run clean && ENVIRONMENT=prod npx @11ty/eleventy",
+    "prepare": "husky install"
+  },
+  "author": "beeps <hi@berly.kim>",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "fs-extra": "^11.1.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "postcss": "^8.4.21",
+    "postcss-preset-env": "^8.0.1",
+    "prettier": "2.8.4",
+    "prettier-plugin-twig-nunjucks-melody": "^0.1.0",
+    "sass": "^1.58.3"
+  },
+  "lint-staged": {
+    "*.{js,css,md,njk,scss}": "prettier --write"
+  }
+}

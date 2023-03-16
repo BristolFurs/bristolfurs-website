@@ -1,0 +1,63 @@
+// Root font size
+// Used for rem font-size calculations
+$bf-root-font-size: 19px;
+
+// Body font stack
+$bf-body-font-stack: (
+	"Open Sans",
+	Inter,
+	Roboto,
+	"Helvetica Neue",
+	"Arial Nova",
+	"Nimbus Sans",
+	Arial,
+	sans-serif
+);
+
+// Heading font stack
+$bf-heading-font-stack: $bf-body-font-stack;
+
+// Monospace font stack
+$bf-mono-font-stack: (
+	ui-monospace,
+	"Cascadia Code",
+	"Source Code Pro",
+	Menlo,
+	Consolas,
+	"DejaVu Sans Mono",
+	monospace
+);
+
+// Font sizes
+// 'null' (mobile) uses a very shallow modular scale (1:1.25)
+// tablet uses a slightly steeper modular scale (1:1.4)
+// desktop uses a very steep scale, with a very large final font size ()
+$bf-font-sizes: (
+	"s": (
+		null: 14px,
+		tablet: 16px,
+	),
+	"m": (
+		null: 16px,
+		tablet: 19px,
+	),
+	"l": (
+		null: 23.75px,
+		tablet: 26.6px,
+	),
+	"xl": (
+		null: 29.688px,
+		tablet: 37.24px,
+		desktop: 45.648px,
+	),
+	"xxl": (
+		null: 37.109px,
+		tablet: 52.136px,
+		desktop: 70.754px,
+	),
+	"xxxl": (
+		null: 46.387px,
+		tablet: 72.99px,
+		desktop: 109.668px,
+	),
+);

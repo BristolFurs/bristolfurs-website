@@ -1,0 +1,5 @@
+# Browsers that will be automatically polyfilled 'n' compiled with support for.
+# Run `npx browserslist` in a terminal to get a list of what browsers and 
+# versions this query equates to.
+
+> 0.2% and not dead

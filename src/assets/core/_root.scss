@@ -1,0 +1,24 @@
+@use "../helpers/colors";
+@use "../helpers/typography";
+
+@include colors.generate-color-custom-properties;
+
+* {
+	box-sizing: border-box;
+}
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	@include typography.body-font;
+	@include typography.font-size("m");
+	color: colors.get-color("text");
+	background-color: colors.get-color("canvas-background");
+	text-size-adjust: 100%;
+}
+
+body {
+	background-color: colors.get-color("page-background");
+}

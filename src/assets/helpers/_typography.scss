@@ -1,0 +1,46 @@
+@use "../settings/typography";
+
+@use "measurements";
+@use "media-queries";
+
+@use "sass:map";
+
+@mixin _common {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin body-font {
+	@include _common;
+	font-family: typography.$bf-body-font-stack;
+}
+
+@mixin heading-font {
+	@include _common;
+	font-family: typography.$bf-heading-font-stack;
+	text-rendering: optimizeLegibility;
+}
+
+@mixin monospace-font {
+	@include _common;
+	font-family: typography.$bf-mono-font-stack;
+	font-variant-ligatures: none;
+}
+
+@mixin font-size($key: "m") {
+	@if not map.has-key(typography.$bf-font-sizes, $key) {
+		@error "Font-size `#{$key}` does not exist.";
+	}
+
+	$sizes: map.get(typography.$bf-font-sizes, $key);
+
+	@each $breakpoint, $value in $sizes {
+		@if ($breakpoint == null) {
+			font-size: $value;
+		} @else {
+			@include media-queries.query($from: $breakpoint) {
+				font-size: $value;
+			}
+		}
+	}
+}
