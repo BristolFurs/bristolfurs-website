@@ -1,0 +1,25 @@
+@use "../settings/layout";
+@use "../helpers/colors";
+
+@mixin focus-ring($fill: true, $important: false) {
+  color: colors.get-color("focus-text") if($important, !important, null);
+  text-decoration: none if($important, !important, null);
+  box-decoration-break: clone if($important, !important, null);
+  @if $fill {
+    background-color: colors.get-color("focus-background") if($important, !important, null);
+    box-shadow: 0 (layout.$bf-focus-ring-border * 2) colors.get-color("focus-text") if($important, !important, null);
+    outline: none if($important, !important, null);
+  } @else {
+    outline: 2px solid colors.get-color("focus-background");
+  }
+}
+
+@mixin visually-hidden($important: false) {
+  block-size: 1px if($important, !important, null);
+  inline-size: 1px if($important, !important, null);
+  position: absolute if($important, !important, null);
+  overflow: hidden if($important, !important, null);
+  white-space: nowrap if($important, !important, null);
+  clip: rect(0 0 0 0) if($important, !important, null);
+  clip-path: inset(50%) if($important, !important, null);
+}

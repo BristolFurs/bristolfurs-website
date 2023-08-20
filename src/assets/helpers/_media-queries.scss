@@ -3,39 +3,37 @@
 @use "sass:map";
 
 @mixin query($from: null, $to: null, $and: null) {
-	$map: breakpoints.$bf-breakpoints;
-	$query: "";
+  $map: breakpoints.$bf-breakpoints;
+  $query: "";
 
-	@if map.has-key($map, $from) {
-		$query: "#{$query} (min-width: #{map.get($map, $from)})";
-	}
+  @if $from {
+    $query: "#{$query} (min-width: #{if(map.has-key($map, $from), map.get($map, $from), $from)})";
+  }
 
-	@if $to {
-		@if map.has-key($map, $from) and map.has-key($map, $to) {
-			$query: "#{$query} and";
-		}
-		@if map.has-key($map, $to) {
-			$query: "#{$query} (max-width: #{map.get($map, $to) - 1px})";
-		}
-	}
+  @if $to {
+    @if $from {
+      $query: "#{$query} and";
+    }
+    $query: "#{$query} (max-width: #{if(map.has-key($map, $to), map.get($map, $to), $to) - 1px})";
+  }
 
-	@if $and {
-		$query: "#{$query} #{$and}";
-	}
+  @if $and {
+    $query: "#{$query} #{$and}";
+  }
 
-	@media screen and #{$query} {
-		@content;
-	}
+  @media screen and #{$query} {
+    @content;
+  }
 }
 
 @mixin dark-mode {
-	@media (prefers-color-scheme: dark) {
-		@content;
-	}
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
 }
 
 @mixin print {
-	@media print {
-		@content;
-	}
+  @media print {
+    @content;
+  }
 }

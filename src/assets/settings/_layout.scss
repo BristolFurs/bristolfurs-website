@@ -1,0 +1,66 @@
+// Spacing map
+$bf-spacing: (
+  0: (
+    null: 0,
+  ),
+  1: (
+    null: 4px,
+  ),
+  2: (
+    null: 8px,
+  ),
+  3: (
+    null: 12px,
+    tablet: 16px,
+  ),
+  4: (
+    null: 16px,
+    tablet: 24px,
+  ),
+  5: (
+    null: 24px,
+    tablet: 32px,
+  ),
+  6: (
+    null: 32px,
+    tablet: 48px,
+  ),
+  7: (
+    null: 48px,
+    tablet: 64px,
+  ),
+  8: (
+    null: 64px,
+    tablet: 96px,
+  ),
+  9: (
+    null: 80px,
+    tablet: 128px,
+  ),
+);
+
+// Focus ring border/padding
+$bf-focus-ring-border: 3px;
+
+// Maximum width for page content
+$bf-container-size: 1060px;
+
+// Page gutters, taken from $bf-spacing
+$bf-container-gutter: 3;
+
+// Borders
+$bf-borders: (
+  hairline: 1px,
+  regular: 2px,
+  thick: 4px,
+);
+
+// Grid configuration
+$bf-grid: (
+  one-quarter: 25%,
+  one-third: 33.3333%,
+  one-half: 50%,
+  two-thirds: 66.6666%,
+  three-quarters: 75%,
+  full-width: 100%,
+);

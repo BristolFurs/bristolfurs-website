@@ -1,0 +1,20 @@
+<section class="bf-meet-banner" aria-labelledby="next-meet">
+	<div class="bf-container bf-meet-banner__inner">
+		<div class="bf-meet-banner__title" id="next-meet">
+			Next meet
+		</div>
+		<div class="bf-meet-banner__date">
+			{{ meetInfo.nextMeetDate }}
+		</div>
+		{%- if meetInfo.schedule %}
+			<dl class="bf-meet-banner__schedule">
+				{%- for row in meetInfo.schedule %}
+					<dt>
+						{{ row.startTime }}
+					</dt>
+					<dd>{{ row.name }}</dd>
+				{%- endfor %}
+			</dl>
+		{%- endif %}
+	</div>
+</section>

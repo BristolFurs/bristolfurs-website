@@ -1,0 +1,85 @@
+@use "../settings/layout";
+
+@use "measurements";
+@use "media-queries";
+
+@use "sass:map";
+@use "sass:math";
+
+@function spacing($key, $breakpoint: null) {
+  $isNegative: false;
+
+  @if $key < 0 {
+    $key: math.abs($key);
+    $isNegative: true;
+  } @else if $key == 0 {
+    @return 0;
+  }
+
+  @if not map.has-key(layout.$bf-spacing, $key) {
+    @error "Spacing key `#{$key}` does not exist.";
+  }
+
+  $sizes: map.get(layout.$bf-spacing, $key);
+  @if not map.has-key($sizes, $breakpoint) {
+    @error "Spacing key `#{$key}` does not have a #{$breakpoint} breakpoint defined.";
+  }
+
+  $value: if($isNegative, map.get($sizes, $breakpoint) * -1, map.get($sizes, $breakpoint));
+  @return measurements.px-to-rem($value);
+}
+
+@mixin responsive-spacing($property, $key, $important: false) {
+  $absKey: math.abs($key);
+  $sizes: map.get(layout.$bf-spacing, $absKey);
+  @each $breakpoint, $value in $sizes {
+    @if ($breakpoint == null) {
+      #{$property}: spacing($key, $breakpoint) if($important, !important, null);
+    } @else {
+      @include media-queries.query($from: $breakpoint) {
+        #{$property}: spacing($key, $breakpoint) if($important, !important, null);
+      }
+    }
+  }
+}
+
+@mixin responsive-margin($key, $direction: "all", $important: false) {
+  $property: "margin";
+  @if $direction != "all" {
+    $property: $property + "-" + $direction;
+  }
+  @include responsive-spacing($property, $key, $important);
+}
+
+@mixin responsive-padding($key, $direction: "all", $important: false) {
+  $property: "padding";
+  @if $direction != "all" {
+    $property: $property + "-" + $direction;
+  }
+  @include responsive-spacing($property, $key, $important);
+}
+
+@function page-gutter() {
+  @return spacing(layout.$bf-container-gutter);
+}
+
+@mixin page-container($autoPadding: true) {
+  inline-size: 100%;
+  max-inline-size: layout.$bf-container-size;
+  margin-inline: auto;
+  @if $autoPadding {
+    padding-left: calc(env(safe-area-inset-left) + #{page-gutter()});
+    padding-right: calc(env(safe-area-inset-right) + #{page-gutter()});
+  } @else {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+}
+
+@function border-width($key) {
+  @if not map.has-key(layout.$bf-borders, $key) {
+    @error "Border key `#{$key}` does not exist.";
+  }
+  $size: map.get(layout.$bf-borders, $key);
+  @return measurements.px-to-rem($size);
+}

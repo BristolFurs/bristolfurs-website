@@ -1,0 +1,44 @@
+@use "../helpers/layout";
+
+.bf-list {
+  @include layout.responsive-margin(0);
+  @include layout.responsive-padding(0);
+  @include layout.responsive-margin(4, $direction: "block-end");
+  list-style: none;
+  li + li {
+    @include layout.responsive-margin(1, $direction: "block-start");
+  }
+  &--numbered,
+  &--bulleted {
+    padding-left: 2.5ch;
+  }
+  &--numbered {
+    list-style: decimal;
+  }
+  &--bulleted {
+    list-style: square;
+  }
+  &--spaced {
+    li + li {
+      @include layout.responsive-margin(3, $direction: "block-start");
+    }
+  }
+  &--legal {
+    counter-reset: a;
+    > li::before {
+      content: counter(a) ". ";
+      counter-increment: a;
+    }
+    > li > ol {
+      counter-reset: b;
+    }
+    > li > ol > li::before {
+      content: counter(a) "." counter(b) ". ";
+      counter-increment: b;
+    }
+    li + li,
+    li > ol {
+      @include layout.responsive-margin(3, $direction: "block-start");
+    }
+  }
+}

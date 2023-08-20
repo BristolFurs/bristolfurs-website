@@ -1,7 +1,58 @@
-{% extends 'src/layouts/layout.njk' %}
+{% extends 'src/_layouts/layout.njk' %}
+
+{% block beforeMain %}
+  {{ super() }}
+  {% include 'meet-banner.njk' %}
+{% endblock %}
 
 {% block main %}
-	<p>
-		Hello world.
-	</p>
+  <div class="bf-container bf-!-margin-block-6">
+    <div class="bf-grid">
+      <div class="bf-grid__column bf-grid__column--full-width tablet:bf-grid__column--two-thirds">
+        <h1 class="bf-heading-xl">Aliquip nostrud consequat irure ea</h1>
+        <p class="bf-body-l">
+          Labore officia in aliqua aute commodo. Velit occaecat ex anim Lorem. Nisi
+          adipisicing sunt minim pariatur anim proident magna exercitation.
+          Adipisicing sit irure ipsum eu esse proident sit. Ea anim irure mollit amet
+          non in veniam tempor ipsum est sit ipsum.
+        </p>
+        <h2 class="bf-heading-l">Exercitation adipisicing minim velit proident ullamco nostrud nisi est consequat</h2>
+        <p class="bf-body">
+          Reprehenderit non minim voluptate Lorem velit sint esse velit. Sit veniam
+          mollit incididunt mollit labore eiusmod officia aliquip incididunt.
+          Excepteur proident est incididunt cupidatat ullamco pariatur magna magna
+          sint. Esse nisi pariatur tempor Lorem laborum id occaecat pariatur quis
+          veniam. Dolor fugiat culpa ad mollit ea consectetur. Laborum cupidatat
+          consequat nulla voluptate duis sit veniam ex. Mollit commodo commodo nulla
+          dolore Lorem ea excepteur.
+        </p>
+        <h3 class="bf-heading-m">Tempor aliquip dolor enim fugiat dolore non voluptate aute</h3>
+        <p class="bf-body-s">
+          Mollit anim laboris sint consectetur veniam aliqua velit. Incididunt sint labore amet nulla aute est culpa sint duis. Sunt anim reprehenderit labore aliquip mollit do cillum sunt proident elit.
+        </p>
+        <h4 class="bf-heading-s">Velit proident elit commodo voluptate Lorem tempor elit ad excepteur enim aliqua sunt</h4>
+        <ul class="bf-list">
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae enim minima eveniet pariatur, aliquid in illum quibusdam blanditiis obcaecati quo reprehenderit repellendus autem voluptatem temporibus, voluptates, dicta sunt ut?</li>
+          <li>Commodi inventore incidunt totam a sit iure delectus similique assumenda quia quasi maiores, officiis animi sint laboriosam ipsum consequatur perspiciatis ratione accusamus aut eius ipsa eveniet! Quia quo ullam impedit?</li>
+          <li>Labore, aliquam minus, ut beatae totam nam sint quasi incidunt voluptates eius, nostrum corrupti. Aperiam neque, quibusdam eius porro assumenda adipisci officiis, et suscipit laboriosam, sed reiciendis veniam molestiae numquam.</li>
+          <li>Suscipit, officia nobis et quod fuga quam dolor praesentium ipsum sapiente dolores nesciunt aliquam ipsam voluptate eum saepe perspiciatis, dicta voluptates soluta similique, quia expedita repudiandae. Veniam id aut non?</li>
+        </ul>
+        <ul class="bf-list bf-list--bulleted">
+          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt minima incidunt, pariatur officiis, ex tenetur sed alias quos commodi porro tempore neque illo, aliquid aspernatur in praesentium qui eius voluptatibus?</li>
+          <li>Quisquam at illo ad eaque, quasi doloribus minima eveniet officiis aliquid autem nesciunt quaerat itaque obcaecati magni eum recusandae dolores asperiores, neque quod voluptatem eos vitae tempore! Rerum, illo aliquid.</li>
+          <li>Vitae, facere voluptates adipisci culpa exercitationem reprehenderit porro molestiae animi dolores necessitatibus cum nulla doloribus rem autem voluptatem labore in, architecto velit dolore? Autem laboriosam, asperiores dicta ullam mollitia hic!</li>
+          <li>Nulla fugiat itaque quisquam quaerat architecto harum vel, facilis ipsa quo vero praesentium beatae velit maiores tempora quibusdam quasi, fuga fugit sint voluptatibus ab perferendis omnis eum a amet? Deserunt.</li>
+        </ul>
+        <ul class="bf-list bf-list--numbered">
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nobis deleniti perspiciatis ducimus quia tenetur, unde consequatur! Voluptatem sunt porro repellat non? Saepe consectetur veniam exercitationem eos id, voluptatem quis!</li>
+          <li>Ea minus itaque, quis amet iure, repellendus, distinctio non est qui facilis sequi. Eum eligendi excepturi cupiditate nesciunt nisi temporibus incidunt repudiandae placeat est, non at deserunt aspernatur cumque ratione.</li>
+          <li>Officia inventore, veritatis praesentium culpa ex quaerat repudiandae voluptatibus quis voluptatum ut fugiat, ullam, sint maxime molestias magni beatae et animi! Assumenda, et veritatis illum nobis voluptatem culpa fuga deserunt.</li>
+          <li>Tempore ex ullam voluptates quibusdam harum! Nihil quos possimus beatae esse vero, suscipit nemo ea distinctio facilis dolores temporibus iure corporis veniam officiis architecto, vitae, exercitationem eveniet tempore mollitia perferendis?</li>
+        </ul>
+      </div>
+      <div class="bf-grid__column bf-grid__column--full-width tablet:bf-grid__column--one-third">
+        awawawa
+      </div>
+    </div>
+  </div>
 {% endblock %}

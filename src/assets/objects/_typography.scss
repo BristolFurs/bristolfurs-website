@@ -1,0 +1,54 @@
+@use "../helpers/layout";
+@use "../helpers/typography";
+
+.bf-heading-xl,
+.bf-heading-l,
+.bf-heading-m,
+.bf-heading-s {
+  @include layout.responsive-margin(4, $direction: "block-end");
+  font-weight: bold;
+}
+
+.bf-heading-xl {
+  @include layout.responsive-margin(0, $direction: "block-start");
+  @include typography.font-size("xxl");
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.bf-heading-l {
+  @include layout.responsive-margin(6, $direction: "block-start");
+  @include typography.font-size("xl");
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.bf-heading-m {
+  @include layout.responsive-margin(5, $direction: "block-start");
+  @include typography.font-size("l");
+  line-height: 1.25;
+}
+
+.bf-heading-s {
+  @include layout.responsive-margin(4, $direction: "block-start");
+  @include typography.font-size("m");
+}
+
+.bf-body,
+.bf-body-l,
+.bf-body-s {
+  @include layout.responsive-margin(4, $direction: "block-end");
+  margin-block-start: 0;
+}
+
+.bf-body-l {
+  @include typography.font-size("m");
+}
+
+.bf-body {
+  @include typography.font-size("s");
+}
+
+.bf-body-s {
+  @include typography.font-size("xs");
+}

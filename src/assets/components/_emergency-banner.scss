@@ -1,0 +1,25 @@
+@use "../helpers/colors";
+@use "../helpers/layout";
+
+.bf-alert-banner {
+  @include layout.responsive-padding(5, $direction: "inline-end");
+  @include layout.responsive-padding(2, $direction: "block");
+  border-block-end: layout.border-width("thick") solid colors.get-color("furniture");
+  color: colors.get-color("alert-text");
+  background-color: colors.get-color("alert-background");
+  background-image: repeating-linear-gradient(
+    -45deg,
+    colors.get-color("alert-background"),
+    colors.get-color("alert-background") 1em,
+    colors.get-color("alert-text") 1em,
+    colors.get-color("alert-text") 2em
+  );
+}
+
+.bf-alert-banner__inner {
+  @include layout.responsive-padding(3, $direction: "inline");
+  @include layout.responsive-padding(1);
+  display: inline-block;
+  border: layout.border-width("regular") solid colors.get-color("furniture");
+  background-color: colors.get-color("alert-background");
+}

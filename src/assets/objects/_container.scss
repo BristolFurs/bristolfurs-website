@@ -1,0 +1,13 @@
+@use "../settings";
+@use "../helpers/colors";
+@use "../helpers/layout";
+
+// Limits elements to the maximum width configured in settings
+.bf-container {
+  @include layout.page-container;
+}
+
+// Surrounds the entire page's contents, probably doesn't need anything fancy
+.bf-page-container {
+  // Placeholder
+}

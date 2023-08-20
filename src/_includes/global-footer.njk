@@ -1,0 +1,32 @@
+<footer class="bf-footer">
+	<div class="bf-container bf-footer__inner">
+		{%- if siteMetadata.footerLinks %}
+		<ul class="bf-footer__links">
+			{%- for item in siteMetadata.footerLinks %}
+			<li class="bf-footer__links-item">
+				<a
+					class="bf-link bf-footer__links-link"
+					href="{{ item.href | url }}"
+					{%- if item.href === page.url %} aria-current="page"{% endif %}>
+					{{ item.html|safe if item.html else item.text }}
+				</a>
+			</li>
+			{%- endfor %}
+		</ul>
+		{%- endif %}
+		{%- if siteMetadata.copyright %}
+		<div class="bf-footer__copyright">
+			{{ siteMetadata.copyright | safe }}
+		</div>
+		{%- endif %}
+		{# {%- if siteMetadata.socialLinks %}
+			{{ bfSocialLinks({
+				classes: "bf-footer__social",
+				attributes: {
+					"aria-label": "Social media links"
+				},
+				items: siteMetadata.socialLinks
+			}) }}
+		{%- endif %} #}
+	</div>
+</footer>

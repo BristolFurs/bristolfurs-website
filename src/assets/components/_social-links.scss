@@ -1,0 +1,23 @@
+@use "../helpers/a11y";
+@use "../helpers/colors";
+@use "../helpers/layout";
+@use "../helpers/links";
+
+.bf-social-links {
+  margin-block-end: 0;
+}
+
+.bf-social-links__item {
+  display: flex;
+}
+
+.bf-social-links__link {
+  @include links.link;
+  display: inline-flex;
+  svg {
+    @include layout.responsive-margin(2, $direction: "inline-end");
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+    fill: colors.get-color("primary");
+  }
+}

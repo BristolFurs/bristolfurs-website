@@ -1,0 +1,23 @@
+@use "../settings";
+@use "../helpers/layout";
+
+$directions: (
+  all: all,
+  block: block,
+  block-start: block-start,
+  block-end: block-end,
+  inline: inline,
+  inline-start: inline-start,
+  inline-end: inline-end,
+);
+
+@each $size, $map in settings.$bf-spacing {
+  @each $key, $dir in $directions {
+    .bf-\!-margin#{if($key != "all", "-" + $key, null)}-#{$size} {
+      @include layout.responsive-margin($key: $size, $direction: $dir, $important: true);
+    }
+    .bf-\!-padding#{if($key != "all", "-" + $key, null)}-#{$size} {
+      @include layout.responsive-padding($key: $size, $direction: $dir, $important: true);
+    }
+  }
+}

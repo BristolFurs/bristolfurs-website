@@ -1,0 +1,43 @@
+@use "../helpers/colors";
+@use "../helpers/layout";
+@use "../helpers/media-queries";
+@use "../helpers/typography";
+
+.bf-footer {
+  @include layout.responsive-padding(3, $direction: "block");
+  @include typography.font-size("xs");
+  border-block-start: layout.border-width("thick") solid colors.get-color("furniture");
+}
+
+.bf-footer__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "social" "links" "copyright";
+  gap: layout.spacing(3);
+  @include media-queries.query($from: tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "links social" "copyright social";
+    row-gap: layout.spacing(1);
+  }
+}
+
+.bf-footer__copyright {
+  grid-area: copyright;
+}
+
+.bf-footer__links {
+  grid-area: links;
+  display: flex;
+  flex-wrap: wrap;
+  gap: layout.spacing(3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bf-footer__social {
+  grid-area: social;
+  @include media-queries.query($from: tablet) {
+    margin-inline-start: auto;
+  }
+}

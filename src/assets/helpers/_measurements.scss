@@ -1,8 +1,10 @@
 @use "../settings/typography";
 
+@use "sass:math";
+
 @function px-to-rem($value, $root: typography.$bf-root-font-size) {
-	@if not $value {
-		@warn "No `$value` provided.";
-	}
-	@return math.div($value, $root) * 1rem;
+  @if not $value {
+    @warn "No `$value` provided.";
+  }
+  @return math.div($value, $root) * 1rem;
 }

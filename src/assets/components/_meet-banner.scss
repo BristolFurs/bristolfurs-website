@@ -1,0 +1,49 @@
+@use "../helpers/colors";
+@use "../helpers/layout";
+@use "../helpers/links";
+@use "../helpers/media-queries";
+@use "../helpers/typography";
+
+.bf-meet-banner {
+  @include layout.responsive-padding(3, $direction: "block");
+  color: colors.get-color("text-inverse");
+  background-color: colors.get-color("page-background-inverse");
+  border-block-end: layout.border-width("thick") solid colors.get-color("furniture");
+}
+
+.bf-meet-banner__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.bf-meet-banner__title {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+}
+
+.bf-meet-banner__date {
+  @include typography.heading-font;
+  @include typography.font-size("l");
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.bf-meet-banner__schedule {
+  @include layout.responsive-margin(3, $direction: "block");
+  @include typography.font-size("xs");
+  display: grid;
+  grid-template-columns: 3em 1fr;
+  gap: layout.spacing(1);
+}
+
+.bf-meet-banner__schedule dt,
+.bf-meet-banner__schedule dd {
+  margin: 0;
+  padding: 0;
+}
+
+.bf-meet-banner__link {
+  @include links.link-inverse;
+}

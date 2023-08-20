@@ -1,0 +1,31 @@
+@use "a11y";
+@use "colors";
+@use "layout";
+
+@mixin _link-common($color: currentcolor) {
+  color: $color;
+  &:focus-visible {
+    @include a11y.focus-ring;
+  }
+}
+
+@mixin _link-underline($color: colors.get-color("primary")) {
+  text-decoration: underline;
+  text-decoration-color: $color;
+  text-decoration-thickness: 0.15em;
+  text-underline-offset: 0.15em;
+  &:hover {
+    text-decoration-thickness: 0.25em;
+  }
+}
+
+@mixin link {
+  @include _link-common;
+  @include _link-underline;
+}
+
+@mixin link-inverse {
+  $color: colors.get-color("text-inverse");
+  @include _link-common($color);
+  @include _link-underline($color);
+}
