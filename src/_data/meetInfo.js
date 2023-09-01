@@ -22,11 +22,6 @@ module.exports = function () {
       { startTime: "3pm", name: "Fursuit walk (weather permitting)" },
     ],
     nextMeetDate: (function () {
-      const addMonths = require("date-fns/addMonths")
-      const isFuture = require("date-fns/isFuture")
-      const isToday = require("date-fns/isToday")
-      const formatISO = require("date-fns/formatISO")
-
       // Get today's date
       const today = new Date()
 
