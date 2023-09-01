@@ -4,7 +4,7 @@
 			Next meet
 		</div>
 		<div class="bf-meet-banner__date">
-			{{ meetInfo.nextMeetDate }}
+			{{ meetInfo.nextMeetDate | formatDate('EEEE, do MMMM yyyy') }}
 		</div>
 		{%- if meetInfo.schedule %}
 			<dl class="bf-meet-banner__schedule">
