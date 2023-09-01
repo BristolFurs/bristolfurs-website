@@ -48,13 +48,6 @@ $bf-container-size: 1060px;
 // Page gutters, taken from $bf-spacing
 $bf-container-gutter: 3;
 
-// Borders
-$bf-borders: (
-  hairline: 1px,
-  regular: 2px,
-  thick: 4px,
-);
-
 // Grid configuration
 $bf-grid: (
   one-quarter: 25%,
@@ -63,4 +56,14 @@ $bf-grid: (
   two-thirds: 66.6666%,
   three-quarters: 75%,
   full-width: 100%,
+);
+
+// Page gutters, taken from $bf-spacing
+$bf-grid-gutter: 5;
+
+// Borders
+$bf-borders: (
+  hairline: 1px,
+  regular: 2px,
+  thick: 4px,
 );

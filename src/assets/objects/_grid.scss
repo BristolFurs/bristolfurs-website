@@ -5,7 +5,7 @@
 @use "sass:list";
 
 .bf-grid {
-  $half-gutter: layout.spacing(settings.$bf-container-gutter) * 0.5;
+  $half-gutter: layout.spacing(settings.$bf-grid-gutter) * 0.5;
   display: flex;
   flex-wrap: wrap;
   margin-inline: 0 - $half-gutter;
