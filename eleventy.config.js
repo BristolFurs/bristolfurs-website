@@ -15,6 +15,7 @@ const markdownItAttributesPlugin = require("markdown-it-attrs")
 
 // Custom shortcodes
 const shortcodeIcon = require("./app/shortcodes/icon")
+const shortcodeMarkdown = require("./app/shortcodes/markdown")
 
 // Custom filters
 const filterFormatDate = require("./app/filters/formatDate")
@@ -51,9 +52,11 @@ module.exports = function (config) {
 
   // Copy over static assets
   config.addPassthroughCopy(paths.srcAssets + "/images")
+  config.addPassthroughCopy(paths.src + "/images")
 
   // Custom shortcodes
   config.addShortcode("icon", shortcodeIcon)
+  config.addPairedShortcode("markdown", shortcodeMarkdown)
 
   // Custom filters
   config.addFilter("formatDate", filterFormatDate)
