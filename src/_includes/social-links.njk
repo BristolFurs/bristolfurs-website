@@ -1,0 +1,12 @@
+{% set name = socialLinksName | default(siteMeta.name) %}
+{% set linksList = socialLinksList | default(siteMetadata.socialLinks) %}
+<ul class="bf-list bf-social-links" aria-label="{{ name }} social links">
+	{%- for item in linksList %}
+		<li class="bf-social-links__item">
+			<a class="bf-social-links__link" href="{{ item.href }}">
+				{% icon item.icon %}
+				<span class="bf-social-links__text">{{ item.text }}</span>
+			</a>
+		</li>
+	{%- endfor %}
+</ul>

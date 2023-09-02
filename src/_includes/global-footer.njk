@@ -15,18 +15,14 @@
 		</ul>
 		{%- endif %}
 		{%- if siteMetadata.copyright %}
-		<div class="bf-footer__copyright">
-			{{ siteMetadata.copyright | safe }}
-		</div>
+			<div class="bf-footer__copyright">
+				{{ siteMetadata.copyright | safe }}
+			</div>
 		{%- endif %}
-		{# {%- if siteMetadata.socialLinks %}
-			{{ bfSocialLinks({
-				classes: "bf-footer__social",
-				attributes: {
-					"aria-label": "Social media links"
-				},
-				items: siteMetadata.socialLinks
-			}) }}
-		{%- endif %} #}
+		{%- if siteMetadata.socialLinks %}
+			<div class="bf-footer__social">
+				{% include 'social-links.njk' %}
+			</div>
+		{%- endif %}
 	</div>
 </footer>
