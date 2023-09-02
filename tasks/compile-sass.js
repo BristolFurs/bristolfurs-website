@@ -6,10 +6,9 @@ const postcss = require("postcss")
 const postcssPresetEnv = require("postcss-preset-env")
 
 const compileSass = function () {
-  const result = sass.renderSync({
-    file: paths.srcAssets + "/styles.scss",
-    sourceMap: false,
-    outputStyle: "compressed",
+  const result = sass.compile(paths.srcAssets + "/styles.scss", {
+    sourceMap: true,
+    style: "compressed",
   })
   console.log("Sass compiled.")
 
