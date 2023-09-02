@@ -8,6 +8,11 @@ const { compileJavascript } = require("./tasks/compile-javascript")
 const loggingPlugin = require("@11ty/eleventy-plugin-directory-output")
 const svgContentsPlugin = require("eleventy-plugin-svg-contents")
 
+// Markdown parser and plugins
+const markdownIt = require("markdown-it")
+const markdownItAnchorPlugin = require("markdown-it-anchor")
+const markdownItAttributesPlugin = require("markdown-it-attrs")
+
 // Custom shortcodes
 const shortcodeIcon = require("./app/shortcodes/icon")
 
@@ -16,11 +21,23 @@ const filterFormatDate = require("./app/filters/formatDate")
 
 module.exports = function (config) {
   // Turn off default log output
-  config.setQuietMode(true)
+  // config.setQuietMode(true)
 
   // Eleventy plugins
   config.addPlugin(loggingPlugin)
   config.addPlugin(svgContentsPlugin)
+
+  // Markdown-It configuration
+  config.setLibrary(
+    "md",
+    markdownIt({
+      html: true,
+      linkify: true,
+      typographer: true,
+    })
+      .use(markdownItAttributesPlugin)
+      .use(markdownItAnchorPlugin)
+  )
 
   // Ignore files in these directories
   config.ignores.add(paths.srcLayouts)

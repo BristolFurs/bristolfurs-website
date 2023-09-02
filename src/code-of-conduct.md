@@ -1,7 +1,11 @@
 ---
 title: Code of conduct
-layout: code-of-conduct.njk
+layout: generic.njk
 ---
+
+<div class="bf-prose">
+
+# {{ title }}
 
 **Please read this document thoroughly before attending any BristolFurs events. BristolFurs will not consider a claimed lack of knowledge of the rules as an excuse for breaking them under any circumstances.**
 
@@ -11,7 +15,9 @@ The attendee is bound by this agreement in its entirety when they attend any eve
 
 This code of conduct is subject to change at any time without notice. Please review this document regularly and note any changes.
 
-## Code of conduct at meets
+</div>
+
+<h2 class="bf-heading-l" id="meets">Code of conduct at meets</h2>
 
 1. **No outside drink is to be on show or consumed at the venue.** The attendee shall not consume or have out of their bag, any drink, alcoholic or otherwise, not purchased from the venue whilst on venue grounds. For the purposes of this rule, “venue grounds” includes the area in front of the venue enclosed by the venue barriers. The single exception to this rule is bottled water. Tap water will be available free of charge at the venue.
 2. **No drugs.**
@@ -29,3 +35,43 @@ This code of conduct is subject to change at any time without notice. Please rev
    3. **The attendee shall remain fully clothed while on site.** The attendee must use the available changing facilities or toilets if they need to change clothes.
    4. **Meets are strictly SFW** (Safe For Work, i.e. not including adult themes or materials), in conjunction with terms 5.3 and 6.1, the attendee shall also not display any NSFW (Not Safe For Work, i.e. containing adult themes) media, items, or behaviours during the meet before 5 pm.
    5. The attendee shall know their own limits when it comes to alcohol consumption and be mindful not to become inebriated enough to cause a nuisance or burden to other attendees or to any other person(s) during attendance.
+6. **Do not compromise the reputation of BristolFurs or the furry fandom through your actions.**
+   1. Please remember that during attendance you are an ambassador and representative of BristolFurs and the furry fandom at large, and the attendee shall be held to this standard by BristolFurs.
+   2. The attendee shall not wear, hold, or otherwise display any kink, fetish, or sexual gear under any circumstances at any time. As a frame of reference only, collars are permitted without a leash or "ownership" tag, but pup hoods are not. If you are unsure if a piece of gear or clothing is appropriate please check beforehand with staff.
+   3. The attendee shall not have out of their bag or pocket any object(s) which are, or resemble, an offensive weapon at any time for any reason.
+   4. The attendee shall not consume any alcoholic beverage whilst on the fursuit walk.
+   5. The attendee shall not play music out loud on the walk unless at a designated stopping place during the walk.
+   6. The attendee shall not be too heavily under the influence of alcohol during the fursuit walk.
+7. BristolFurs reserves the right to remove any attendees for any reason at their discretion.
+8. Meets end at 6 pm, attendees are welcome to remain at the venue past this time if they wish but staff shall no longer be expected to manage attendees.
+
+{.bf-list .bf-list--legal}
+
+<h2 class="bf-heading-l" id="online">Code of conduct in online chat</h2>
+
+<p class="bf-body">For the purposes of this document, any of the BristolFurs online spaces where users can join and converse via text, voice, or any other medium with other members is defined as a “chat”.</p>
+
+1. **Behave in a manner which is respectful to other online users.**
+   1. The attendee shall converse civilly with all other online users at all times.
+   2. The attendee shall not use, or attempt to use, any offensive slurs at any time under any circumstances.
+   3. The attendee shall not post content which could reasonably be expected to cause offence (Please directly message staff if you are unsure if your content breaches this term before posting it).
+   4. The attendee shall only advertise within the dedicated, clearly marked places, or with express written consent from a member of staff or chat moderator. Where this consent is given, it must be declared in the post, this declaration shall include the name of the Staff or Moderator that provided this consent.
+2. **Age restrictions apply to the chats.**
+   1. Attendees below the age of 18 are not permitted to join the Discord or Telegram.
+   2. **The chats are SFW**, the attendee shall not post or link any NSFW content, nor shall they engage in NSFW conversation or behaviours.
+   3. Certain specified channels in the Discord are exempt from 2.2, these will be marked in accordance with Discord’s community guidelines. In addition, these channels will not be available to the attendee without approval from a Member of staff or a chat moderator.
+   4. BristolFurs reserves the right to request proof of age at any time in the interest of ensuring compliance with 2.1, and 2.3.
+3. **Chats may have their own specific rules.** These apply in conjunction with the terms listed in this document. Where the attendee is bound by chat rules listed separately from those found in this document, they shall not be released from their responsibility to comply with the terms found in this document without exception.
+4. Respect Staff/Chat moderators when they intervene in an argument and do not escalate or ‘stir the pot’.
+
+{.bf-list .bf-list--legal}
+
+<div class="bf-prose">
+
+The attendee agrees that if they breach any of the terms listed in this document, they may be subject to action from staff. This can include but is not limited to: Chat timeouts, Chat bans (temporary or permanent), Formal warnings, Walk bans (temporary or permanent), Meet removals, and meet bans (temporary or permanent). The appropriate action(s) will be determined on a case-by-case basis.
+
+The attendee also agrees that BristolFurs staff may take one of the aforementioned actions against the attendee for any reason under their discretion even if the attendee is not strictly in breach of the terms listed in this document.
+
+The attendee also agrees that any decision made by the BristolFurs committee is final and may not be subject to review unless significant new information is made available.
+
+</div>

@@ -25,16 +25,22 @@
   }
   &--legal {
     counter-reset: a;
-    > li::before {
+    li::before {
       content: counter(a) ". ";
       counter-increment: a;
+      font-variant-numeric: tabular-nums;
     }
-    > li > ol {
+    li > ol {
+      @include layout.responsive-margin(0);
+      @include layout.responsive-padding(0);
+      padding-inline-start: 2.5ch;
+      list-style: none;
       counter-reset: b;
     }
-    > li > ol > li::before {
+    li > ol > li::before {
       content: counter(a) "." counter(b) ". ";
       counter-increment: b;
+      font-variant-numeric: tabular-nums;
     }
     li + li,
     li > ol {
