@@ -9,15 +9,11 @@ $bf-color-black: #18020c;
 // Light-mode theme colours (must have 4.5:1 ratio with #fff)
 $bf-color-red: #bc0031;
 $bf-color-blue: #0015bc;
-$bf-color-green: #007a91;
-$bf-color-purple: #5a00c3;
 $bf-color-yellow: #f5c618;
 
 // Dark mode theme colours (must have 4.5:1 ratio with #18020c)
 $bf-color-red-light: #f9dadc;
 $bf-color-blue-light: #dcdcf8;
-$bf-color-green-light: #85aebc;
-$bf-color-purple-light: #9882d7;
 
 // Colours mapped to semantic purposes
 // CSS variables are made outta these
@@ -42,35 +38,27 @@ $bf-color-palette-semantic: (
     light: $bf-color-black,
     dark: $bf-color-white,
   ),
-  primary: (
+  link: (
     light: $bf-color-red,
     dark: $bf-color-red,
   ),
-  secondary: (
+  supporter: (
     light: $bf-color-blue,
     dark: $bf-color-blue-light,
   ),
-  tertiary: (
-    light: $bf-color-green,
-    dark: $bf-color-green-light,
-  ),
-  supporter: (
-    light: $bf-color-purple,
-    dark: $bf-color-purple-light,
-  ),
   focus-text: (
-    light: black,
-    dark: black,
+    light: $bf-color-black,
+    dark: $bf-color-black,
   ),
   focus-background: (
-    light: skyblue,
-    dark: skyblue,
-  ),
-  alert-background: (
     light: $bf-color-yellow,
     dark: $bf-color-yellow,
   ),
-  alert-text: (
+  emergency-background: (
+    light: $bf-color-yellow,
+    dark: $bf-color-yellow,
+  ),
+  emergency-text: (
     light: $bf-color-black,
     dark: $bf-color-black,
   ),

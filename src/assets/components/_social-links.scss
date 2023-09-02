@@ -18,6 +18,6 @@
     @include layout.responsive-margin(2, $direction: "inline-end");
     inline-size: 1.5rem;
     block-size: 1.5rem;
-    fill: colors.get-color("primary");
+    fill: colors.get-color("link");
   }
 }
