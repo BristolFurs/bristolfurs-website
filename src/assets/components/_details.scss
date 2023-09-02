@@ -1,0 +1,52 @@
+@use "../helpers/a11y";
+@use "../helpers/colors";
+@use "../helpers/layout";
+
+.bf-details {
+  @include layout.responsive-margin(0, $direction: "block-start");
+  @include layout.responsive-margin(4, $direction: "block-end");
+  padding-inline-start: layout.spacing(5);
+  position: relative;
+  &[open] .bf-details__summary {
+    @include layout.responsive-margin(2, $direction: "block-end");
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.bf-details__summary {
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+  list-style: none;
+  &::-webkit-details-marker {
+    display: none;
+  }
+  &::before {
+    @include layout.responsive-padding(2);
+    content: "+";
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    inset-block-start: 0.4em;
+    inset-inline-start: 0;
+    inline-size: layout.spacing(4);
+    block-size: layout.spacing(4);
+    border-radius: 50%;
+    color: colors.get-color("page-background");
+    background-color: colors.get-color("link");
+    font-weight: bold;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:focus-visible {
+    span {
+      @include a11y.focus-ring;
+    }
+  }
+  span {
+  }
+}

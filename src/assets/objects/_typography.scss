@@ -32,6 +32,7 @@
 .bf-heading-s {
   @include layout.responsive-margin(4, $direction: "block-start");
   @include typography.font-size("m");
+  line-height: 1.4;
 }
 
 .bf-body,

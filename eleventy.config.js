@@ -14,6 +14,7 @@ const markdownItAnchorPlugin = require("markdown-it-anchor")
 const markdownItAttributesPlugin = require("markdown-it-attrs")
 
 // Custom shortcodes
+const shortcodeFAQ = require("./app/shortcodes/faq")
 const shortcodeIcon = require("./app/shortcodes/icon")
 const shortcodeMarkdown = require("./app/shortcodes/markdown")
 
@@ -55,6 +56,7 @@ module.exports = function (config) {
   config.addPassthroughCopy(paths.src + "/images")
 
   // Custom shortcodes
+  config.addPairedShortcode("faq", shortcodeFAQ)
   config.addShortcode("icon", shortcodeIcon)
   config.addPairedShortcode("markdown", shortcodeMarkdown)
 
