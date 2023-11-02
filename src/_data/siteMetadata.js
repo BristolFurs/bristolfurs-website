@@ -1,11 +1,16 @@
 module.exports = function () {
   return {
+    // If the site is in development mode.
+    // If true, all pages are set to not be indexed by search engines and a
+    // bunch o' development information is dumped into the page.
+    developmentMode: process.env.ENVIRONMENT === "production" ? false : true,
+
     // The group name, used in a bunch of places, obviously.
     name: "BristolFurs",
 
     // The domain name, for when absolute links are required
     // (e.g. OpenGraph, RSS, schema data).
-    domainName: process.env.ENVIRONMENT === "prod" ? "https://idunno.lol" : "",
+    domainName: process.env.ENVIRONMENT === "production" ? "https://idunno.lol" : "",
 
     // Copyright statement
     copyright: "&copy; Copy copyright dobeltleflfsdfsd 20203.",

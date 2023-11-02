@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf _site",
-    "start": "npm run clean && ENVIRONMENT=dev npx @11ty/eleventy --serve",
-    "build": "npm run clean && ENVIRONMENT=prod npx @11ty/eleventy",
+    "start": "npm run clean && ENVIRONMENT=development npx @11ty/eleventy --serve",
+    "build-development": "ENVIRONMENT=development npx @11ty/eleventy",
+    "build-production": "ENVIRONMENT=production npx @11ty/eleventy",
     "lint": "prettier --write \"**/*.{js,json,md,mjs,scss,yaml,yml}\"",
     "prepare": "husky install"
   },
