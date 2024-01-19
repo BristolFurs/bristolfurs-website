@@ -1,0 +1,53 @@
+{% extends 'src/_layouts/layout.njk' %}
+
+{% block main %}
+  <article class="bf-container bf-!-margin-block-xl" itemscope itemtype="https://schema.org/WebPage">
+  
+    {%- if backLink %}
+      <a class="bf-back-link" href="{{ backLink.href | url }}">{{ backLink.text }}</a>
+    {%- endif %}
+    
+    <h1 class="bf-heading-4xl" itemprop="name">
+      {%- if pretitle %}
+        <div class="bf-heading-2xl bf-!-margin-block-start-0 bf-!-margin-block-end-2xs">{{ pretitle }}</div>
+      {%- endif %}
+      {{ title }}
+    </h1>
+    
+    <div class="bf-grid-article">
+      {%- if content | toc %}
+        <div class="bf-grid-article__toc">
+          <nav class="bf-blocc" id="toc" aria-labelledby="toc-title">
+            <h2 class="bf-heading-l bf-!-margin-block-start-0">On this page</h2>
+            {{ content | toc | safe }}
+          </nav>
+        </div>
+      {%- endif %}
+      
+      <div class="bf-grid-article__body">
+        <div class="bf-prose" itemprop="text">
+          {{ content | safe }}
+        </div>
+        <p class="bf-small-print bf-!-margin-block-start-xl">
+          <a class="bf-link" href="{{ page.url | url }}" itemprop="url">Permalink to this page</a>
+        </p>
+      </div>
+      
+      {%- if relatedLinks %}
+        <aside class="bf-blocc bf-grid-article__related" id="related" aria-labelledby="related-title">
+          <h2 class="bf-heading-l bf-!-margin-block-start-0">Related pages</h2>
+          <ul class="bf-list">
+            {%- for item in relatedLinks %}
+              <li>
+                <a class="bf-link" href="{{ item.href | url }}" {%- if item.external %} rel="noreferrer noopener" target="_blank"{% endif %}>
+                  {{- item.text -}}
+                </a>
+              </li>
+            {%- endfor %}
+          </ul>
+        </aside>
+      {%- endif %}
+    </div>
+    
+  </article>
+{% endblock %}

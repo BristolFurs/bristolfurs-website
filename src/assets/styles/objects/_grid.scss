@@ -1,0 +1,40 @@
+@use "../helpers/media-queries";
+
+.bf-grid-cards,
+.bf-grid-article {
+  display: grid;
+  gap: var(--grid-gutter);
+  grid-template-columns: 1fr;
+}
+
+.bf-grid-cards {
+  @include media-queries.query($from: mobile) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include media-queries.query($from: tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.bf-grid-article {
+  grid-template-areas: "toc" "body" "related";
+  @include media-queries.query($from: tablet) {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "body toc" "body related";
+  }
+  &__toc {
+    grid-area: toc;
+    > :first-child {
+      position: sticky;
+      inset-block-start: var(--space-m);
+    }
+  }
+  &__body {
+    grid-area: body;
+  }
+  &__related {
+    grid-area: related;
+    align-self: end;
+  }
+}

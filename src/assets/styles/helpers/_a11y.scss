@@ -1,0 +1,31 @@
+@mixin focus-ring--inline {
+  outline: none;
+  color: var(--color-focus-text);
+  background-color: var(--color-focus-background);
+  text-decoration: none;
+  box-shadow: 0 var(--border-width-regular) 0 0 var(--color-focus-text);
+}
+
+@mixin focus-ring--input {
+  outline: none;
+  box-shadow: 0 0 0 var(--border-width-regular) var(--color-focus-text),
+    0 0 0 calc(var(--border-width-regular) * 2) var(--color-focus-background);
+}
+
+@mixin focus-ring--button {
+  outline: none;
+  color: var(--color-focus-text);
+  background-color: var(--color-focus-background);
+  text-decoration: none;
+  box-shadow: 0 0 0 var(--border-width-regular) var(--color-focus-text);
+}
+
+@mixin visually-hidden($important: false) {
+  block-size: 1px if($important, !important, null);
+  inline-size: 1px if($important, !important, null);
+  position: absolute if($important, !important, null);
+  overflow: hidden if($important, !important, null);
+  white-space: nowrap if($important, !important, null);
+  clip: rect(0 0 0 0) if($important, !important, null);
+  clip-path: inset(50%) if($important, !important, null);
+}

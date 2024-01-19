@@ -1,9 +1,0 @@
-@use "../helpers/links";
-
-.bf-link {
-  @include links.link;
-}
-
-.bf-link-inverse {
-  @include links.link-inverse;
-}

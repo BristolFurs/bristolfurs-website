@@ -1,4 +1,4 @@
 ---
-layout: generic-text.njk
+layout: generic-landing.njk
 title: Attending a meet
 ---

@@ -1,0 +1,31 @@
+@use "../helpers/a11y";
+
+.bf-back-link {
+  $_arrow-thickness: 3px;
+  $_arrow-height: 0.7em;
+  display: inline-flex;
+  align-items: center;
+  margin-block-end: var(--space-m);
+  color: var(--color-link);
+  font-size: var(--font-size-m);
+  text-decoration: none;
+  &:focus-visible {
+    @include a11y.focus-ring--inline;
+  }
+  &::before {
+    content: "";
+    display: inline-block;
+    inline-size: $_arrow-height * 0.666;
+    block-size: $_arrow-height;
+    margin-inline-end: var(--space-2xs);
+    background-color: currentcolor;
+    clip-path: polygon(
+      100% 0,
+      calc(100% - #{$_arrow-thickness}) 0,
+      0 50%,
+      calc(100% - #{$_arrow-thickness}) 100%,
+      100% 100%,
+      #{$_arrow-thickness} 50%
+    );
+  }
+}

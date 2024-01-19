@@ -1,0 +1,40 @@
+@use "../helpers/grid";
+@use "../helpers/media-queries";
+@use "../objects/typography";
+@use "../objects/link";
+@use "../objects/lists";
+
+.bf-prose {
+  > p:not([class]) {
+    @extend .bf-body;
+    max-inline-size: var(--grid-max-prose-width);
+  }
+  > ol:not([class]) {
+    @extend .bf-list;
+    @extend .bf-list--numbered;
+    max-inline-size: var(--grid-max-prose-width);
+  }
+  > ul:not([class]) {
+    @extend .bf-list;
+    @extend .bf-list--bulleted;
+    max-inline-size: var(--grid-max-prose-width);
+  }
+  > h1:not([class]) {
+    @extend .bf-heading-4xl;
+  }
+  > h2:not([class]) {
+    @extend .bf-heading-3xl;
+  }
+  > h3:not([class]) {
+    @extend .bf-heading-2xl;
+  }
+  > h4:not([class]) {
+    @extend .bf-heading-xl;
+  }
+  > h5:not([class]) {
+    @extend .bf-heading-l;
+  }
+  a:not([class]) {
+    @extend .bf-link;
+  }
+}

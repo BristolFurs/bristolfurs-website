@@ -1,0 +1,17 @@
+.bf-schedule {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  row-gap: var(--space-3xs);
+  margin: 0;
+  margin-block-end: var(--space-m);
+  padding: 0;
+}
+
+.bf-schedule__time {
+  padding-inline-end: var(--space-2xs);
+  border-inline-end: var(--border-width-hairline) solid var(--color-primary);
+}
+
+.bf-schedule__content {
+  margin-inline-start: var(--space-2xs);
+}

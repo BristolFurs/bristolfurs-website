@@ -1,6 +1,7 @@
 ---
-layout: generic-text.njk
-title: Frequently asked questions — Attending a meet
+layout: generic-article.njk
+pretitle: Attending a meet
+title: Frequently asked questions
 backLink:
   text: Attending a meet
   href: /attending-a-meet/

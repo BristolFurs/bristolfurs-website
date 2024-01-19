@@ -1,0 +1,36 @@
+@use "../settings";
+@use "sass:map";
+
+@mixin query($from: null, $to: null, $and: null) {
+  $map: settings.$bf-breakpoints;
+  $query: "";
+
+  @if $from {
+    $query: "#{$query} (min-width: #{if(map.has-key($map, $from), map.get($map, $from), $from)})";
+  }
+
+  @if $to {
+    @if $from {
+      $query: "#{$query} and";
+    }
+    $query: "#{$query} (max-width: #{if(map.has-key($map, $to), map.get($map, $to), $to) - 0.001rem})";
+  }
+
+  @if $and {
+    $query: "#{$query} #{$and}";
+  }
+
+  @media screen and #{$query} {
+    @content;
+  }
+}
+
+@function value($point) {
+  $map: settings.$bf-breakpoints;
+
+  @if (map.has-key($map, $point)) {
+    @return map.get($map, $point);
+  }
+
+  @return null;
+}

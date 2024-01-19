@@ -1,0 +1,25 @@
+@use "../helpers/a11y";
+
+.bf-button {
+  display: inline-block;
+  padding-block: var(--space-xs);
+  padding-inline: var(--space-s);
+  border: var(--border-width-hairline) solid currentcolor;
+  color: var(--color-link);
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.02em;
+  span {
+    border-block-end: var(--border-width-regular) solid transparent;
+  }
+  &:hover span {
+    border-block-end-color: currentcolor;
+  }
+  &:focus-visible {
+    @include a11y.focus-ring--button;
+  }
+  &.bf-button--full-width {
+    inline-size: 100%;
+  }
+}

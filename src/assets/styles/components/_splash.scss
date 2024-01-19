@@ -1,0 +1,47 @@
+@use "../helpers/media-queries";
+
+$_breakpoint: "tablet";
+
+.bf-splash {
+  position: relative;
+  @include media-queries.query($from: $_breakpoint) {
+    min-block-size: 20rem;
+  }
+
+  .bf-container {
+    position: relative;
+    @include media-queries.query($from: $_breakpoint) {
+      display: flex;
+      justify-content: end;
+      align-items: end;
+    }
+  }
+}
+
+.bf-splash__media {
+  inline-size: 100%;
+  background-color: var(--color-canvas-background-alt);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  @include media-queries.query($from: $_breakpoint) {
+    inline-size: 100%;
+    block-size: 100%;
+    position: absolute;
+    inset: 0;
+    aspect-ratio: auto;
+  }
+}
+
+.bf-splash__content {
+  padding-block: var(--space-m);
+  @include media-queries.query($from: $_breakpoint) {
+    inline-size: 100%;
+    max-inline-size: 25rem;
+    margin-block-start: var(--space-3xl);
+    margin-block-end: calc(0px - var(--space-l));
+    padding: var(--space-m);
+    border-block-start: var(--border-width-thick) solid var(--color-primary);
+    background-color: var(--color-canvas-background);
+    filter: var(--border-shadow);
+  }
+}

@@ -1,11 +1,10 @@
 ---
-title: Code of conduct
-layout: generic.njk
+title: BristolFurs code of conduct
+layout: generic-article.njk
+relatedLinks:
+  - href: /fursuiting/
+    text: Fursuiting at BristolFurs
 ---
-
-<div class="bf-prose">
-
-# {{ title }}
 
 **Please read this document thoroughly before attending any BristolFurs events. BristolFurs will not consider a claimed lack of knowledge of the rules as an excuse for breaking them under any circumstances.**
 
@@ -15,9 +14,7 @@ The attendee is bound by this agreement in its entirety when they attend any eve
 
 This code of conduct is subject to change at any time without notice. Please review this document regularly and note any changes.
 
-</div>
-
-<h2 class="bf-heading-l" id="meets">Code of conduct at meets</h2>
+## Code of conduct at meets
 
 1. **No outside drink is to be on show or consumed at the venue.** The attendee shall not consume or have out of their bag, any drink, alcoholic or otherwise, not purchased from the venue whilst on venue grounds. For the purposes of this rule, “venue grounds” includes the area in front of the venue enclosed by the venue barriers. The single exception to this rule is bottled water. Tap water will be available free of charge at the venue.
 2. **No drugs.**
@@ -47,9 +44,9 @@ This code of conduct is subject to change at any time without notice. Please rev
 
 {.bf-list .bf-list--legal}
 
-<h2 class="bf-heading-l" id="online">Code of conduct in online chat</h2>
+## Code of conduct in online chat
 
-<p class="bf-body">For the purposes of this document, any of the BristolFurs online spaces where users can join and converse via text, voice, or any other medium with other members is defined as a “chat”.</p>
+For the purposes of this document, any of the BristolFurs online spaces where users can join and converse via text, voice, or any other medium with other members is defined as a “chat”.
 
 1. **Behave in a manner which is respectful to other online users.**
    1. The attendee shall converse civilly with all other online users at all times.
@@ -66,12 +63,8 @@ This code of conduct is subject to change at any time without notice. Please rev
 
 {.bf-list .bf-list--legal}
 
-<div class="bf-prose">
-
 The attendee agrees that if they breach any of the terms listed in this document, they may be subject to action from staff. This can include but is not limited to: Chat timeouts, Chat bans (temporary or permanent), Formal warnings, Walk bans (temporary or permanent), Meet removals, and meet bans (temporary or permanent). The appropriate action(s) will be determined on a case-by-case basis.
 
 The attendee also agrees that BristolFurs staff may take one of the aforementioned actions against the attendee for any reason under their discretion even if the attendee is not strictly in breach of the terms listed in this document.
 
 The attendee also agrees that any decision made by the BristolFurs committee is final and may not be subject to review unless significant new information is made available.
-
-</div>

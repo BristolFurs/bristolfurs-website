@@ -1,9 +1,0 @@
-@use "../helpers/colors";
-@use "../helpers/layout";
-
-.bf-rule {
-  @include layout.responsive-margin(6, $direction: "block");
-  border-block-end: layout.border-width("thick") solid colors.get-color("furniture");
-  color: transparent;
-  background-color: transparent;
-}

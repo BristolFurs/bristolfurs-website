@@ -1,0 +1,32 @@
+.bf-alert-banner {
+  padding-block: var(--space-2xs);
+  background-color: var(--color-raw-yellow);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 1em,
+    rgba(0, 0, 0, 0.25) 1em,
+    rgba(0, 0, 0, 0.25) 2em
+  );
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--color-raw-black);
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 1em,
+      rgba(245, 198, 24, 0.25) 1em,
+      rgba(245, 198, 24, 0.25) 2em
+    );
+  }
+}
+
+.bf-alert-banner span {
+  color: var(--color-canvas-text);
+  background-color: var(--color-canvas-background-alt);
+  box-shadow: 0 0 0 0.2rem var(--color-canvas-background-alt);
+  box-decoration-break: clone;
+}
+
+.bf-alert-banner__inner {
+  max-inline-size: var(--grid-max-prose-width);
+}

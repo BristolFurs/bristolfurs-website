@@ -1,0 +1,22 @@
+@use "../helpers/a11y";
+
+@mixin _common-styles {
+  color: var(--color-link);
+  &:focus-visible {
+    @include a11y.focus-ring--inline;
+  }
+}
+
+.bf-link {
+  @include _common-styles;
+  text-decoration: underline;
+  text-decoration-thickness: var(--border-width-hairline);
+  &:hover {
+    text-decoration-thickness: var(--border-width-regular);
+  }
+}
+
+.bf-link-no-underline {
+  @include _common-styles;
+  text-decoration: none;
+}

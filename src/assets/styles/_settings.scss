@@ -1,0 +1,92 @@
+@use "sass:color";
+
+// Lots of numbers derived from Utopia fluid responsive system
+// https://utopia.fyi/space/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12
+
+:root {
+  /** Spacing steps */
+  --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+  --space-2xs: clamp(0.5625rem, 0.5408rem + 0.1087vw, 0.625rem);
+  --space-xs: clamp(0.875rem, 0.8533rem + 0.1087vw, 0.9375rem);
+  --space-s: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+  --space-m: clamp(1.6875rem, 1.6223rem + 0.3261vw, 1.875rem);
+  --space-l: clamp(2.25rem, 2.163rem + 0.4348vw, 2.5rem);
+  --space-xl: clamp(3.375rem, 3.2446rem + 0.6522vw, 3.75rem);
+  --space-2xl: clamp(4.5rem, 4.3261rem + 0.8696vw, 5rem);
+  --space-3xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+
+  /** Font stacks */
+  --font-body: Poppins, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial, sans-serif;
+  --font-heading: var(--font-body);
+
+  /** Grid system */
+  --grid-max-width: 77.5rem;
+  --grid-gutter: clamp(1.125rem, 0.6467rem + 2.3913vw, 2.5rem);
+  --grid-columns: 12;
+  --grid-max-prose-width: 38em;
+
+  /** Font sizes */
+  --font-size-xs: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
+  --font-size-s: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+  --font-size-m: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+  --font-size-l: clamp(1.35rem, 1.2761rem + 0.3696vw, 1.5625rem);
+  --font-size-xl: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);
+  --font-size-2xl: clamp(1.9438rem, 1.7707rem + 0.8652vw, 2.4413rem);
+  --font-size-3xl: clamp(2.3325rem, 2.0823rem + 1.2511vw, 3.0519rem);
+  --font-size-4xl: clamp(2.7994rem, 2.4461rem + 1.7663vw, 3.815rem);
+
+  /** Colours (unassigned) */
+  --color-raw-white: #fff;
+  --color-raw-off-white: #f4f1ef;
+  --color-raw-black: #000;
+  --color-raw-off-black: #202020;
+  --color-raw-red: #bc0031;
+  --color-raw-red-alt: #ff3730;
+  --color-raw-blue: #0032bc;
+  --color-raw-green: #00bc8a;
+  --color-raw-yellow: #f5c618;
+
+  /** Colours (light mode) */
+  --color-canvas-text: var(--color-raw-off-black);
+  --color-canvas-background: var(--color-raw-white);
+  --color-canvas-background-alt: var(--color-raw-off-white);
+  --color-link: var(--color-raw-red);
+
+  /** Colours (all modes) */
+  --color-primary: var(--color-raw-red);
+  --color-secondary: var(--color-raw-blue);
+  --color-tertiary: var(--color-raw-green);
+  --color-focus-text: var(--color-raw-black);
+  --color-focus-background: var(--color-raw-yellow);
+  --color-header-text: var(--color-raw-white);
+  --color-header-background: var(--color-raw-red);
+
+  /** Border widths */
+  --border-width-hairline: 1px;
+  --border-width-regular: 0.5rem;
+  --border-width-thick: 1rem;
+  --border-shadow: drop-shadow(0 3px 5px #{color.change(#000, $alpha: 0.07)});
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /** Colours (dark mode) */
+    --color-canvas-text: var(--color-raw-white);
+    --color-canvas-background: var(--color-raw-black);
+    --color-canvas-background-alt: var(--color-raw-off-black);
+    --color-link: var(--color-raw-red-alt);
+    --border-shadow: drop-shadow(0 3px 5px #{color.change(#bc0031, $alpha: 0.4)});
+  }
+}
+
+/**
+ * Breakpoints
+ * 
+ * CSS custom properties can't be used in media queries,
+ * so this'll stay Sassy for now.
+ */
+$bf-breakpoints: (
+  mobile: 30rem,
+  tablet: 48rem,
+  desktop: 77.5rem,
+);

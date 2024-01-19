@@ -2,10 +2,12 @@
 // needs to be communicated (e.g. disruption due to Covid 2)
 
 module.exports = function () {
-  // Write a message to show the banner
-  // Only properly supports a single line of plain text at the moment.
-  // return "Meets are postponed due to furry crime. Again."
+  // Write a message to show in the banner. Uncomment to make it visible.
+  // Only supports a single line of plain text at the moment.
+  return {
+    title: "Roadworks ahead 🚧",
+    body: "This website is still being actively developed. Information may not be up to date and some pages may appear unusual or broken.",
+  }
 
-  // Set to null to hide the banner
   return null
 }

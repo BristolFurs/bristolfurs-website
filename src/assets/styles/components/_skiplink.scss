@@ -1,0 +1,16 @@
+.bf-skiplink {
+  display: block;
+  padding: var(--space-3xs);
+  position: absolute;
+  inset-block-start: -9999em;
+  inset-inline-start: -9999em;
+  color: var(--color-focus-text);
+  background-color: var(--color-focus-background);
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  &:focus {
+    outline: none;
+    position: static;
+  }
+}

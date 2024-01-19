@@ -1,0 +1,53 @@
+@use "../helpers/reset";
+
+.bf-list {
+  @include reset.list;
+  margin-block-end: var(--space-m);
+  li + li {
+    margin-block-start: var(--space-2xs);
+  }
+}
+
+.bf-list--spaced {
+  li + li {
+    margin-block-start: var(--space-xs);
+  }
+}
+
+.bf-list--numbered,
+.bf-list--bulleted {
+  padding-inline-start: var(--space-m);
+}
+
+.bf-list--numbered {
+  list-style: decimal;
+}
+
+.bf-list--bulleted {
+  list-style: square;
+}
+
+.bf-list--legal {
+  counter-reset: a;
+  li::before {
+    content: counter(a) ". ";
+    counter-increment: a;
+    font-variant-numeric: tabular-nums;
+  }
+  li > ol {
+    margin: 0;
+    padding: 0;
+    padding-inline-start: 2.5ch;
+    list-style: none;
+    counter-reset: b;
+  }
+  li > ol > li::before {
+    content: counter(a) "." counter(b) ". ";
+    counter-increment: b;
+    font-variant-numeric: tabular-nums;
+  }
+  li + li,
+  li > ol {
+    margin-block-start: var(--space-m);
+  }
+}

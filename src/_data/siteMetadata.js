@@ -18,34 +18,37 @@ module.exports = function () {
     // The links that appear on the top of the site.
     navigationLinks: [
       { href: "/attending-a-meet/", text: "Attending" },
-      { href: "/venue-information/", text: "Venue" },
+      { href: "/venue-information/", text: "Venues" },
       { href: "/the-team/", text: "Team" },
       { href: "/support-us/", text: "Support us" },
     ],
 
     // The links that appear on the bottom of the site.
     footerLinks: [
+      { href: "/fursuiting/", text: "Fursuiting at BristolFurs" },
       { href: "/code-of-conduct/", text: "Code of conduct" },
-      { href: "/privacy-policy/", text: "Privacy policy" },
+      { href: "/privacy-policy/", text: "Privacy and cookies" },
+      { href: "/accessibility-statement/", text: "Accessibility statement" },
     ],
 
     // Social media links. Make sure there's actually an icon in
     // `assets/images/icons` or this is gonna break.
     socialLinks: [
-      { text: "Discord server", icon: "discord", href: "//discord.gg/" },
       {
-        text: "Telegram channel",
-        icon: "telegram",
-        href: "//telegram.me/",
+        text: "Bluesky",
+        href: "//crouton.net/",
       },
       {
         text: "Twitter",
-        icon: "twitter",
         href: "//twitter.com/",
+      },
+      { text: "Discord", href: "//discord.gg/" },
+      {
+        text: "Telegram",
+        href: "//telegram.me/",
       },
       {
         text: "Support us on Ko-fi",
-        icon: "ko-fi",
         href: "//ko-fi.com/",
       },
     ],

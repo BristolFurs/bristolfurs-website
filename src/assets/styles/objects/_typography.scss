@@ -1,0 +1,65 @@
+.bf-heading-4xl,
+.bf-heading-3xl,
+.bf-heading-2xl,
+.bf-heading-xl,
+.bf-heading-l {
+  margin-block-end: var(--space-m);
+  font-family: var(--font-heading);
+  font-weight: bold;
+  text-wrap: balance;
+}
+
+.bf-heading-4xl {
+  margin-block-start: 0;
+  font-size: var(--font-size-4xl);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.bf-heading-3xl {
+  margin-block-start: var(--space-3xl);
+  font-size: var(--font-size-3xl);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.bf-heading-2xl {
+  margin-block-start: var(--space-2xl);
+  font-size: var(--font-size-2xl);
+  line-height: 1.25;
+}
+
+.bf-heading-xl {
+  margin-block-start: var(--space-xl);
+  font-size: var(--font-size-xl);
+  line-height: 1.4;
+}
+
+.bf-heading-l {
+  margin-block-start: var(--space-l);
+  font-size: var(--font-size-l);
+  line-height: 1.4;
+}
+
+.bf-body,
+.bf-body-l,
+.bf-body-s {
+  margin-block-start: 0;
+  margin-block-end: var(--space-m);
+}
+
+.bf-body-l {
+  font-size: var(--font-size-l);
+}
+
+.bf-body {
+  font-size: var(--font-size-m);
+}
+
+.bf-body-s {
+  font-size: var(--font-size-s);
+}
+
+.bf-small-print {
+  font-size: var(--font-size-xs);
+}

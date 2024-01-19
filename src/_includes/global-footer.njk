@@ -1,28 +1,39 @@
 <footer class="bf-footer">
-	<div class="bf-container bf-footer__inner">
-		{%- if siteMetadata.footerLinks %}
-		<ul class="bf-footer__links">
-			{%- for item in siteMetadata.footerLinks %}
-			<li class="bf-footer__links-item">
-				<a
-					class="bf-link bf-footer__links-link"
-					href="{{ item.href | url }}"
-					{%- if item.href === page.url %} aria-current="page"{% endif %}>
-					{{ item.html|safe if item.html else item.text }}
-				</a>
-			</li>
-			{%- endfor %}
-		</ul>
-		{%- endif %}
-		{%- if siteMetadata.copyright %}
-			<div class="bf-footer__copyright">
-				{{ siteMetadata.copyright | safe }}
-			</div>
-		{%- endif %}
-		{%- if siteMetadata.socialLinks %}
-			<div class="bf-footer__social">
-				{% include 'social-links.njk' %}
-			</div>
-		{%- endif %}
-	</div>
+  <div class="bf-container bf-footer__inner">
+    {%- if siteMetadata.socialLinks %}
+      <div class="bf-footer__social">
+        <h2 class="bf-body-l" id="social-links">Socialise!</h2>
+        {% renderTemplate "webc", { links: siteMetadata.socialLinks } %}
+          <bf-social-links 
+            :@links="this.links" 
+            @attributes="({'aria-labelledby': 'social-links'})">
+          </bf-social-links>
+        {% endrenderTemplate %}
+      </div>
+    {%- endif %}
+    
+    {%- if siteMetadata.footerLinks %}
+    <div class="bf-footer__links">
+      <h2 class="bf-body-l">Other stuff</h2>
+      <ul class="bf-list bf-footer__links-list">
+        {%- for item in siteMetadata.footerLinks %}
+        <li>
+          <a
+            class="bf-link-no-underline"
+            href="{{ item.href | url }}"
+            {%- if item.href === page.url %} aria-current="page"{% endif %}>
+            {{ item.html|safe if item.html else item.text }}
+          </a>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+    {%- endif %}
+    
+    {%- if siteMetadata.copyright %}
+      <small class="bf-footer__copyright bf-small-print">
+        {{ siteMetadata.copyright | safe }}
+      </small>
+    {%- endif %}
+  </div>
 </footer>

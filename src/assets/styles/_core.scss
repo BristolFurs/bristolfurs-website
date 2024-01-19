@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  color: var(--color-canvas-text);
+  background-color: var(--color-canvas-background-alt);
+  font-family: var(--font-body);
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-canvas-background);
+  font-size: var(--font-size-m);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}

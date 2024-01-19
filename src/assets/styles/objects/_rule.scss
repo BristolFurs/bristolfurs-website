@@ -1,0 +1,12 @@
+.bf-rule {
+  margin-block: var(--space-xl);
+  border: none;
+  border-block-end: var(--border-width-regular) solid var(--color-primary);
+  color: transparent;
+  background-color: none;
+}
+
+.bf-rule--thick {
+  margin-block: var(--space-2xl);
+  border-block-end-width: var(--border-width-thick);
+}

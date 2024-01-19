@@ -1,3 +1,3 @@
-import Masthead from "./javascript/masthead.mjs"
+import Header from "./javascript/header.mjs"
 
-new Masthead()
+new Header()

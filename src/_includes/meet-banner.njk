@@ -1,20 +1,24 @@
-<section class="bf-meet-banner" aria-labelledby="next-meet">
-	<div class="bf-container bf-meet-banner__inner">
-		<div class="bf-meet-banner__title" id="next-meet">
-			Next meet
+<div class="bf-splash">
+	<img class="bf-splash__media" src="{{ '/images/homepage.jpg' | url }}" alt="">
+	<div class="bf-container">
+		<div class="bf-splash__content">
+			<h1 class="bf-heading-2xl bf-!-margin-block-start-0 bf-!-margin-block-end-m">
+				<div class="bf-body-l bf-!-margin-block-end-3xs">Next furmeet:</div>
+				{{ meetInfo.nextMeetDate | formatDate('EEEE, do MMMM yyyy') }}
+			</h1>
+			{%- if meetInfo.schedule %}
+				<dl class="bf-schedule">
+					{%- for row in meetInfo.schedule %}
+						<dt class="bf-schedule__time">
+							{{ row.startTime }}
+						</dt>
+						<dd class="bf-schedule__content">{{ row.name }}</dd>
+					{%- endfor %}
+				</dl>
+			{%- endif %}
+			<a class="bf-button bf-button--full-width" href="#">
+				<span>Meet information</span>
+			</a>
 		</div>
-		<div class="bf-meet-banner__date">
-			{{ meetInfo.nextMeetDate | formatDate('EEEE, do MMMM yyyy') }}
-		</div>
-		{%- if meetInfo.schedule %}
-			<dl class="bf-meet-banner__schedule">
-				{%- for row in meetInfo.schedule %}
-					<dt>
-						{{ row.startTime }}
-					</dt>
-					<dd>{{ row.name }}</dd>
-				{%- endfor %}
-			</dl>
-		{%- endif %}
 	</div>
-</section>
+</div>

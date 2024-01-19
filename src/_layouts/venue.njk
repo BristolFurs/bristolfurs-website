@@ -1,0 +1,53 @@
+{% extends 'src/_layouts/layout.njk' %}
+
+{% block main %}
+<article class="bf-container bf-!-margin-block-xl" itemscope itemtype="https://schema.org/Place">
+
+  <a class="bf-back-link" href="{{ '/venue-information/' | url }}">Our venues</a>
+  
+  <h1 class="bf-heading-4xl" itemprop="name">
+    {{- name -}}
+  </h1>
+  
+  <p class="bf-body-l bf-!-margin-block-end-0" itemprop="address">
+    {{- addressLines | join("<br>") | safe -}}
+  </p>
+  
+  <div class="bf-!-margin-block-xl">
+    [venue photo] [map]
+  </div>
+  
+  <div itemprop="description">
+    <h2 class="bf-heading-3xl" id="fursuiting">Fursuiting at {{ name }}</h2>
+    <div class="bf-prose">
+      {% markdown %}
+        {% block fursuiting %}<p><em>No information provided.</em></p>{% endblock %}
+      {% endmarkdown %}
+    </div>
+    
+    <hr class="bf-rule">
+    
+    <h2 class="bf-heading-3xl" id="accessibility">Accessibility information</h2>
+    <div class="bf-prose">
+      {% markdown %}
+        {% block accessibility %}<p><em>No information provided.</em></p>{% endblock %}
+      {% endmarkdown %}
+    </div>
+    
+    <hr class="bf-rule">
+    
+    <h2 class="bf-heading-3xl" id="travel">Getting to {{ name }}</h2>
+    <div class="bf-prose">
+      {% markdown %}
+        {% block travel %}<p><em>No information provided.</em></p>{% endblock %}
+      {% endmarkdown %}
+    </div>
+    
+  </div>
+  
+  <p class="bf-small-print bf-!-margin-block-start-xl">
+    <a class="bf-link" href="{{ page.url | url }}" itemprop="url">Permalink to this page</a>
+  </p>
+  
+</article>
+{% endblock %}

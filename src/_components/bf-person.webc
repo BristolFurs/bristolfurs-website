@@ -1,0 +1,11 @@
+<article class="bf-person" webc:root>
+  <div class="bf-person__media">
+    <img webc:if="person.avatar" class="bf-person__image" :alt="person.name" :src="url(`/images/${person.avatar}`)" />
+  </div>
+  <div class="bf-person__body">
+    <h3 class="bf-heading-l bf-person__name" @text="person.name"></h3>
+    <p class="bf-body bf-person__role" webc:if="person.title" @text="person.title"></p>
+    <bf-social-links :@links="person.socialLinks" @attributes="({'aria-label': `${person.name} on socials`})">
+    </bf-social-links>
+  </div>
+</article>

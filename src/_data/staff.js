@@ -16,17 +16,17 @@ module.exports = function () {
     committee: [
       {
         name: "Azure Goat",
-        title: "Chairperson",
-        biography: "Adipisicing ut sunt exercitation incididunt esse eiusmod adipisicing.",
+        title: "Community lead",
         avatar: "not-azure.jpg",
         socialLinks: [
-          { text: "gote on that fuckin' website", icon: "twitter", href: "//bees.bees" },
-          { text: "telegrum", icon: "telegram", href: "//bees.bees" },
+          { text: "Bluesky", href: "//bees.bees" },
+          { text: "Telegram", href: "//bees.bees" },
         ],
       },
-      { name: "Kipperil" },
+      { name: "Kipperil", title: "Meet lead", avatar: "not-kip.jpg" },
+      { name: "Taylor", title: "Also here", avatar: "not-taylor.png" },
     ],
-    meetModerators: [{ name: "Eskelater" }, { name: "Owen" }, { name: "Taylor" }],
+    meetModerators: [{ name: "Eskelater" }, { name: "Owen" }],
     chatModerators: [{ name: "Pudge" }, { name: "Verge" }],
   }
 }

@@ -1,0 +1,42 @@
+@use "../helpers/media-queries";
+
+.bf-footer {
+  padding-block: var(--space-xl);
+  border-block-start: var(--border-width-thick) solid var(--color-primary);
+  background-color: var(--color-canvas-background-alt);
+}
+
+.bf-footer__inner {
+  display: grid;
+  gap: var(--grid-gutter);
+  grid-template-columns: 1fr;
+  grid-template-areas: "social" "links" "copyright";
+  @include media-queries.query($from: mobile) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "social links" "copyright copyright";
+  }
+  @include media-queries.query($from: tablet) {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "social links" "social copyright";
+  }
+}
+
+.bf-footer__social {
+  grid-area: social;
+  @include media-queries.query($from: mobile) {
+    border-inline-end: var(--border-width-hairline) solid var(--color-primary);
+    padding-inline-end: var(--space-m);
+  }
+}
+
+.bf-footer__links {
+  grid-area: links;
+}
+
+.bf-footer__links-list {
+}
+
+.bf-footer__copyright {
+  grid-area: copyright;
+  align-self: end;
+}

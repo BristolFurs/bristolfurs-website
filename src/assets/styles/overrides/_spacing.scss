@@ -1,0 +1,13 @@
+$_scale: (0, 3xs, 2xs, xs, s, m, l, xl, 2xl, 3xl);
+$_directions: (all, block, block-start, block-end, inline, inline-start, inline-end);
+
+@each $size in $_scale {
+  @each $dir in $_directions {
+    .bf-\!-margin#{if($dir != "all", "-" + $dir, null)}-#{$size} {
+      margin#{if($dir != "all", "-" + $dir, null)}: if($size == 0, 0, var(--space-#{$size})) !important;
+    }
+    .bf-\!-padding#{if($dir != "all", "-" + $dir, null)}-#{$size} {
+      padding#{if($dir != "all", "-" + $dir, null)}: if($size == 0, 0, var(--space-#{$size})) !important;
+    }
+  }
+}

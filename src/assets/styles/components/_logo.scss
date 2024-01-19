@@ -1,0 +1,31 @@
+@use "../helpers/a11y";
+
+.bf-logo {
+  display: inline-flex;
+  align-items: end;
+  padding-block: var(--space-s);
+  color: currentcolor;
+  font-size: var(--font-size-2xl);
+  text-decoration: none;
+  &:focus-visible {
+    outline: none;
+    .bf-logo__text {
+      @include a11y.focus-ring--inline;
+    }
+  }
+}
+
+.bf-logo__icon {
+  inline-size: auto;
+  block-size: 1.5em;
+  color: inherit;
+}
+
+.bf-logo__text {
+  margin-inline-start: var(--space-2xs);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: inherit;
+}

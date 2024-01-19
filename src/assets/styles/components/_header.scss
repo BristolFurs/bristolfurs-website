@@ -1,0 +1,46 @@
+@use "../helpers/a11y";
+@use "../helpers/reset";
+
+.bf-header {
+  color: var(--color-header-text);
+  background-color: var(--color-header-background);
+  position: relative;
+  z-index: 1;
+  &.bf-header--homepage {
+    color: var(--color-link);
+    background-color: transparent;
+  }
+  .bf-container {
+    position: relative;
+  }
+}
+
+.bf-header__nav-toggle {
+  @include reset.button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: var(--space-xl);
+  block-size: var(--space-xl);
+  border-radius: 50%;
+  color: var(--color-header-background);
+  background-color: var(--color-header-text);
+  position: absolute;
+  inset-inline-end: var(--grid-gutter);
+  inset-block-start: var(--space-xl);
+  filter: var(--border-shadow);
+  &[hidden] {
+    display: none;
+  }
+  &:focus-visible {
+    @include a11y.focus-ring--button;
+  }
+}
+
+.bf-header__nav-toggle-icon {
+  fill: currentcolor;
+  transition: transform 250ms ease;
+  [aria-expanded="true"] & {
+    transform: rotate(-90deg);
+  }
+}

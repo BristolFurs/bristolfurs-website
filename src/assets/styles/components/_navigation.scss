@@ -1,0 +1,57 @@
+@use "../helpers/a11y";
+@use "../helpers/media-queries";
+@use "../helpers/reset";
+
+// Breakpoint at which the menu switches between 'mobile' (hidden behind a
+// button) and being persistently visible
+$_breakpoint: "mobile";
+$_js-breakpoint: media-queries.value($_breakpoint);
+
+.bf-navigation {
+  --js-breakpoint: #{$_js-breakpoint};
+}
+
+.bf-navigation__list {
+  @include reset.list;
+  display: flex;
+  flex-direction: column;
+  @include media-queries.query($from: $_breakpoint) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--grid-gutter);
+  }
+}
+
+.bf-navigation__item {
+}
+
+.bf-navigation__link {
+  color: inherit;
+  text-decoration: none;
+  &:focus-visible {
+    outline: none;
+    span {
+      @include a11y.focus-ring--inline;
+    }
+  }
+  @include media-queries.query($to: $_breakpoint) {
+    display: block;
+    padding-block: var(--space-xs);
+    padding-inline: var(--space-s);
+    margin-inline-start: calc(0px - var(--space-s));
+    border-inline-start: var(--border-width-regular) solid transparent;
+    &:hover,
+    &[aria-current] {
+      border-inline-start-color: currentcolor;
+    }
+  }
+  @include media-queries.query($from: $_breakpoint) {
+    display: inline-block;
+    padding-block: var(--space-s);
+    border-block-end: var(--border-width-regular) solid transparent;
+    &:hover,
+    &[aria-current] {
+      border-block-end-color: var(--color-canvas-background);
+    }
+  }
+}

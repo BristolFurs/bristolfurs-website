@@ -1,0 +1,11 @@
+<ul class="bf-list bf-social-links" webc:if="links" webc:keep webc:root>
+  <li class="bf-social-links__item" webc:for="item of links">
+    <a
+      class="bf-link-no-underline bf-social-links__link"
+      :href="item.href"
+      @text="item.text"
+      rel="noreferrer noopener"
+      target="_blank">
+    </a>
+  </li>
+</ul>

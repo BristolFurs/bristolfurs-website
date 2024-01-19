@@ -5,8 +5,11 @@ const { compileSass } = require("./tasks/compile-sass")
 const { compileJavascript } = require("./tasks/compile-javascript")
 
 // Eleventy plugins
-const loggingPlugin = require("@11ty/eleventy-plugin-directory-output")
-const svgContentsPlugin = require("eleventy-plugin-svg-contents")
+const pluginDirectoryLogging = require("@11ty/eleventy-plugin-directory-output")
+const { EleventyRenderPlugin: pluginRender } = require("@11ty/eleventy")
+const pluginSvgContents = require("eleventy-plugin-svg-contents")
+const pluginTableOfContents = require("eleventy-plugin-toc")
+const pluginWebC = require("@11ty/eleventy-plugin-webc")
 
 // Markdown parser and plugins
 const markdownIt = require("markdown-it")
@@ -26,8 +29,16 @@ module.exports = function (config) {
   // config.setQuietMode(true)
 
   // Eleventy plugins
-  config.addPlugin(loggingPlugin)
-  config.addPlugin(svgContentsPlugin)
+  config.addPlugin(pluginDirectoryLogging)
+  config.addPlugin(pluginRender)
+  config.addPlugin(pluginSvgContents)
+  config.addPlugin(pluginTableOfContents, {
+    tags: ["h2"],
+    wrapper: null,
+  })
+  config.addPlugin(pluginWebC, {
+    components: paths.srcComponents + "/**/*.webc",
+  })
 
   // Markdown-It configuration
   config.setLibrary(

@@ -36,12 +36,13 @@
 
     <div class="bf-page-container">
       {% block header %}
+        {% include 'emergency-banner.njk' %}
         {% include 'global-header.njk' %}
       {% endblock %}
 
       <main class="bf-main {%- if mainClasses %} {{ mainClasses }}{% endif %}" id="main-content">
         {% block beforeMain %}
-          {% include 'emergency-banner.njk' %}
+        
         {% endblock %}
         
         {% block main %}

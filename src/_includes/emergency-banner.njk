@@ -1,9 +1,14 @@
 {%- if emergencyBannerText %}
-	<section class="bf-alert-banner" aria-label="Alert">
-		<div class="bf-container">
-			<div class="bf-alert-banner__inner">
-				{{- emergencyBannerText -}}
-			</div>
-		</div>
-	</section>
+  <section class="bf-alert-banner" aria-labelledby="alert-title">
+    <div class="bf-container">
+      <div class="bf-alert-banner__inner">
+        <h2 class="bf-heading-l bf-!-margin-0" id="alert-title">
+          <span>{{- emergencyBannerText.title -}}</span>
+        </h2>
+        <div>
+          <span>{{- emergencyBannerText.body -}}</span>
+        </div>
+      </div>
+    </div>
+  </section>
 {%- endif %}
