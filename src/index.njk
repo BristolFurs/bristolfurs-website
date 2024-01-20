@@ -1,10 +1,24 @@
 {% extends 'src/_layouts/layout.njk' %}
 
-{% block beforeMain %}
-  {{ super() }}
-  {% include 'meet-banner.njk' %}
-{% endblock %}
-
 {% block main %}
- 
+  {% include 'meet-banner.njk' %}
+  
+  <div class="bf-container">
+  {% renderTemplate "webc" %}
+  
+  <bf-brochure :params="({
+    name: 'Fursuiting at BristolFurs',
+    href: '/fursuiting/'
+  })">
+  
+  <div class="bf-prose" slot="body">
+  <p>Magna sunt aliquip id dolor. Lorem anim veniam sunt proident velit minim nostrud voluptate mollit ea ea. Velit ut aliqua dolor culpa commodo eu.</p>
+  </div>
+  <span slot="button">
+  More information <span class="bf-!-sr">about fursuiting</span>
+  </span>
+  </bf-brochure>
+  {% endrenderTemplate %}
+  
+  </div>
 {% endblock %}

@@ -1,4 +1,5 @@
 @use "../helpers/media-queries";
+@use "../helpers/theme";
 
 $_breakpoint: "tablet";
 
@@ -35,6 +36,7 @@ $_breakpoint: "tablet";
 .bf-splash__content {
   padding-block: var(--space-m);
   @include media-queries.query($from: $_breakpoint) {
+    @include theme.shadow;
     inline-size: 100%;
     max-inline-size: 25rem;
     margin-block-start: var(--space-3xl);
@@ -42,6 +44,5 @@ $_breakpoint: "tablet";
     padding: var(--space-m);
     border-block-start: var(--border-width-thick) solid var(--color-primary);
     background-color: var(--color-canvas-background);
-    filter: var(--border-shadow);
   }
 }

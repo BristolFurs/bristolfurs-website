@@ -1,15 +1,17 @@
+$_shadow-thickness: 4px;
+
 @mixin focus-ring--inline {
   outline: none;
   color: var(--color-focus-text);
   background-color: var(--color-focus-background);
   text-decoration: none;
-  box-shadow: 0 var(--border-width-regular) 0 0 var(--color-focus-text);
+  box-shadow: 0 $_shadow-thickness 0 0 var(--color-focus-text);
 }
 
 @mixin focus-ring--input {
   outline: none;
-  box-shadow: 0 0 0 var(--border-width-regular) var(--color-focus-text),
-    0 0 0 calc(var(--border-width-regular) * 2) var(--color-focus-background);
+  box-shadow: 0 0 0 $_shadow-thickness var(--color-focus-text),
+    0 0 0 ($_shadow-thickness * 2) var(--color-focus-background);
 }
 
 @mixin focus-ring--button {
@@ -17,7 +19,7 @@
   color: var(--color-focus-text);
   background-color: var(--color-focus-background);
   text-decoration: none;
-  box-shadow: 0 0 0 var(--border-width-regular) var(--color-focus-text);
+  box-shadow: 0 0 0 $_shadow-thickness var(--color-focus-text);
 }
 
 @mixin visually-hidden($important: false) {

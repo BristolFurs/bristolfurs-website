@@ -1,15 +1,17 @@
+@use "../helpers/theme";
+
 .bf-person {
+  @include theme.shadow;
   border-block-start: var(--border-width-thick) solid var(--color-primary);
   color: var(--color-canvas-text);
   background-color: var(--color-canvas-background);
-  filter: var(--border-shadow);
 }
 .bf-person__media {
   aspect-ratio: 1;
   background-color: var(--color-canvas-background-alt);
   background-image: url("images/no-avatar.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   line-height: 0;
 }

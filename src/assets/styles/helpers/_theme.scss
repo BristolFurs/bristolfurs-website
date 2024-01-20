@@ -1,0 +1,9 @@
+@use "sass:color";
+
+@mixin shadow {
+  filter: drop-shadow(0 3px 5px #{color.change(#000, $alpha: 0.07)});
+  @media (prefers-color-scheme: dark) {
+    filter: unset;
+    outline: 1px solid var(--color-primary);
+  }
+}

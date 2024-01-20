@@ -10,11 +10,11 @@
   text-decoration: none;
   text-align: center;
   letter-spacing: 0.02em;
-  span {
-    border-block-end: var(--border-width-regular) solid transparent;
-  }
-  &:hover span {
-    border-block-end-color: currentcolor;
+  &:hover {
+    text-decoration-skip-ink: none;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 2px;
   }
   &:focus-visible {
     @include a11y.focus-ring--button;

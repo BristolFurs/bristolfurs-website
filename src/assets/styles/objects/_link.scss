@@ -2,6 +2,7 @@
 
 @mixin _common-styles {
   color: var(--color-link);
+  text-decoration-skip-ink: none;
   &:focus-visible {
     @include a11y.focus-ring--inline;
   }
@@ -10,13 +11,20 @@
 .bf-link {
   @include _common-styles;
   text-decoration: underline;
-  text-decoration-thickness: var(--border-width-hairline);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
   &:hover {
-    text-decoration-thickness: var(--border-width-regular);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 2px;
   }
 }
 
 .bf-link-no-underline {
   @include _common-styles;
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 2px;
+  }
 }

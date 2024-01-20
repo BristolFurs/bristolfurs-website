@@ -1,4 +1,5 @@
 @use "../helpers/media-queries";
+@use "../helpers/theme";
 
 $_breakpoint: "tablet";
 
@@ -13,27 +14,29 @@ $_breakpoint: "tablet";
 
 .bf-brochure__image {
   inline-size: 100%;
-  background-color: var(--color-canvas-background-alt);
   aspect-ratio: 1;
+  background-color: var(--color-canvas-background-alt);
+  background-image: url("images/no-avatar.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   object-fit: cover;
   @include media-queries.query($from: $_breakpoint) {
     inline-size: 50%;
-    block-size: 100%;
-    aspect-ratio: auto;
   }
 }
 
 .bf-brochure__body {
   padding-block: var(--space-m);
   @include media-queries.query($from: $_breakpoint) {
-    inline-size: 100%;
+    @include theme.shadow;
+    inline-size: 50%;
     max-inline-size: var(--grid-max-prose-width);
     margin-inline-start: calc(0px - var(--space-l));
     padding: var(--space-m);
     position: relative;
     border-block-start: var(--border-width-thick) solid var(--color-primary);
     background-color: var(--color-canvas-background);
-    filter: var(--border-shadow);
   }
 }
 

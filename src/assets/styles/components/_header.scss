@@ -1,5 +1,6 @@
 @use "../helpers/a11y";
 @use "../helpers/reset";
+@use "../helpers/theme";
 
 .bf-header {
   color: var(--color-header-text);
@@ -17,6 +18,7 @@
 
 .bf-header__nav-toggle {
   @include reset.button;
+  @include theme.shadow;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +30,6 @@
   position: absolute;
   inset-inline-end: var(--grid-gutter);
   inset-block-start: var(--space-xl);
-  filter: var(--border-shadow);
   &[hidden] {
     display: none;
   }
