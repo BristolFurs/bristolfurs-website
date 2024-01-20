@@ -1,4 +1,4 @@
-name: Build and deploy
+name: Deploy to development
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - "src/**"
-      - ".eleventy.js"
+      - "eleventy.config.js"
   workflow_dispatch:
 
 concurrency:
@@ -27,28 +27,29 @@ jobs:
           cache-dependency-path: ${{ env.BUILD_PATH }}/package-lock.json
       - name: Install dependencies
         uses: ./.github/workflows/actions/install-dependencies
-      - name: Build Eleventy (development)
+      - name: Build Eleventy in development mode
         run: npm run build-development
       - name: Save artifact
         uses: actions/upload-artifact@v3
         with:
-          name: bristolfurs
+          name: bristolfurs-dev
           path: _site
           retention-days: 1
   deploy:
-    name: Deploy to server
+    name: Deploy to development
     needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
-          name: bristolfurs
+          name: bristolfurs-dev
       - name: Upload files
-        uses: up9cloud/action-rsync@v1.1
-        env:
-          HOST: ${{ secrets.SSH_HOST }}
-          USER: ${{ secrets.SSH_USER }}
-          KEY: ${{ secrets.SSH_KEY }}
-          TARGET: ${{ secrets.SSH_PATH }}
-          ARGS: -avP --compress --delete-after --human-readable
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_DEV_PATH }}
+          protocol: ftps
+          port: 21
