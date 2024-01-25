@@ -1,8 +1,10 @@
 @use "../helpers/grid";
 @use "../helpers/media-queries";
-@use "../objects/typography";
+
 @use "../objects/link";
 @use "../objects/lists";
+@use "../objects/rule";
+@use "../objects/typography";
 
 .bf-prose {
   > p:not([class]) {
@@ -24,6 +26,13 @@
   }
   > h2:not([class]) {
     @extend .bf-heading-3xl;
+    &::before {
+      content: "";
+      display: block;
+      inline-size: 9rem;
+      margin-block-end: var(--space-s);
+      border-block-start: var(--border-width-regular) solid var(--color-primary);
+    }
   }
   > h3:not([class]) {
     @extend .bf-heading-2xl;
@@ -36,5 +45,8 @@
   }
   a:not([class]) {
     @extend .bf-link;
+  }
+  > hr {
+    @extend .bf-rule;
   }
 }

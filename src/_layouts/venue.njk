@@ -16,31 +16,22 @@
   <div class="bf-!-margin-block-xl">
     [venue photo] [map]
   </div>
+    
+  <div class="bf-grid-article">
   
-  <div itemprop="description">
-    <h2 class="bf-heading-3xl" id="fursuiting">Fursuiting at {{ name }}</h2>
-    <div class="bf-prose">
-      {% markdown %}
-        {% block fursuiting %}<p><em>No information provided.</em></p>{% endblock %}
-      {% endmarkdown %}
-    </div>
+    {%- if content | toc %}
+      <div class="bf-grid-article__toc">
+        <nav class="bf-blocc" id="toc" aria-labelledby="toc-title">
+          <h2 class="bf-heading-l bf-!-margin-block-start-0">On this page</h2>
+          {{ content | toc | safe }}
+        </nav>
+      </div>
+    {%- endif %}
     
-    <hr class="bf-rule">
-    
-    <h2 class="bf-heading-3xl" id="accessibility">Accessibility information</h2>
-    <div class="bf-prose">
-      {% markdown %}
-        {% block accessibility %}<p><em>No information provided.</em></p>{% endblock %}
-      {% endmarkdown %}
-    </div>
-    
-    <hr class="bf-rule">
-    
-    <h2 class="bf-heading-3xl" id="travel">Getting to {{ name }}</h2>
-    <div class="bf-prose">
-      {% markdown %}
-        {% block travel %}<p><em>No information provided.</em></p>{% endblock %}
-      {% endmarkdown %}
+    <div class="bf-grid-article__body">
+      <div class="bf-prose" itemprop="description">
+        {{ content | safe }}
+      </div>
     </div>
     
   </div>
