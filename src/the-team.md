@@ -4,15 +4,15 @@ title: Meet the BristolFurs team
 lede: Furmeets are hard. Round of applause for those who make them happen. 👏👏👏
 ---
 
+{% from "components/person.njk" import person %}
+
 ## Governing committee
 
 In tempor est et voluptate. Lorem commodo amet proident proident fugiat Lorem deserunt est sint commodo consectetur amet laborum amet. Officia non et consequat nostrud esse excepteur.</p>
 
 <div class="bf-grid-cards">
-{%- for person in staff.committee %}
-  {% renderTemplate "webc", { person: person } %}
-    <bf-person :@person="person"></bf-person>
-  {% endrenderTemplate %}
+{%- for item in staff.committee %}
+  {{ person(item) }}
 {%- endfor %}
 </div>
     
@@ -21,10 +21,8 @@ In tempor est et voluptate. Lorem commodo amet proident proident fugiat Lorem de
 Exercitation ex cupidatat exercitation excepteur cillum tempor ut excepteur incididunt. Voluptate qui laboris nostrud quis laboris laborum labore occaecat labore tempor irure dolor ad. Quis commodo dolore ea occaecat ipsum non.
     
 <div class="bf-grid-cards">
-{%- for person in staff.meetModerators %}
-  {% renderTemplate "webc", { person: person } %}
-    <bf-person :@person="person"></bf-person>
-  {% endrenderTemplate %}
+{%- for item in staff.meetModerators %}
+  {{ person(item) }}
 {%- endfor %}
 </div>
     
@@ -33,10 +31,8 @@ Exercitation ex cupidatat exercitation excepteur cillum tempor ut excepteur inci
 Proident nulla dolore sunt ipsum deserunt. Commodo ullamco fugiat nulla irure consectetur. Do Lorem quis sunt nostrud. Tempor voluptate excepteur ex eiusmod ipsum sunt.
 
 <div class="bf-grid-cards">
-{%- for person in staff.chatModerators %}
-  {% renderTemplate "webc", { person: person } %}
-    <bf-person :@person="person"></bf-person>
-  {% endrenderTemplate %}
+{%- for item in staff.chatModerators %}
+  {{ person(item) }}
 {%- endfor %}
 </div>
     

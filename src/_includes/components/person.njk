@@ -1,0 +1,28 @@
+{% from "components/social-links.njk" import socialLinks %}
+
+{% macro person(params) %}
+  <article class="bf-person">
+    <div class="bf-person__media">
+      {%- if params.avatar %}
+        <img class="bf-person__image" alt="{{ params.name }}" src="{{ ('/images/' + params.avatar) | url }}" />
+      {%- endif %}
+    </div>
+    <div class="bf-person__body">
+      <h3 class="bf-heading-l bf-person__name">{{ params.name }}</h3>
+      {%- if params.title %}
+        <p class="bf-body bf-person__role">{{ params.title }}</p>
+      {%- endif %}
+      {%- if caller %}
+        <div class="bf-prose">
+          {{ caller() }}
+        </div>
+      {% endif %}
+      {{ socialLinks({
+        links: params.socialLinks,
+        attributes: {
+          "aria-label": params.name + " on socials"
+        }
+      }) }}
+    </div>
+  </article>
+{% endmacro %}

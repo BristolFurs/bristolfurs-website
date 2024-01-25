@@ -1,0 +1,17 @@
+{% macro socialLinks(params) %}
+  {%- if params.links | length %}
+    <ul class="bf-list bf-social-links" {%- for attribute, value in params.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
+      {%- for item in params.links %}
+      <li class="bf-social-links__item">
+        <a
+          class="bf-link-no-underline bf-social-links__link"
+          href="{{ item.href }}"
+          rel="noreferrer noopener"
+          target="_blank">
+          {{- item.text -}}
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  {%- endif %}
+{% endmacro %}

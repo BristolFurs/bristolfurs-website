@@ -1,14 +1,16 @@
+{% from "components/social-links.njk" import socialLinks %}
+
 <footer class="bf-footer">
   <div class="bf-container bf-footer__inner">
     {%- if siteMetadata.socialLinks %}
       <div class="bf-footer__social">
         <h2 class="bf-body-l" id="social-links">Socialise!</h2>
-        {% renderTemplate "webc", { links: siteMetadata.socialLinks } %}
-          <bf-social-links 
-            :@links="this.links" 
-            @attributes="({'aria-labelledby': 'social-links'})">
-          </bf-social-links>
-        {% endrenderTemplate %}
+        {{ socialLinks({
+          links: siteMetadata.socialLinks,
+          attributes: {
+            "aria-labelledby": "social-links"
+          }
+        }) }}
       </div>
     {%- endif %}
     

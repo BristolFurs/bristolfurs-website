@@ -1,24 +1,26 @@
 {% extends 'src/_layouts/layout.njk' %}
 
+{% from "components/brochure.njk" import brochure %}
+
 {% block main %}
   {% include 'meet-banner.njk' %}
   
   <div class="bf-container">
-  {% renderTemplate "webc" %}
   
-  <bf-brochure :params="({
-    name: 'Fursuiting at BristolFurs',
-    href: '/fursuiting/'
-  })">
-  
-  <div class="bf-prose" slot="body">
-  <p>Magna sunt aliquip id dolor. Lorem anim veniam sunt proident velit minim nostrud voluptate mollit ea ea. Velit ut aliqua dolor culpa commodo eu.</p>
-  </div>
-  <span slot="button">
-  More information <span class="bf-!-sr">about fursuiting</span>
-  </span>
-  </bf-brochure>
-  {% endrenderTemplate %}
+    {% call brochure({
+      title: {
+        text: "Fursuiting at BristolFurs"
+      },
+      href: "/fursuiting/",
+      button: {
+        html: 'More information <span class="bf-!-sr">about fursuiting</span>'
+      },
+      image: {
+        src: "//placeholder.rocks/600/600/3"
+      }
+    }) %}
+      <p>Tempor pariatur laborum pariatur exercitation dolor eu labore est deserunt.</p>
+    {% endcall %}
   
   </div>
 {% endblock %}
