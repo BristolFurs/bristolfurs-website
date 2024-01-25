@@ -10,7 +10,7 @@ module.exports = function () {
 
     // The domain name, for when absolute links are required
     // (e.g. OpenGraph, RSS, schema data).
-    domainName: process.env.ENVIRONMENT === "production" ? "https://idunno.lol" : "",
+    domainName: process.env.ENVIRONMENT === "production" ? "https://bristolfurs.co.uk" : "",
 
     // Copyright statement
     copyright: "&copy; Copy copyright dobeltleflfsdfsd 20203.",
