@@ -1,0 +1,12 @@
+@use "../objects/link";
+@use "../objects/lists";
+
+.bf-toc {
+  ol,
+  ul {
+    @extend .bf-list;
+  }
+  a {
+    @extend .bf-link;
+  }
+}

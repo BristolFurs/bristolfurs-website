@@ -31,7 +31,8 @@ module.exports = function (config) {
   config.addPlugin(pluginSvgContents)
   config.addPlugin(pluginTableOfContents, {
     tags: ["h2"],
-    wrapper: null,
+    wrapper: "div",
+    wrapperClass: "bf-toc",
   })
 
   // Markdown-It configuration
