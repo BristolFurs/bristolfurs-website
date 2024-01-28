@@ -4,7 +4,7 @@
   <article class="bf-person">
     <div class="bf-person__media">
       {%- if params.avatar %}
-        <img class="bf-person__image" alt="{{ params.name }}" src="{{ ('/images/' + params.avatar) | url }}" />
+        {% image params.avatar, params.name, { class: "bf-person__image" } %}
       {%- endif %}
     </div>
     <div class="bf-person__body">

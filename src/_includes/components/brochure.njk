@@ -1,7 +1,7 @@
 {% macro brochure(params) %}
   <div class="bf-brochure">
     {%- if params.image %}
-      <img class="bf-brochure__image" alt="{{ params.image.alt }}" src="{{ params.image.src }}" />
+      {% image params.image.src, params.image.alt, { class: "bf-brochure__image" } %}
     {%- else %}
       <div class="bf-brochure__image" aria-hidden="true"></div>
     {%- endif %}

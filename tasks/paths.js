@@ -7,4 +7,5 @@ module.exports = {
   srcIncludes: "./_includes",
   output: "./_site",
   outputAssets: "./_site/assets",
+  outputImages: "./_site/images",
 }

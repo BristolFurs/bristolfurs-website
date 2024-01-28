@@ -17,6 +17,7 @@ const markdownItAttributesPlugin = require("markdown-it-attrs")
 // Custom shortcodes
 const shortcodeFAQ = require("./app/shortcodes/faq")
 const shortcodeIcon = require("./app/shortcodes/icon")
+const shortcodeImage = require("./app/shortcodes/image")
 const shortcodeMarkdown = require("./app/shortcodes/markdown")
 
 // Custom filters
@@ -63,6 +64,7 @@ module.exports = function (config) {
   // Custom shortcodes
   config.addPairedShortcode("faq", shortcodeFAQ)
   config.addShortcode("icon", shortcodeIcon)
+  config.addShortcode("image", shortcodeImage)
   config.addPairedShortcode("markdown", shortcodeMarkdown)
 
   // Custom filters

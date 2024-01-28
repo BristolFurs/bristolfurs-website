@@ -15,7 +15,8 @@ lede: How to get to our meeting spots and what to expect when you get there.
     html: '<span class="bf-!-sr">The Boardroom</span> Venue information'
   },
   image: {
-    src: "//placeholder.rocks/600/600/1"
+    src: "//placeholder.rocks/600/600/1",
+    alt: "Placeholder image"
   }
 }) %}
 
@@ -26,12 +27,13 @@ lede: How to get to our meeting spots and what to expect when you get there.
   title: {
     text: "Starbucks Temple Quay"
   },
-  href: '/venue-information/starbucks-temple-quay/',
+  href: "/venue-information/starbucks-temple-quay/",
   button: {
     html: '<span class="bf-!-sr">Starbucks Temple Quay</span> Venue information'
   },
   image: {
-    src: '//placeholder.rocks/600/600/2'
+    src: "//placeholder.rocks/600/600/2",
+    alt: "Placeholder image"
   }
 }) %}
 
