@@ -17,8 +17,8 @@ If you're a Windows user, you may need to install a proper Unix command line for
 In your command line, run each of these commands to copy down the repo and navigate into it.
 
 ```shell
-git clone git@github.com:querkmachine/bristolfurs-eleventy.git
-cd bristolfurs-eleventy
+git clone git@github.com:bristolfurs/bristolfurs-website.git
+cd bristolfurs-website
 ```
 
 ### Install everything you need
@@ -86,8 +86,14 @@ Only the `src/assets/all.mjs` file is compiled. Everything else should be includ
 
 ### Deploying
 
-```shell
-npm run build
-```
+### Deployment to development environment
 
-This compiles everything you need and plonks it into the `_site` directory. If all is well, you should be able to place the contents of this directory on basically any web server anywhere and it'll Just Work™.
+There is a Continuous Integration (CI) pipeline set up to automatically build and deploy the website to [dev.bristolfurs.co.uk](https://dev.bristolfurs.co.uk/). Use this to ensure that content changes look good before pushing them to the live website.
+
+This version of the site is publicly viewable, but is configured to not be indexed by search engines. It also shows a big banner at the top pointing out that this isn't the actual, proper website.
+
+### Deployment to live (production) environment
+
+Deployments to live are not automated and must always be performed manually.
+
+Do so from the 'Run workflow' dropdown menu in the ['Deploy to live' Action](https://github.com/BristolFurs/bristolfurs-website/actions/workflows/deploy-prod.yml).
