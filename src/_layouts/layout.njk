@@ -2,13 +2,13 @@
   'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap'
 -%}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB" dir="ltr">
   <head>
     {# Technical metadata #}
     <meta charset="UTF-8" />
     <meta name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    {%- if siteMetadata.developmentMode or pageMetadata.noRobots %}
+    {%- if siteMetadata.developmentMode or metadata.noRobots %}
       <meta name="robots" content="noindex, nofollow" />
     {%- endif %}
     
@@ -31,6 +31,19 @@
     <link rel="apple-touch-icon" href="{{ '/assets/icons/icon-180.png' | url }}">
     <link rel="mask-icon" href="{{ '/assets/icons/icon-mask.svg' | url }}" color="#bc0031">
     <link rel="manifest" href="{{ '/assets/icons/manifest.json' | url }}">
+    
+    {#- Content metadata / OpenGraph #}
+    <link rel="canonical" href="{{ siteMetadata.domainName + page.url | url }}">
+    <meta property="og:url" content="{{ siteMetadata.domainName + page.url | url }}">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:title" content="{{ metadata.title | default(title) | default(siteMetadata.name) }}">
+    <meta property="og:site_name" content="{{ siteMetadata.name }}">
+    <meta property="og:image" content="{{ '/assets/icons/opengraph.png' | url }}">
+    <meta property="og:type" content="website">
+    {%- if metadata.description %}
+      <meta name="description" content="{{ metadata.description }}">
+      <meta property="og:description" content="{{ metadata.description }}">
+    {%- endif %}
     
     {# Page title #}
     <title>
