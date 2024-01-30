@@ -59,7 +59,6 @@ module.exports = function (config) {
 
   // Copy over static assets
   config.addPassthroughCopy(paths.srcAssets + "/images")
-  config.addPassthroughCopy(paths.src + "/images")
 
   // Custom shortcodes
   config.addPairedShortcode("faq", shortcodeFAQ)
