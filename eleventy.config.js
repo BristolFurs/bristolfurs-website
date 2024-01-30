@@ -58,6 +58,7 @@ module.exports = function (config) {
   config.on("beforeBuild", compileJavascript)
 
   // Copy over static assets
+  config.addPassthroughCopy(paths.srcAssets + "/icons")
   config.addPassthroughCopy(paths.srcAssets + "/images")
 
   // Custom shortcodes
