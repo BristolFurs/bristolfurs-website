@@ -1,24 +1,24 @@
 {% macro brochure(params) %}
-  <div class="bf-brochure">
-    {%- if params.image %}
-      {% image params.image.src, params.image.alt, { class: "bf-brochure__image" } %}
-    {%- else %}
-      <div class="bf-brochure__image" aria-hidden="true"></div>
+<div class="bf-brochure">
+  {%- if params.image %}
+    {% image params.image.src, params.image.alt, { class: "bf-brochure__image" } %}
+  {%- else %}
+    <div class="bf-brochure__image" aria-hidden="true"></div>
+  {%- endif %}
+  <div class="bf-brochure__body">
+    <h2 class="bf-heading-3xl bf-!-margin-block-start-0">
+      {{- params.title.html | safe if params.title.html else params.title.text -}}
+    </h2>
+    {%- if caller %}
+      <div class="bf-prose">
+        {{ caller() }}
+      </div>
+    {%- endif %} 
+    {%- if params.href %}
+      <a class="bf-button" href="{{ params.href }}">
+        {{- params.button.html | safe if params.button.html else params.button.text -}}
+      </a>
     {%- endif %}
-    <div class="bf-brochure__body">
-      <h2 class="bf-heading-3xl bf-!-margin-block-start-0">
-        {{- params.title.html | safe if params.title.html else params.title.text -}}
-      </h2>
-      {%- if caller %}
-        <div class="bf-prose">
-          {{ caller() }}
-        </div>
-      {%- endif %} 
-      {%- if params.href %}
-        <a class="bf-button" href="{{ params.href }}">
-          {{- params.button.html | safe if params.button.html else params.button.text -}}
-        </a>
-      {%- endif %}
-    </div>
   </div>
+</div>
 {% endmacro %}
