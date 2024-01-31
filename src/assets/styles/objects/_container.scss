@@ -1,6 +1,5 @@
 .bf-container {
   max-inline-size: var(--grid-max-width);
-  padding-inline-start: max(var(--grid-gutter), env(safe-area-inset-left));
-  padding-inline-end: max(var(--grid-gutter), env(safe-area-inset-right));
+  padding-inline: var(--grid-page-gutter);
   margin-inline: auto;
 }

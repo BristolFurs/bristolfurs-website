@@ -20,6 +20,7 @@
   /** Grid system */
   --grid-max-width: 77.5rem;
   --grid-gutter: clamp(1.125rem, 0.6467rem + 2.3913vw, 2.5rem);
+  --grid-page-gutter: max(var(--grid-gutter), env(safe-area-inset-left));
   --grid-columns: 12;
   --grid-max-prose-width: 38em;
 
