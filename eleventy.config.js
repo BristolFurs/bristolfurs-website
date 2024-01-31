@@ -2,7 +2,6 @@ const paths = require("./tasks/paths")
 
 // Build tasks
 const { compileSass } = require("./tasks/compile-sass")
-const { compileJavascript } = require("./tasks/compile-javascript")
 
 // Eleventy plugins
 const pluginDirectoryLogging = require("@11ty/eleventy-plugin-directory-output")
@@ -53,13 +52,16 @@ module.exports = function (config) {
 
   // Watch and compile Sass files
   config.addWatchTarget(paths.srcAssets + "/**/*.scss")
-  config.addWatchTarget(paths.srcAssets + "/**/*.mjs")
   config.on("beforeBuild", compileSass)
-  config.on("beforeBuild", compileJavascript)
+
+  // Watch and reload on JS file changes
+  config.addWatchTarget(paths.srcAssets + "/**/*.mjs")
 
   // Copy over static assets
   config.addPassthroughCopy(paths.srcAssets + "/icons")
   config.addPassthroughCopy(paths.srcAssets + "/images")
+  config.addPassthroughCopy(paths.srcAssets + "/all.mjs")
+  config.addPassthroughCopy(paths.srcAssets + "/javascript")
 
   // Custom shortcodes
   config.addPairedShortcode("faq", shortcodeFAQ)
