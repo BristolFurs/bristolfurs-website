@@ -20,6 +20,7 @@ const shortcodeImage = require("./app/shortcodes/image")
 const shortcodeMarkdown = require("./app/shortcodes/markdown")
 
 // Custom filters
+const filterCachebust = require("./app/filters/cachebust")
 const filterFormatDate = require("./app/filters/formatDate")
 
 module.exports = function (config) {
@@ -70,6 +71,7 @@ module.exports = function (config) {
   config.addPairedShortcode("markdown", shortcodeMarkdown)
 
   // Custom filters
+  config.addFilter("cachebust", filterCachebust)
   config.addFilter("formatDate", filterFormatDate)
 
   return {

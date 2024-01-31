@@ -22,7 +22,7 @@
     <noscript>
       <link rel="stylesheet" media="all" href="{{ webfontUrl }}" />
     </noscript>
-    <link rel="stylesheet" media="all" href="{{ '/assets/styles.css'|url }}" />
+    <link rel="stylesheet" media="all" href="{{ '/assets/styles.css' | url | cachebust }}" />
     
     {# Theming and favicons #}
     <meta name="theme-color" content="#bc0031">
@@ -89,7 +89,7 @@
     {% endblock %}
 
     {% block scripts %}
-      <script type="module" src="{{ '/assets/all.mjs'|url }}"></script>
+      <script type="module" src="{{ '/assets/all.mjs' | url | cachebust }}"></script>
     {% endblock %}
   </body>
 </html>
