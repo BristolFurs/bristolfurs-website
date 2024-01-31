@@ -1,0 +1,50 @@
+@use "../helpers/a11y";
+
+.bf-faq {
+  padding-block: var(--space-s);
+  border-block: var(--border-width-hairline) solid var(--color-primary);
+}
+
+.bf-faq + .bf-faq {
+  border-block-start: none;
+}
+
+.bf-faq__summary {
+  list-style: none;
+  padding-inline-start: var(--space-m);
+  &::marker {
+    display: none;
+  }
+  &::before {
+    content: "";
+    display: inline-block;
+    inline-size: 1em;
+    block-size: 1em;
+    margin-block-start: 0.25em;
+    margin-inline-start: calc(0px - var(--space-m));
+    float: inline-start;
+    vertical-align: baseline;
+    background-color: var(--color-link);
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+  }
+}
+
+.bf-faq[open] .bf-faq__summary {
+  margin-block-end: var(--space-s);
+  &::before {
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+  }
+}
+
+.bf-faq__summary:focus {
+  outline: none;
+}
+
+.bf-faq__summary > * {
+  display: inline;
+  cursor: pointer;
+}
+
+.bf-faq__summary:focus-visible > * {
+  @include a11y.focus-ring--inline;
+}

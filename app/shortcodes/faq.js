@@ -6,10 +6,10 @@ module.exports = function (content, question) {
     linkify: true,
     typographer: true,
   })
-  return `<details class="bf-details">
-		<summary class="bf-details__summary bf-heading-s"><span>${md.renderInline(question)}</span></summary>
-		<div class="bf-prose">
-			${md.render(content)}
-		</div>
-	</details>`
+  return `<details class="bf-faq">
+    <summary class="bf-faq__summary"><h2 class="bf-heading-l bf-link-no-underline">${md.renderInline(
+      question
+    )}</h2></summary>
+    <div class="bf-prose">${md.render(content)}</div>
+  </details>`
 }
