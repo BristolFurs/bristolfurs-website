@@ -16,17 +16,21 @@ module.exports = function () {
     committee: [
       {
         name: "Azure Goat",
-        title: "Community lead",
+        role: "Community lead",
+        pronouns: "he/him",
         avatar: "not-azure.jpg",
         socialLinks: [
           { text: "Bluesky", href: "//bees.bees" },
           { text: "Telegram", href: "//bees.bees" },
         ],
       },
-      { name: "Kipperil", title: "Meet lead", avatar: "not-kip.jpg" },
-      { name: "Taylor", title: "Also here", avatar: "not-taylor.png" },
+      { name: "Kipperil", role: "Meet lead", pronouns: "they/them", avatar: "not-kip.jpg" },
+      { name: "Taylor", role: "Is also here", pronouns: "he/him", avatar: "not-taylor.png" },
     ],
-    meetModerators: [{ name: "Eskelater" }, { name: "Owen" }],
-    chatModerators: [{ name: "Pudge" }, { name: "Verge" }],
+    meetModerators: [{ name: "Eskelater", pronouns: "he/him" }, { name: "Owen" }],
+    chatModerators: [
+      { name: "Pudge", pronouns: "he/him" },
+      { name: "Verge", pronouns: "any pronouns" },
+    ],
   }
 }

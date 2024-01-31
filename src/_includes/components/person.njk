@@ -8,9 +8,12 @@
     {%- endif %}
   </div>
   <div class="bf-person__body">
-    <h3 class="bf-heading-l bf-person__name">{{ params.name }}</h3>
-    {%- if params.title %}
-      <p class="bf-body bf-person__role">{{ params.title }}</p>
+    <h3 class="bf-heading-l bf-person__name">
+      {{ params.name }}
+      {%- if params.role %} ({{ params.role }}){% endif %}
+    </h3>
+    {%- if params.pronouns %}
+      <p class="bf-body">{{ params.pronouns }}</p>
     {%- endif %}
     {%- if caller %}
       <div class="bf-prose">

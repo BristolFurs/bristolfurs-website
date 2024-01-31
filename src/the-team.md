@@ -9,7 +9,7 @@ lede: Furmeets are hard. Round of applause for those who make them happen. ğŸ‘ğ
 
 {% from "components/person.njk" import person %}
 
-## Governing committee
+## Staff committee
 
 In tempor est et voluptate. Lorem commodo amet proident proident fugiat Lorem deserunt est sint commodo consectetur amet laborum amet. Officia non et consequat nostrud esse excepteur.</p>
 
@@ -41,4 +41,4 @@ Proident nulla dolore sunt ipsum deserunt. Commodo ullamco fugiat nulla irure co
     
 ## Fursuit walk volunteers
 
-Many meets have volunteers to assist with the fursuit walk. They get to wear funky purple hi-vis vests! Thank you, random volunteers.
+Many meets have volunteers to assist with the fursuit walk. They're too numerous to name, but in return they get to wear funky purple hi-vis vests! Thank you, random volunteers.

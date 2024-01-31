@@ -25,7 +25,5 @@
 }
 .bf-person__name {
   margin-block-start: 0;
-  margin-block-end: 0;
-}
-.bf-person__role {
+  margin-block-end: var(--space-3xs);
 }
