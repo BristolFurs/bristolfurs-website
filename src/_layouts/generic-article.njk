@@ -4,13 +4,10 @@
   <article class="bf-container bf-!-margin-block-xl" itemscope itemtype="https://schema.org/WebPage">
   
     {%- if backLink %}
-      <a class="bf-back-link" href="{{ backLink.href | url }}">{{ backLink.text }}</a>
+      <a class="bf-link-no-underline bf-back-link" href="{{ backLink.href | url }}">{{ backLink.text }}</a>
     {%- endif %}
     
     <h1 class="bf-heading-4xl" itemprop="name">
-      {%- if pretitle %}
-        <div class="bf-heading-2xl bf-!-margin-block-start-0 bf-!-margin-block-end-2xs">{{ pretitle }}</div>
-      {%- endif %}
       {{ title }}
     </h1>
     

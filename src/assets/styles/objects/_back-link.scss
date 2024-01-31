@@ -6,12 +6,7 @@
   display: inline-flex;
   align-items: center;
   margin-block-end: var(--space-m);
-  color: var(--color-link);
   font-size: var(--font-size-m);
-  text-decoration: none;
-  &:focus-visible {
-    @include a11y.focus-ring--inline;
-  }
   &::before {
     content: "";
     display: inline-block;
