@@ -1,44 +1,16 @@
 {%- if siteMetadata.developmentMode %}
-  <details id="dev-tag">
-    <summary id="dev-tag__label">
-      <span>Development</span>
-    </summary>
-    <div>
-      <code>page</code>
-      <textarea>{{ page | dump }}</textarea>
-      <code>eleventy</code>
-      <textarea>{{ eleventy | dump }}</textarea>
-      <code>siteMetadata</code>
-      <textarea>{{ siteMetadata | dump }}</textarea>
-    </div>
-  </details>
-  <style>
-    #dev-tag[open] {
-      position: static;
-      width: 100%;
-      background-color: red;
-    }
-    #dev-tag summary  {
-      padding: .25em .5em;
-      color: white;
-      background-color: red;
-      font-size: smaller;
-      font-weight: bold;
-      text-transform: uppercase;
-      list-style: none;
-      cursor: pointer;
-    }
-    #dev-tag summary::-webkit-details-marker { display: none; }
-    #dev-tag div {
-      display: grid;
-      grid-template-columns: 8em 1fr;
-      gap: .5em;
-      padding: .5em;
-    }
-    #dev-tag textarea {
-      width: 100%;
-      height: 10em;
-      resize: vertical;
-    }
-  </style>
+<div style="padding-block: var(--space-xs); color: var(--color-canvas-background-alt); background-color: var(--color-canvas-text);">
+  <div class="bf-container">
+    <p class="bf-small-print bf-!-margin-0">This is a development version of the BristolFurs website. Content may be incorrect and things may appear broken. <a class="bf-link-camoflage" href="//bristolfurs.co.uk">Visit bristolfurs.co.uk</a> for current furmeet information.</p>
+  </div>
+</div>
+<script id="debug-page" type="application/json">
+  {{ page | dump | safe }}
+</script>
+<script id="debug-siteMetadata" type="application/json">
+  {{ siteMetadata | dump | safe }}
+</script>
+<script id="debug-eleventy" type="application/json">
+  {{ eleventy | dump | safe }}
+</script>
 {%- endif %}

@@ -19,6 +19,11 @@
   }
 }
 
+.bf-link-camoflage {
+  @extend .bf-link;
+  color: inherit;
+}
+
 .bf-link-no-underline {
   @include _common-styles;
   text-decoration: none;
