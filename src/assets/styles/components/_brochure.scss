@@ -30,8 +30,10 @@ $_breakpoint: "tablet";
   padding-block: var(--space-m);
   @include media-queries.query($from: $_breakpoint) {
     @include theme.shadow;
+    flex-grow: 1;
     inline-size: 50%;
     max-inline-size: var(--grid-max-prose-width);
+    margin-block: var(--space-s);
     margin-inline-start: calc(0px - var(--space-l));
     padding: var(--space-m);
     position: relative;
