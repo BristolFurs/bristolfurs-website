@@ -1,4 +1,4 @@
-.bf-alert-banner {
+.bf-emergency-banner {
   padding-block: var(--space-2xs);
   background-color: var(--color-raw-yellow);
   background-image: repeating-linear-gradient(
@@ -20,13 +20,13 @@
   }
 }
 
-.bf-alert-banner span {
+.bf-emergency-banner span {
   color: var(--color-canvas-text);
   background-color: var(--color-canvas-background-alt);
   box-shadow: 0 0 0 0.2rem var(--color-canvas-background-alt);
   box-decoration-break: clone;
 }
 
-.bf-alert-banner__inner {
+.bf-emergency-banner__inner {
   max-inline-size: var(--grid-max-prose-width);
 }
