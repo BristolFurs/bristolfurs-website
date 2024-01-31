@@ -89,7 +89,10 @@
     {% endblock %}
 
     {% block scripts %}
-      <script type="module" src="{{ '/assets/all.mjs' | url | cachebust }}"></script>
+      <script type="module">
+        import { initAll } from '{{ '/assets/all.mjs' | url | cachebust }}'
+        initAll()
+      </script>
     {% endblock %}
   </body>
 </html>
