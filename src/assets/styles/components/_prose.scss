@@ -49,4 +49,7 @@
   > hr {
     @extend .bf-rule;
   }
+  > img {
+    margin-block-end: var(--space-m);
+  }
 }

@@ -25,10 +25,11 @@ module.exports = function () {
 
     // The links that appear on the bottom of the site.
     footerLinks: [
-      { href: "/fursuiting/", text: "Fursuiting at BristolFurs" },
+      { href: "/attending-a-meet/fursuiting/", text: "Fursuiting at BristolFurs" },
       { href: "/code-of-conduct/", text: "Code of conduct" },
       { href: "/privacy-policy/", text: "Privacy and cookies" },
       { href: "/accessibility-statement/", text: "Accessibility statement" },
+      { href: "/contact-us/", text: "Contact us" },
     ],
 
     // Social media links. Make sure there's actually an icon in

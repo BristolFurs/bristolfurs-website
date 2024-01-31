@@ -4,6 +4,9 @@ layout: generic-article.njk
 
 # Content
 title: Fursuiting at BristolFurs meets
+backLink:
+  text: Attending a meet
+  href: /attending-a-meet/
 ---
 
 - fursuiting is allowed and encouraged at the main meet
