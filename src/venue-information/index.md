@@ -1,5 +1,8 @@
 ---
+# Technical data
 layout: generic-landing.njk
+
+# Content
 title: Our venues
 lede: How to get to our meeting spots and what to expect when you get there.
 ---

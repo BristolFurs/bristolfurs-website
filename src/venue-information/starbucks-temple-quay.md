@@ -1,14 +1,17 @@
 ---
+# Technical data
 layout: venue.njk
-title: Starbucks pre-meet venue information
 
-name: Starbucks Temple Quay
-addressLines:
-  - 1 The Square
-  - Bristol
-  - BS1 6DG
-latitude: 51.45073732738741
-longitude: -2.5818740347803906
+# Content
+title: Starbucks pre-meet venue information
+venue:
+  name: Starbucks Temple Quay
+  addressLines:
+    - 1 The Square
+    - Bristol
+    - BS1 6DG
+  latitude: 51.45073732738741
+  longitude: -2.5818740347803906
 ---
 
 Starbucks at Temple Quay is where have our pre-meet.

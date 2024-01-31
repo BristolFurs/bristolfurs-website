@@ -1,7 +1,14 @@
 ---
+# Technical data
 layout: generic-article.njk
+
+# Content
 title: Accessibility statement for BristolFurs website
 updated: 2024-01-31
+
+# SEO
+metadata:
+  description:
 ---
 
 Last updated: {{ updated | formatDate('d MMMM yyyy') }}.

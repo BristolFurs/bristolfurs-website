@@ -1,5 +1,8 @@
 ---
+# Technical data
 layout: generic-article.njk
+
+# Content
 title: Fursuiting at BristolFurs meets
 ---
 

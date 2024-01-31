@@ -1,5 +1,8 @@
 ---
+# Technical data
 layout: generic-article.njk
+
+# Content
 pretitle: Attending a meet
 title: Frequently asked questions
 backLink:

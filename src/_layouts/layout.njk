@@ -47,8 +47,8 @@
     
     {# Page title #}
     <title>
-      {%- if title %}
-        {{ title }} &mdash;
+      {%- if metadata.title or title %}
+        {{ metadata.title | default(title) }} &mdash;
       {% endif %}{{- siteMetadata.name -}}
     </title>
   </head>
@@ -67,7 +67,7 @@
 
       <main class="bf-main {%- if mainClasses %} {{ mainClasses }}{% endif %}" id="main-content">
         {% block beforeMain %}
-        
+          {# Placeholder #}
         {% endblock %}
         
         {% block main %}

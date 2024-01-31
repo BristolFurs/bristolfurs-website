@@ -1,5 +1,8 @@
 ---
+# Technical data
 layout: generic-landing.njk
+
+# Content
 title: Meet the BristolFurs team
 lede: Furmeets are hard. Round of applause for those who make them happen. 👏👏👏
 ---

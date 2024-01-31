@@ -1,9 +1,7 @@
 ---
-title: BristolFurs code of conduct
 layout: generic-article.njk
-relatedLinks:
-  - href: /fursuiting/
-    text: Fursuiting at BristolFurs
+
+title: BristolFurs code of conduct
 ---
 
 **Please read this document thoroughly before attending any BristolFurs events. BristolFurs will not consider a claimed lack of knowledge of the rules as an excuse for breaking them under any circumstances.**

@@ -1,5 +1,8 @@
 ---
+# Technical data
 layout: generic-landing.njk
+
+# Content
 title: Help BristolFurs meets happen
 lede: Become a BristolFurs Supporter to help fund equipment and operating costs.
 ---
