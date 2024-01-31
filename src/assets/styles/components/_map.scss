@@ -1,0 +1,29 @@
+.bf-map {
+  inline-size: 100%;
+  block-size: clamp(10rem, 30vh, 30rem);
+}
+
+.bf-map__marker {
+  padding: var(--space-2xs) var(--space-xs);
+  position: relative;
+  color: var(--color-raw-white);
+  background-color: var(--color-raw-red);
+  font-family: var(--font-body);
+  font-size: var(--font-size-m);
+  font-weight: bold;
+  &::after {
+    // Not using logical properties here as the arrow should be on the bottom
+    // of the box in all scenarios.
+    --radius: 0.75rem;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: var(--radius) solid var(--color-raw-red);
+    border-right: var(--radius) solid transparent;
+    border-left: var(--radius) solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}

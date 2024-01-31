@@ -1,11 +1,15 @@
 ---
 layout: venue.njk
+title: The Boardroom venue information
+
 name: The Boardroom
-title: "{{ name }} venue information"
 addressLines:
   - 20 St Nicholas Street
   - Bristol
   - BS1 1UB
+
+latitude: 51.45383710282948
+longitude: -2.593624741607833
 ---
 
 The Boardroom is our current home away from home. Although cosy, cushy couches and welcoming staff have welcomed us back every month since idk some time in 2021 or 2022??

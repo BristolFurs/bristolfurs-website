@@ -13,9 +13,11 @@
     {{- addressLines | join("<br>") | safe -}}
   </p>
   
+  {%- if latitude and longitude %}
   <div class="bf-!-margin-block-xl">
-    [venue photo] [map]
+    <div class="bf-map" data-latitude="{{ latitude }}" data-longitude="{{ longitude }}" data-label="{{ name }}"></div>
   </div>
+  {%- endif %}
     
   <div class="bf-grid-article">
   
