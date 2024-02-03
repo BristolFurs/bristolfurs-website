@@ -12,7 +12,8 @@
 .bf-faq__summary {
   list-style: none;
   padding-inline-start: var(--space-m);
-  &::marker {
+  &::marker,
+  &::-webkit-details-marker {
     display: none;
   }
   &::before {
