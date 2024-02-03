@@ -1,0 +1,14 @@
+---
+title: Page not found
+eleventyExcludeFromCollections: true
+---
+
+{% extends 'src/_layouts/layout.njk' %}
+
+{% block main %}
+  <div class="bf-container bf-!-margin-block-3xl">
+    <h1 class="bf-heading-4xl">Page not found</h1>
+    <p class="bf-body-l">The page you tried to visit isn't here.<br>It might've been moved or deleted, or never existed at all.<br>Spooky. 👻</p>
+    <p class="bf-body">Return to <a class="bf-link" href="{{ '/' | url }}">the homepage</a>.</p>
+  </div>
+{% endblock %}
