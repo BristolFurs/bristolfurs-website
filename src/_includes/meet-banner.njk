@@ -12,12 +12,17 @@
             <dt class="bf-schedule__time">
               {{ row.startTime }}
             </dt>
-            <dd class="bf-schedule__content">{{ row.name }}</dd>
+            <dd class="bf-schedule__content">
+              {{ row.title }}
+              {%- if row.subtitle %}
+              <div class="bf-small-print">{{ row.subtitle }}</div>
+              {%- endif %}
+            </dd>
           {%- endfor %}
         </dl>
       {%- endif %}
-      <a class="bf-button bf-button--full-width" href="#">
-        <span>Meet information</span>
+      <a class="bf-button bf-button--full-width" href="{{ '/attending-a-meet/' | url }}">
+        <span>Furmeet guide</span>
       </a>
     </div>
   </div>
