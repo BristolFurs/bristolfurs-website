@@ -1,6 +1,6 @@
 ---
 # Technical data
-layout: generic-landing.njk
+layout: landing.njk
 
 # Content
 title: Meet the BristolFurs team

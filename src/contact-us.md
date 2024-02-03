@@ -1,5 +1,5 @@
 ---
-layout: generic-article.njk
+layout: article.njk
 
 title: Contact us
 ---
