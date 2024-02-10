@@ -18,10 +18,11 @@ Turns out that herding cats (and dogs, wolves, foxes, protogen, etc.) takes a bi
 Currently, we use donations to cover:
 
 - equipment for fursuit walks, like walkie-talkies and hi-vis
-- equipment at the venue, like bins(?)
+- equipment not provided by the venue
 - maintaining our website and online services
 - small expenses, such as printing signage around the venue
+- manufacturing rewards for our recurring supporters
 
 In future we want to:
 
-- consider different meet venues that are better for fursuiting and accessibility, but may come with hiring fees
+- consider different meet venues that are better for fursuiting and accessibility, but may come with hiring fees, new equipment requirements, or other costs

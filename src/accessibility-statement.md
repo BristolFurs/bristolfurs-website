@@ -38,6 +38,6 @@ We are currently unaware of any additional accessibility concerns to add to this
 
 ## Feedback and contact information
 
-We are always looking for ways to improve the accessibility of this website. If you find any problems not listed on this page, you can [open an issue in the website's repository on GitHub](https://github.com/BristolFurs/bristolfurs-website/issues) or email us at [info@bristolfurs.co.uk](mailto:info@bristolfurs.co.uk).
+We are always looking for ways to improve the accessibility of this website. If you find any problems not listed on this page, you can [open an issue in the website's repository on GitHub](https://github.com/BristolFurs/bristolfurs-website/issues) or [contact us directly]({{ '/contact-us/' | url }}).
 
 We will endeavour to review your request and to respond as quickly as possible.

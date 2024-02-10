@@ -14,13 +14,17 @@ venue:
   longitude: -2.593624741607833
 ---
 
-The Boardroom is our current home away from home. Although cosy, cushy couches and welcoming staff have welcomed us back every month since idk some time in 2021 or 2022??
+The Boardroom is our current home away from home. Although cosy, cushy couches and welcoming staff have welcomed us back every month since 2019!
 
 Please note: Outside drinks are not allowed in The Boardroom, except for water. Any drinks purchased from venues other than The Boardoom must be drank outside. Outside food is permitted in the venue.
 
 ## Fursuiting
 
-- storage and changing facilities info
+We have a small room available as a changing room adjoining the function room. This is not on the ground floor of The Boardroom, so be aware that you will need to traverse the stairs in suit if you're participating in the fursuit walk.
+
+The changing room has a small amount of storage space for suitcases available. Additional storage space is present in the main function room, next to the stairs.
+
+See [our full guide on fursuiting at our meets]({{ '/attending-a-meet/fursuiting/' | url }}).
 
 ## Accessibility
 

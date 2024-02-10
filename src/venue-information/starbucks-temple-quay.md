@@ -22,23 +22,19 @@ It also provides a quieter and more relaxed experience for anyone who prefers to
 
 Please note: This is **not** the same Starbucks as the one inside of Temple Meads railway station.
 
-## Fursuiting
-
-Do not fursuit at a Starbucks. Just don't.
-
 ## Accessibility
 
 ### Mobility
 
-We usually meet in the upstairs section of this Starbucks, but unfortunately, it is not wheelchair accessible. If you use a wheelchair and intend to come, please inform us in advance, and we will make arrangements to gather downstairs or outside instead.
+We usually meet in the upstairs section of this Starbucks, but unfortunately, it is not wheelchair accessible. If you use a wheelchair and intend to come, please inform us in advance, and we'll do our best to meet you downstairs.
 
 The doors of this Starbucks have a split design, which may pose difficulties for wheelchair users. There is a call button on the outside of the door for those who need assistance.
 
 ### Toilets
 
-Single-occupancy gendered toilets are located at the rear of the upper floor. [Does it need a code?]
+Single-occupancy non-gendered toilets are located at the rear of the upper floor.
 
-A wheelchair accessible toilet is available on the ground floor. [Does it need a code/RADAR key?]
+A wheelchair accessible toilet is available on the ground floor. It doesn't require a RADAR key.
 
 ## Travel
 
