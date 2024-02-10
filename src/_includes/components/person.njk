@@ -10,11 +10,15 @@
   <div class="bf-person__body">
     <h3 class="bf-heading-l bf-person__name">
       {{ params.name }}
-      {%- if params.role %} ({{ params.role }}){% endif %}
+      {%- if params.pronouns %}
+        ({{ params.pronouns }})
+      {%- endif %}
     </h3>
-    {%- if params.pronouns %}
-      <p class="bf-body">{{ params.pronouns }}</p>
-    {%- endif %}
+    {%- if params.role %}
+    <p class="bf-heading-m bf-person__role">
+      {{ params.role }}
+    </p>
+    {% endif %}
     {%- if caller %}
       <div class="bf-prose">
         {{ caller() }}

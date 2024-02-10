@@ -32,5 +32,25 @@ module.exports = function () {
       { name: "Pudge", pronouns: "he/him" },
       { name: "Verge", pronouns: "any pronouns" },
     ],
+    other: [
+      {
+        name: "beeps",
+        role: "Website developer",
+        pronouns: "it/its",
+        avatar: "beeps.png",
+        socialLinks: [
+          { text: "beeps.website", href: "//beeps.website" },
+          { text: "Mastodon", href: "//chitter.xyz/@batbeeps" },
+        ],
+      },
+      {
+        name: "Hoot",
+        role: "Photographer",
+      },
+      {
+        name: "Kirin",
+        role: "Photographer",
+      },
+    ],
   }
 }
