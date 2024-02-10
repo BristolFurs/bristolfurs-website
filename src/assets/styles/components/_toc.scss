@@ -2,9 +2,13 @@
 @use "../objects/lists";
 
 .bf-toc {
-  ol,
-  ul {
+  ol {
     @extend .bf-list;
+  }
+  ol li ol {
+    margin-inline-start: var(--space-s);
+    margin-block-start: var(--space-2xs);
+    margin-block-end: 0;
   }
   a {
     @extend .bf-link;

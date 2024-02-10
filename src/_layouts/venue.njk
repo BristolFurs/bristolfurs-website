@@ -25,7 +25,7 @@
       <div class="bf-grid-article__toc">
         <nav class="bf-blocc" id="toc" aria-labelledby="toc-title">
           <h2 class="bf-heading-l bf-!-margin-block-start-0">On this page</h2>
-          {{ content | toc | safe }}
+          {{ content | toc({tags: ["h2", "h3"]}) | safe }}
         </nav>
       </div>
     {%- endif %}
