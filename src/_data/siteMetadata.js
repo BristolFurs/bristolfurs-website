@@ -39,10 +39,6 @@ module.exports = function () {
         text: "Bluesky",
         href: "//crouton.net/",
       },
-      {
-        text: "Twitter",
-        href: "//twitter.com/",
-      },
       { text: "Discord", href: "//discord.gg/" },
       {
         text: "Telegram",
