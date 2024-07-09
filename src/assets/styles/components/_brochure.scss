@@ -20,6 +20,7 @@ $_breakpoint: "tablet";
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  line-height: 0;
   object-fit: cover;
   @include media-queries.query($from: $_breakpoint) {
     inline-size: 50%;

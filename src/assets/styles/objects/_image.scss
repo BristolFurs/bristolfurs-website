@@ -1,0 +1,18 @@
+// Wrapper around the image and attribution, if the latter is present
+.bf-image {
+  margin: 0;
+  position: relative;
+}
+
+.bf-image__attribution {
+  display: inline-block;
+  padding-block: var(--space-3xs);
+  padding-inline: var(--space-2xs);
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline-end: 0;
+  color: var(--color-raw-white);
+  background-color: var(--color-raw-off-black);
+  font-size: var(--font-size-xs);
+  line-height: 1;
+}

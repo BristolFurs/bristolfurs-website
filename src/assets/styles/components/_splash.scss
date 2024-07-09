@@ -5,9 +5,6 @@ $_breakpoint: "tablet";
 
 .bf-splash {
   position: relative;
-  @include media-queries.query($from: $_breakpoint) {
-    min-block-size: 20rem;
-  }
 
   .bf-container {
     position: relative;
@@ -20,16 +17,22 @@ $_breakpoint: "tablet";
 }
 
 .bf-splash__media {
+  block-size: 100%;
   inline-size: 100%;
-  background-color: var(--color-canvas-background-alt);
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  background-color: var(--color-canvas-background-alt);
+
   @include media-queries.query($from: $_breakpoint) {
     inline-size: 100%;
     block-size: 100%;
     position: absolute;
     inset: 0;
-    aspect-ratio: auto;
+  }
+
+  img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
   }
 }
 
