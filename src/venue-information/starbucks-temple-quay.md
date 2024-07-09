@@ -14,7 +14,7 @@ venue:
   longitude: -2.5818740347803906
 ---
 
-Starbucks at Temple Quay is where have our pre-meet.
+Starbucks at Temple Quay is where we have our pre-meet.
 
 Located just around the corner from Bristol Temple Meads railway station, it's a convenient spot for any out-of-towners to grab a drink and a seat before heading onward to our main venue together.
 
@@ -56,6 +56,8 @@ Also nearby are the council-operated [Temple Gate car park](https://www.bristol.
 
 Bristol Temple Meads railway station has free short stay parking for up to 20 minutes—which can be used for quick drop offs or pick ups—located at the front of the station.
 
+Motorbikes can be parked next to the bicycle racks.
+
 ### By bike
 
-A large amount of on-street cycle parking is located directly outside of the Starbucks. Sheltered (but not enclosed) bicycle parking is nearby, next to Temple Meads.
+There are several “staple style” bicycle racks directly in front of the Starbucks, with more further along the same street.

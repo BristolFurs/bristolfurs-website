@@ -16,7 +16,7 @@ venue:
 
 The Boardroom is our current home away from home. Although cosy, cushy couches and welcoming staff have welcomed us back every month since 2019!
 
-Please note: Outside drinks are not allowed in The Boardroom, except for water. Any drinks purchased from venues other than The Boardoom must be drank outside. Outside food is permitted in the venue.
+Please note: Outside drinks are not allowed in The Boardroom, except for water. Any drinks purchased from venues other than The Boardroom must be drunk outside. Outside food is permitted in the venue.
 
 ## Fursuiting
 

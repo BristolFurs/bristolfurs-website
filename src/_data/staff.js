@@ -15,22 +15,32 @@ module.exports = function () {
   return {
     committee: [
       {
-        name: "Azure Goat",
-        role: "Community lead",
-        pronouns: "he/him",
-        avatar: "not-azure.jpg",
+        name: "Kipperil",
+        role: "Meet lead, Treasurer, Cat",
+        pronouns: "they/them",
+        avatar: "kipperil.png",
+        biography:
+          "My name’s Kipperil, or Kip for short. I’m the cat responsible for the physical meets in terms of planning, venue liaising, and overseeing execution. I also handle the back-of house finances. You’ll most likely see me at the meets when I’m running the walks! ",
         socialLinks: [
-          { text: "Bluesky", href: "//bees.bees" },
-          { text: "Telegram", href: "//bees.bees" },
+          { text: "Telegram", href: "//t.me/kipperil" },
+          { text: "Discord", href: "//discord.com/users/365910128773300226" },
         ],
       },
-      { name: "Kipperil", role: "Meet lead", pronouns: "they/them", avatar: "not-kip.jpg" },
-      { name: "Taylor", role: "Is also here", pronouns: "he/him", avatar: "not-taylor.png" },
+      { name: "Taylor", role: "Community lead, Dog", pronouns: "he/him", avatar: "not-taylor.png" },
     ],
-    meetModerators: [{ name: "Eskelater", pronouns: "he/him" }, { name: "Owen" }],
+    meetModerators: [
+      {
+        name: "Azure Goat",
+        role: "Meet moderator",
+        pronouns: "he/him",
+        avatar: "not-azure.jpg",
+      },
+      { name: "Eskelater", role: "Meet moderator", pronouns: "he/him" },
+      { name: "Owen", role: "Meet moderator" },
+    ],
     chatModerators: [
       { name: "Pudge", pronouns: "he/him" },
-      { name: "Verge", pronouns: "any pronouns" },
+      { name: "Verge", pronouns: "any" },
     ],
     other: [
       {
@@ -42,14 +52,6 @@ module.exports = function () {
           { text: "beeps.website", href: "//beeps.website" },
           { text: "Mastodon", href: "//chitter.xyz/@batbeeps" },
         ],
-      },
-      {
-        name: "Hoot",
-        role: "Photographer",
-      },
-      {
-        name: "Kirin",
-        role: "Photographer",
       },
     ],
   }

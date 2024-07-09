@@ -21,7 +21,7 @@
     {% endif %}
     {%- if caller %}
       <div class="bf-prose">
-        {{ caller() }}
+        {% markdown %}{{ caller() }}{% endmarkdown %}
       </div>
     {% endif %}
     {{ socialLinks({

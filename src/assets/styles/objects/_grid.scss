@@ -16,6 +16,12 @@
   }
 }
 
+.bf-grid-cards--smol {
+  @include media-queries.query($from: desktop) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .bf-grid-article {
   grid-template-areas: "toc" "body" "related";
   @include media-queries.query($from: tablet) {

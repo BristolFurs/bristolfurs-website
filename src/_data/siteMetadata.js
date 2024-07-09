@@ -13,7 +13,7 @@ module.exports = function () {
     domainName: process.env.ENVIRONMENT === "production" ? "https://bristolfurs.co.uk" : "",
 
     // Copyright statement
-    copyright: "&copy; Copy copyright dobeltleflfsdfsd 20203.",
+    copyright: "&copy; 2024 BristolFurs except where otherwise stated. All rights reserved.",
 
     // The links that appear on the top of the site.
     navigationLinks: [
@@ -37,7 +37,7 @@ module.exports = function () {
     socialLinks: [
       {
         text: "Bluesky",
-        href: "//crouton.net/",
+        href: "//bsky.app/profile/bristolfurs.bsky.social",
       },
       { text: "Discord", href: "//discord.gg/" },
       {

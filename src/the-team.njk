@@ -17,7 +17,7 @@ lede: Furmeets are hard. Round of applause for those who make them happen. ğŸ‘ğ
 
 <div class="bf-grid-cards">
 {%- for item in staff.committee %}
-  {{ person(item) }}
+  {% call person(item) %}{{ item.biography }}{% endcall %}
 {%- endfor %}
 </div>
 
@@ -27,7 +27,7 @@ lede: Furmeets are hard. Round of applause for those who make them happen. ğŸ‘ğ
   <p>Exercitation ex cupidatat exercitation excepteur cillum tempor ut excepteur incididunt. Voluptate qui laboris nostrud quis laboris laborum labore occaecat labore tempor irure dolor ad. Quis commodo dolore ea occaecat ipsum non.</p>
 </div>
 
-<div class="bf-grid-cards">
+<div class="bf-grid-cards bf-grid-cards--smol">
 {%- for item in staff.meetModerators %}
   {{ person(item) }}
 {%- endfor %}
@@ -39,7 +39,7 @@ lede: Furmeets are hard. Round of applause for those who make them happen. ğŸ‘ğ
   <p>Proident nulla dolore sunt ipsum deserunt. Commodo ullamco fugiat nulla irure consectetur. Do Lorem quis sunt nostrud. Tempor voluptate excepteur ex eiusmod ipsum sunt.</p>
 </div>
 
-<div class="bf-grid-cards">
+<div class="bf-grid-cards bf-grid-cards--smol">
 {%- for item in staff.chatModerators %}
   {{ person(item) }}
 {%- endfor %}
@@ -51,7 +51,7 @@ lede: Furmeets are hard. Round of applause for those who make them happen. ğŸ‘ğ
   <p>These people aren't actually on the BristolFurs staff, but they donate their time in one way or another that we really appreciate.</p>
 </div>
 
-<div class="bf-grid-cards">
+<div class="bf-grid-cards bf-grid-cards--smol">
 {%- for item in staff.other %}
   {{ person(item) }}
 {%- endfor %}
