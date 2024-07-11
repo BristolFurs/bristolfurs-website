@@ -16,11 +16,6 @@ $_breakpoint: "tablet";
   inline-size: 100%;
   aspect-ratio: 1;
   background-color: var(--color-canvas-background-alt);
-  background-image: url("images/no-avatar.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  line-height: 0;
   object-fit: cover;
   @include media-queries.query($from: $_breakpoint) {
     inline-size: 50%;

@@ -16,7 +16,7 @@ module.exports = function () {
     committee: [
       {
         name: "Kipperil",
-        role: "Meet lead, Treasurer, Cat",
+        role: "Meet lead, treasurer, cat",
         pronouns: "they/them",
         avatar: "kipperil.png",
         biography:
@@ -26,7 +26,7 @@ module.exports = function () {
           { text: "Discord", href: "//discord.com/users/365910128773300226" },
         ],
       },
-      { name: "Taylor", role: "Community lead, Dog", pronouns: "he/him", avatar: "not-taylor.png" },
+      { name: "Taylor", role: "Community lead, dog", pronouns: "he/him", avatar: "not-taylor.png" },
     ],
     meetModerators: [
       {
@@ -45,9 +45,10 @@ module.exports = function () {
     other: [
       {
         name: "beeps",
-        role: "Website developer",
+        role: "Webmaster",
         pronouns: "it/its",
         avatar: "beeps.png",
+        avatarAttribution: "Tuxedo Dragon",
         socialLinks: [
           { text: "beeps.website", href: "//beeps.website" },
           { text: "Mastodon", href: "//chitter.xyz/@batbeeps" },

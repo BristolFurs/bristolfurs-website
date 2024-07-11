@@ -2,11 +2,11 @@
 
 {% macro person(params) %}
 <article class="bf-person">
-  <div class="bf-person__media">
-    {%- if params.avatar %}
-      {% image params.avatar, params.name, "", { class: "bf-person__image" } %}
-    {%- endif %}
-  </div>
+  {%- if params.avatar %}
+    {% image params.avatar, params.name, params.avatarAttribution, { class: "bf-person__image" } %}
+  {%- else %}
+    {% image "no-avatar.png", params.name, params.avatarAttribution, { class: "bf-person__image" } %}
+  {%- endif %}
   <div class="bf-person__body">
     <h3 class="bf-heading-l bf-person__name">
       {{ params.name }}
@@ -15,21 +15,10 @@
       {%- endif %}
     </h3>
     {%- if params.role %}
-    <p class="bf-heading-m bf-person__role">
+    <p class="bf-body bf-person__role">
       {{ params.role }}
     </p>
     {% endif %}
-    {%- if caller %}
-      <div class="bf-prose">
-        {% markdown %}{{ caller() }}{% endmarkdown %}
-      </div>
-    {% endif %}
-    {{ socialLinks({
-      links: params.socialLinks,
-      attributes: {
-        "aria-label": params.name + " on socials"
-      }
-    }) }}
   </div>
 </article>
 {% endmacro %}
