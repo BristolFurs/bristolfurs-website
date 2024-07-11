@@ -5,7 +5,7 @@
   $_arrow-height: 0.7em;
   display: inline-flex;
   align-items: center;
-  margin-block-end: var(--space-m);
+  margin-block: var(--space-xs);
   font-size: var(--font-size-m);
   &::before {
     content: "";

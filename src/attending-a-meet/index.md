@@ -5,6 +5,11 @@ layout: landing.njk
 # Content
 title: Attending a meet
 lede: Everything you need to know about attending a furmeet.
+subnavigation:
+  - href: "/attending-a-meet/fursuiting/"
+    text: Fursuiting guide
+  - href: "/attending-a-meet/faqs/"
+    text: FAQs
 ---
 
 ## Before you attend

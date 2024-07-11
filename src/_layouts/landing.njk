@@ -1,5 +1,23 @@
 {% extends 'src/_layouts/layout.njk' %}
 
+{% block beforeMain %}
+  {% if subnavigation %}
+    <nav class="bf-subnavigation" aria-label="Section navigation">
+      <div class="bf-container bf-subnavigation__inner">
+        <ul class="bf-subnavigation__list">
+          {%- for item in subnavigation %}
+            <li class="bf-subnavigation__item">
+              <a class="bf-link-no-underline bf-subnavigation__link" href="{{ item.href | url }}">
+                {{- item.html | safe if item.html else item.text -}}
+              </a>
+            </li>
+          {%- endfor %}
+        </ul>
+      </div>
+    </nav>
+  {% endif %}
+{% endblock %}
+
 {% block main %}
   <article class="bf-!-margin-block-end-xl">
   

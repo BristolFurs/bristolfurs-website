@@ -1,11 +1,15 @@
 {% extends 'src/_layouts/layout.njk' %}
 
+{% block beforeMain %}
+  {%- if backLink %}
+    <div class="bf-container">
+      <a class="bf-link-no-underline bf-back-link" href="{{ backLink.href | url }}">{{ backLink.text }}</a>
+    </div>
+  {%- endif %}
+{% endblock %}
+
 {% block main %}
   <article class="bf-container bf-!-margin-block-xl" itemscope itemtype="https://schema.org/WebPage">
-  
-    {%- if backLink %}
-      <a class="bf-link-no-underline bf-back-link" href="{{ backLink.href | url }}">{{ backLink.text }}</a>
-    {%- endif %}
     
     <h1 class="bf-heading-4xl" itemprop="name">
       {{ title }}

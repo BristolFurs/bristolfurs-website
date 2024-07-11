@@ -1,46 +1,50 @@
 {% extends 'src/_layouts/layout.njk' %}
 
-{% block main %}
-<article class="bf-container bf-!-margin-block-xl" itemscope itemtype="https://schema.org/Place">
-
-  <a class="bf-link-no-underline bf-back-link" href="{{ '/venue-information/' | url }}">Our venues</a>
-  
-  <h1 class="bf-heading-4xl" itemprop="name">
-    {{- venue.name -}}
-  </h1>
-  
-  <p class="bf-body-l bf-!-margin-block-end-0" itemprop="address">
-    {{- venue.addressLines | join("<br>") | safe -}}
-  </p>
-  
-  {%- if venue.latitude and venue.longitude %}
-  <div class="bf-!-margin-block-xl">
-    <div class="bf-map" data-latitude="{{ venue.latitude }}" data-longitude="{{ venue.longitude }}" data-label="{{ venue.name }}"></div>
+{% block beforeMain %}
+  <div class="bf-container">
+    <a class="bf-link-no-underline bf-back-link" href="{{ '/venue-information/' | url }}">Our venues</a>
   </div>
-  {%- endif %}
+{% endblock %}
+
+{% block main %}
+  <article class="bf-container bf-!-margin-block-xl" itemscope itemtype="https://schema.org/Place">
     
-  <div class="bf-grid-article">
-  
-    {%- if content | toc %}
-      <div class="bf-grid-article__toc">
-        <nav class="bf-blocc" id="toc" aria-labelledby="toc-title">
-          <h2 class="bf-heading-l bf-!-margin-block-start-0">On this page</h2>
-          {{ content | toc({tags: ["h2", "h3"]}) | safe }}
-        </nav>
-      </div>
+    <h1 class="bf-heading-4xl" itemprop="name">
+      {{- venue.name -}}
+    </h1>
+    
+    <p class="bf-body-l bf-!-margin-block-end-0" itemprop="address">
+      {{- venue.addressLines | join("<br>") | safe -}}
+    </p>
+    
+    {%- if venue.latitude and venue.longitude %}
+    <div class="bf-!-margin-block-xl">
+      <div class="bf-map" data-latitude="{{ venue.latitude }}" data-longitude="{{ venue.longitude }}" data-label="{{ venue.name }}"></div>
+    </div>
     {%- endif %}
+      
+    <div class="bf-grid-article">
     
-    <div class="bf-grid-article__body">
-      <div class="bf-prose" itemprop="description">
-        {{ content | safe }}
+      {%- if content | toc %}
+        <div class="bf-grid-article__toc">
+          <nav class="bf-blocc" id="toc" aria-labelledby="toc-title">
+            <h2 class="bf-heading-l bf-!-margin-block-start-0">On this page</h2>
+            {{ content | toc({tags: ["h2", "h3"]}) | safe }}
+          </nav>
+        </div>
+      {%- endif %}
+      
+      <div class="bf-grid-article__body">
+        <div class="bf-prose" itemprop="description">
+          {{ content | safe }}
+        </div>
       </div>
+      
     </div>
     
-  </div>
-  
-  <p class="bf-small-print bf-!-margin-block-start-xl">
-    <a class="bf-link" href="{{ page.url | url }}" itemprop="url">Permalink to this page</a>
-  </p>
-  
-</article>
+    <p class="bf-small-print bf-!-margin-block-start-xl">
+      <a class="bf-link" href="{{ page.url | url }}" itemprop="url">Permalink to this page</a>
+    </p>
+    
+  </article>
 {% endblock %}

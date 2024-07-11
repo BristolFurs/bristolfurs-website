@@ -1,0 +1,35 @@
+@use "../helpers/a11y";
+@use "../helpers/media-queries";
+@use "../helpers/reset";
+
+// Breakpoint at which the menu switches between 'mobile' (hidden behind a
+// button) and being persistently visible
+$_breakpoint: "mobile";
+
+.bf-subnavigation {
+}
+
+.bf-subnavigation__inner {
+}
+
+.bf-subnavigation__list {
+  @include reset.list;
+  display: flex;
+  flex-direction: column;
+  @include media-queries.query($from: $_breakpoint) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--grid-gutter);
+  }
+}
+
+.bf-subnavigation__item {
+}
+
+.bf-subnavigation__link {
+  display: block;
+  padding-block: var(--space-xs);
+  &[aria-current] {
+    font-weight: bold;
+  }
+}
