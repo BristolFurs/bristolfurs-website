@@ -10,6 +10,8 @@ subnavigation:
     text: Fursuiting guide
   - href: "/attending-a-meet/faqs/"
     text: FAQs
+  - href: "/code-of-conduct/"
+    text: Code of Conduct
 ---
 
 ## Before you attend
