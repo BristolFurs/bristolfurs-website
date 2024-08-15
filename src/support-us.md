@@ -13,7 +13,7 @@ Turns out that herding cats (and dogs, wolves, foxes, protogen, etc.) takes a bi
 
 We accept both recurring and one-off donations via [Ko-Fi](https://ko-fi.com/bristolfurs). Recurring Ko-Fi supporters will receive a supporter lanyard at their next meet.
 
-<iframe class="bf-!-margin-block-end-s" src="https://ko-fi.com/bristolfurs/?hidefeed=true&widget=true&embed=true&preview=true" style="border:none" height="712" title="BristolFurs on Ko-Fi"></iframe>
+<iframe id="kofiframe" src="https://ko-fi.com/bristolfurs/?hidefeed=true&widget=true&embed=true&preview=true" style="border:none;width:100%;padding:4px;background:#f9f9f9;" height="712" title="Embedded donation form"><a href="https://ko-fi.com/bristolfurs">BristolFurs on Ko-Fi</a></iframe>
 
 Unlike some other payment services, we receive 100% of the donations received via Ko-Fi—they don't take a cut.
 
