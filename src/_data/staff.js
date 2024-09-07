@@ -48,7 +48,7 @@ module.exports = function () {
         avatar: "esk.jpg",
         avatarAttribution: "Superneonbuck",
       },
-      { name: "Jordan", pronouns: "he/him" },
+      { name: "Jordon", pronouns: "he/him", avatar: "jordon.png", avatarAttribution: "cherrybrandy" },
       { name: "Owen", pronouns: "he/him" },
     ],
     chatModerators: [
