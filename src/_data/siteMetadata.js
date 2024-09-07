@@ -32,14 +32,13 @@ module.exports = function () {
       { href: "/contact-us/", text: "Contact us" },
     ],
 
-    // Social media links. Make sure there's actually an icon in
-    // `assets/images/icons` or this is gonna break.
+    // Social media links.
     socialLinks: [
       {
         text: "Bluesky",
         href: "//bsky.app/profile/bristolfurs.bsky.social",
       },
-      { text: "Discord", href: "//discord.gg/EJnUdx2jSE" },
+      { text: "Discord", href: "//discord.gg/qw7reg8X4c" },
       {
         text: "Telegram",
         href: "//t.me/bristolfurs",

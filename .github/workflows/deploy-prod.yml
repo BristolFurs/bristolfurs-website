@@ -3,7 +3,7 @@ name: Deploy to live
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 18 */1 * *"
+    - cron: "20 04 */1 * *"
 
 concurrency:
   group: deploy-prod
