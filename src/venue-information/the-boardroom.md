@@ -30,7 +30,7 @@ See [our full guide on fursuiting at our meets]({{ '/attending-a-meet/fursuiting
 
 ### Mobility
 
-The Boardroom’s function room is up two flights of stairs and is not accessible to wheelchairs. People with mobility or stability issues may also find ascending the stairs difficult, as there is no handrail.
+The Boardroom’s function room is up two flights of stairs and is not accessible to wheelchairs. People with mobility or stability issues may also find ascending the stairs difficult.
 
 There are small steps from pavement level to enter the ground floor of the venue. Furmeet attendees are free to utilise the ground floor and outside areas of the venue at any time, but be aware that members of the public will also be in these spaces.
 
@@ -60,7 +60,7 @@ If travelling to The Boardroom from [our pre-meet venue]({{ '/venue-information/
 
 Be aware that The Boardroom is located in Bristol’s Old City, large areas of which are pedestrianised or closed to general traffic. Plan your journey ahead of time to ensure that you don’t get stuck or fined for entering a pedestrian or bus only area.
 
-The nearest car park is the [NCP Bristol Queen Charlotte Street](https://www.ncp.co.uk/find-a-car-park/car-parks/bristol-queen-charlotte-street/) (approx. 450 feet away), followed by [NCP Bristol Nelson Street](https://www.ncp.co.uk/find-a-car-park/car-parks/bristol-nelson-street/) (0.3 miles away).
+The nearest car park is the [NCP Bristol Nelson Street](https://www.ncp.co.uk/find-a-car-park/car-parks/bristol-nelson-street/) (0.3 miles away).
 
 Blue Badge holders may park in any on-street parking in the area for an unlimited time and free of charge.
 

@@ -18,8 +18,9 @@ lede: How to get to our meeting spots and what to expect when you get there.
     html: '<span class="bf-!-sr">The Boardroom</span> Venue information'
   },
   image: {
-    src: "http://placeholder.rocks/600/600/1",
-    alt: "Placeholder image"
+    src: "boardroom.jpg",
+    alt: "The front of an old stone building, a pub, painted teal on the lower floor and white on the upper floors and decorated with hanging flower baskets and fairy lights.",
+    credit: "Taylor Erise"
   }
 }) %}
 
@@ -35,8 +36,9 @@ lede: How to get to our meeting spots and what to expect when you get there.
     html: '<span class="bf-!-sr">Starbucks Temple Quay</span> Venue information'
   },
   image: {
-    src: "http://placeholder.rocks/600/600/2",
-    alt: "Placeholder image"
+    src: "starbucks-placeholder.jpg",
+    alt: "A Starbucks branded paper cup standing on a table and reflecting on the window behind it.",
+    credit: "Unsplash: introspectivedsgn"
   }
 }) %}
 

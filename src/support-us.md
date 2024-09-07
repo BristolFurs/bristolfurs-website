@@ -15,13 +15,13 @@ We accept both recurring and one-off donations via [Ko-Fi](https://ko-fi.com/bri
 
 <iframe id="kofiframe" src="https://ko-fi.com/bristolfurs/?hidefeed=true&widget=true&embed=true&preview=true" style="border:none;width:100%;padding:4px;background:#f9f9f9;" height="712" title="Embedded donation form"><a href="https://ko-fi.com/bristolfurs">BristolFurs on Ko-Fi</a></iframe>
 
-Unlike some other payment services, we receive 100% of the donations received via Ko-Fi—they don't take a cut.
+We receive 100% of any one-off donations sent via Ko-Fi—they don't take a cut. Recurring payments incur a small fee of approximately 5%.
 
 Cash donations are also accepted in-person at the meets.
 
 ## What your support pays for
 
-100% of donations made to BristolFurs go back into improving the meets. All of the meets staff volunteer their time and aren't compensated in any way.
+100% of the donations received by BristolFurs goes back into improving the meets. All of the meets staff volunteer their time and aren't compensated in any way.
 
 Currently, we use donations to cover:
 

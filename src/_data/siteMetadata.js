@@ -39,14 +39,14 @@ module.exports = function () {
         text: "Bluesky",
         href: "//bsky.app/profile/bristolfurs.bsky.social",
       },
-      { text: "Discord", href: "//discord.gg/" },
+      { text: "Discord", href: "//discord.gg/EJnUdx2jSE" },
       {
         text: "Telegram",
-        href: "//telegram.me/",
+        href: "//t.me/bristolfurs",
       },
       {
         text: "Support us on Ko-fi",
-        href: "//ko-fi.com/",
+        href: "//ko-fi.com/bristolfurs",
       },
     ],
   }

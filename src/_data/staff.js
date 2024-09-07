@@ -19,6 +19,7 @@ module.exports = function () {
         role: "Meet lead, treasurer, cat",
         pronouns: "they/them",
         avatar: "kipperil.png",
+        avatarAttribution: "valleycore",
         biography:
           "My name’s Kipperil, or Kip for short. I’m the cat responsible for the physical meets in terms of planning, venue liaising, and overseeing execution. I also handle the back-of house finances. You’ll most likely see me at the meets when I’m running the walks! ",
         socialLinks: [
@@ -26,21 +27,34 @@ module.exports = function () {
           { text: "Discord", href: "//discord.com/users/365910128773300226" },
         ],
       },
-      { name: "Taylor", role: "Community lead, dog", pronouns: "he/him", avatar: "not-taylor.png" },
+      {
+        name: "Taylor",
+        role: "Community lead, dog",
+        pronouns: "he/him",
+        avatar: "taylor.jpg",
+        avatarAttribution: "MouseNoises",
+      },
     ],
     meetModerators: [
       {
         name: "Azure Goat",
-        role: "Meet moderator",
         pronouns: "he/him",
-        avatar: "not-azure.jpg",
+        avatar: "azure.jpg",
+        avatarAttribution: "StormBlaze",
       },
-      { name: "Eskelater", role: "Meet moderator", pronouns: "he/him" },
-      { name: "Owen", role: "Meet moderator" },
+      {
+        name: "Eskelater",
+        pronouns: "he/him",
+        avatar: "esk.jpg",
+        avatarAttribution: "Superneonbuck",
+      },
+      { name: "Jordan", pronouns: "he/him" },
+      { name: "Owen", pronouns: "he/him" },
     ],
     chatModerators: [
+      { name: "Nenna", pronouns: "she/her" },
       { name: "Pudge", pronouns: "he/him" },
-      { name: "Verge", pronouns: "any" },
+      { name: "Robyn", pronouns: "any" },
     ],
     other: [
       {

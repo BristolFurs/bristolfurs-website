@@ -27,19 +27,19 @@ The walking route will usually change depending on the weather. The route of the
 
 This route is typically used in dry and hot weather. It provides more open space and greenery with plentiful shaded areas. It's a shorter route, but includes walking on gravel and grass surfaces.
 
-The walk leads down St Nicholas Street and Clare Street, following Broad Quay southwards until the junction of Prince Street and King Street. We then cross over onto Queen Square, where we stop for a break, public schenanigans and a group photoshoot.
+The walk leads down St Nicholas Street and Clare Street, following Broad Quay southwards until the junction of Prince Street and King Street. We then cross over onto Queen Square, where we stop for a break, public schenanigans, and a group photoshoot.
 
-Returning to The Boardroom follows the same route in reverse.
+We return to the Boardroom via Welsh Back and High Street.
 
-#### Millenium Square route (wet conditions)
+#### Millennium Square route (wet conditions)
 
 This route is commonly used when it has recently rained and the ground is still damp or drying. The entire walking route is paved.
 
-The walk leads down St Nicholas Street and Clare Street, through The Centre onto Anchor Road and past the outside of We The Curious, stopping at Millenium Square for a break and public schenanigans.
+The walk leads down St Nicholas Street and Clare Street, through The Centre onto Anchor Road and past the outside of We The Curious, stopping at Millennium Square for a break and public schenanigans.
 
-We then proceed to the Lloyds Amphitheatre for the photoshoot.
+We will sometimes proceed to the Lloyds Amphitheatre for a photoshoot, depending on conditions.
 
-Afterwards we return to the venue via Bordeaux Quay and Canon's Road, before rejoining Anchor Road and heading back to The Boardoom on the same route as before.
+Afterwards, we return via Pero's Bridge and Narrow Quay, before rejoining the fountains and heading back to The Boardroom on the same route as before.
 
 ### Fursuit walk rules
 
@@ -47,7 +47,7 @@ When on the walk, please follow the following additional rules:
 
 - Always follow the instructions given by the meet staff and volunteer stewards, particularly when crossing roads and bicycle lanes.
 - Do not walk ahead of the lead steward or behind the trailing steward, unless doing so to take photographs.
-- Do not consume alcohol at any time during the walk.
+- Do not consume alcohol at any time during the walk. Bristol bylaws prohibit street drinking.
 - Do not play music when walking. You may do so at the stopping locations.
 
 ## Storage and changing space
@@ -67,4 +67,6 @@ Travel cases and other large bags can be stored on and under the signposted tabl
 - **Take regular breaks.** Don't hesitate to remove the fursuit head or other accessories if necessary.
 - **Stay hydrated.** Suiting is hot work! Drink lots of water or isotonic drinks both whilst fursuiting and for an hour afterwards.
 - **Be aware of your appendages.** Tails, wings and other accessories are brilliant makeshift weapons for hitting people and things. Try to avoid doing that.
-- **Recognise the signs of heat exhaustion and heatstroke.** Be aware of headaches, dizziness, nausea, muscle cramps and an elevated heart rate. If you're struggling with any of them, seek immediate assistance.
+- **Recognise the signs of heat exhaustion and heatstroke.** Be aware of headaches, dizziness, nausea, muscle cramps and an elevated heart rate. If you're struggling with any of them, seek immediate assistance and alert a walk volunteer.
+
+{% image "JFTW-heat-exhaustion-poster.png", "A visual guide to identifying heat exhaustion and heatstroke whilst in fursuit.", "Just Fur The Weekend" %}
