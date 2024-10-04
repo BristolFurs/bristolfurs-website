@@ -67,6 +67,6 @@ module.exports = function (src, alt, credit = "", options = {}) {
 
   return `<figure class="bf-image${options.class ? ` ${options.class}` : ""}">
     ${pictureHtml}
-    ${credit ? `<figcaption class="bf-image__attribution">${credit}</figcaption>` : ""}
+    ${credit ? `<figcaption class="bf-image__attribution">Credit: ${credit}</figcaption>` : ""}
   </figure>`
 }
