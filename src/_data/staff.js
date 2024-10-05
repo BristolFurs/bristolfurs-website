@@ -62,7 +62,7 @@ module.exports = function () {
         role: "Webmaster",
         pronouns: "it/its",
         avatar: "beeps.png",
-        avatarAttribution: "Tuxedo Dragon",
+        avatarAttribution: "TuxedoDragon",
         socialLinks: [
           { text: "beeps.website", href: "//beeps.website" },
           { text: "Mastodon", href: "//chitter.xyz/@batbeeps" },
