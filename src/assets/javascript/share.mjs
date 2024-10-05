@@ -18,7 +18,7 @@ export default class Share {
     // Assemble the share data for this page
     const shareData = {
       title: document.title,
-      text: document.querySelector("meta[type='description']") ?? "",
+      text: document.querySelector("meta[name='description']").getAttribute("content") ?? "",
       url: location.href,
     }
 
