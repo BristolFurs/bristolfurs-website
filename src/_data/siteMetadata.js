@@ -1,4 +1,4 @@
-module.exports = function () {
+export default function () {
   return {
     // If the site is in development mode.
     // If true, all pages are set to not be indexed by search engines and a

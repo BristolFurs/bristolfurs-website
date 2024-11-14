@@ -1,6 +1,6 @@
-const format = require("date-fns/format")
+import { format } from "date-fns"
 
-module.exports = function (url) {
+export default function (url) {
   const [urlPart, paramPart] = url.split("?")
   const params = new URLSearchParams(paramPart || "")
   params.set("v", format(new Date(), "t"))

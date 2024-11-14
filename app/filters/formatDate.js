@@ -1,11 +1,10 @@
-const dateFormat = require("date-fns/format")
-const dateFormatISO = require("date-fns/formatISO")
+import { format, formatISO } from "date-fns"
 
-module.exports = function (value, format) {
+export default function (value, outputFormat) {
   value = new Date(value)
 
-  if (format) {
-    return dateFormat(value, format)
+  if (outputFormat) {
+    return format(value, outputFormat)
   }
-  return dateFormatISO(value)
+  return formatISO(value)
 }
