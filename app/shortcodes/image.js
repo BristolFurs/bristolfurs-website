@@ -1,7 +1,7 @@
-const eleventyImg = require("@11ty/eleventy-img")
-const paths = require("../../tasks/paths")
+import eleventyImg from "@11ty/eleventy-img"
+import paths from "../../tasks/paths.js"
 
-module.exports = function (src, alt, credit = "", options = {}) {
+export default function (src, alt, credit = "", options = {}) {
   // Throw errors is either required option is missing
   if (!src) {
     console.log(src)

@@ -11,7 +11,7 @@
  * socialLinks.icon {string} - Name of icon to use, must be in `/src/assets/images/icons` to work.
  */
 
-module.exports = function () {
+export default function () {
   return {
     committee: [
       {

@@ -1,8 +1,8 @@
-const fs = require("fs")
+import { readFileSync } from "node:fs"
 
-module.exports = function (name) {
+export default function (name) {
   const filePath = `./src/assets/images/icons/${name}.svg`
-  const data = fs.readFileSync(filePath, function (err, contents) {
+  const data = readFileSync(filePath, function (err, contents) {
     if (err) return err
     return contents
   })

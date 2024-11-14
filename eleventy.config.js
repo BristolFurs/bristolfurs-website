@@ -1,29 +1,29 @@
-const paths = require("./tasks/paths")
+import paths from "./tasks/paths.js"
 
 // Build tasks
-const { compileSass } = require("./tasks/compile-sass")
+import { compileSass } from "./tasks/compile-sass.js"
 
 // Eleventy plugins
-const pluginDirectoryLogging = require("@11ty/eleventy-plugin-directory-output")
-const pluginSvgContents = require("eleventy-plugin-svg-contents")
-const pluginTableOfContents = require("eleventy-plugin-toc")
+import pluginDirectoryLogging from "@11ty/eleventy-plugin-directory-output"
+import pluginSvgContents from "eleventy-plugin-svg-contents"
+import pluginTableOfContents from "eleventy-plugin-toc"
 
 // Markdown parser and plugins
-const markdownIt = require("markdown-it")
-const markdownItAnchorPlugin = require("markdown-it-anchor")
-const markdownItAttributesPlugin = require("markdown-it-attrs")
+import markdownIt from "markdown-it"
+import markdownItAnchorPlugin from "markdown-it-anchor"
+import markdownItAttributesPlugin from "markdown-it-attrs"
 
 // Custom shortcodes
-const shortcodeFAQ = require("./app/shortcodes/faq")
-const shortcodeIcon = require("./app/shortcodes/icon")
-const shortcodeImage = require("./app/shortcodes/image")
-const shortcodeMarkdown = require("./app/shortcodes/markdown")
+import shortcodeFAQ from "./app/shortcodes/faq.js"
+import shortcodeIcon from "./app/shortcodes/icon.js"
+import shortcodeImage from "./app/shortcodes/image.js"
+import shortcodeMarkdown from "./app/shortcodes/markdown.js"
 
 // Custom filters
-const filterCachebust = require("./app/filters/cachebust")
-const filterFormatDate = require("./app/filters/formatDate")
+import filterCachebust from "./app/filters/cachebust.js"
+import filterFormatDate from "./app/filters/formatDate.js"
 
-module.exports = function (config) {
+export default function (config) {
   // Turn off default log output
   // config.setQuietMode(true)
 

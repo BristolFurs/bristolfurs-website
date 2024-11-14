@@ -1,9 +1,9 @@
-const paths = require("./paths")
+import paths from "./paths.js"
 
-const fs = require("fs-extra")
-const sass = require("sass")
-const postcss = require("postcss")
-const postcssPresetEnv = require("postcss-preset-env")
+import { outputFile } from "fs-extra/esm"
+import * as sass from "sass"
+import postcss from "postcss"
+import postcssPresetEnv from "postcss-preset-env"
 
 const compileSass = function () {
   const result = sass.compile(paths.srcAssets + "/styles.scss", {
@@ -16,7 +16,7 @@ const compileSass = function () {
   postcss([postcssPresetEnv()])
     .process(css, { from: "styles.scss", to: "assets/styles.css" })
     .then((result) => {
-      fs.outputFile(paths.outputAssets + "/styles.css", result.css, (err) => {
+      outputFile(paths.outputAssets + "/styles.css", result.css, (err) => {
         if (err) console.error(err)
         console.log("PostCSS transformations complete.")
         return false
@@ -26,6 +26,4 @@ const compileSass = function () {
   return true
 }
 
-module.exports = {
-  compileSass,
-}
+export { compileSass }

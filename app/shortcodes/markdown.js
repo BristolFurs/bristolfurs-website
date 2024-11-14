@@ -1,6 +1,6 @@
-const markdownIt = require("markdown-it")
+import markdownIt from "markdown-it"
 
-module.exports = function (content) {
+export default function (content) {
   const md = new markdownIt({
     html: true,
     linkify: true,

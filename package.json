@@ -2,7 +2,7 @@
   "name": "bristolfurs-eleventy",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "clean": "rm -rf _site",
     "start": "DEBUG=Eleventy* npm run clean && npm run build-development -- --serve",
@@ -14,11 +14,12 @@
   "author": "beeps <hi@berly.kim>",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0",
-    "@11ty/eleventy-img": "^3.1.8",
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-img": "^5.0.0",
     "@11ty/eleventy-plugin-directory-output": "^1.0.1",
     "date-fns": "^2.30.0",
     "eleventy-plugin-svg-contents": "^0.7.0",
+    "eleventy-plugin-toc": "^1.1.5",
     "fs-extra": "^11.1.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
@@ -28,12 +29,9 @@
     "postcss": "^8.4.21",
     "postcss-preset-env": "^8.0.1",
     "prettier": "2.8.4",
-    "sass": "^1.58.3"
+    "sass": "1.76.0"
   },
   "lint-staged": {
     "*.{js,json,md,mjs,scss,yaml,yml}": "prettier --write"
-  },
-  "dependencies": {
-    "eleventy-plugin-toc": "^1.1.5"
   }
 }

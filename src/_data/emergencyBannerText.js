@@ -1,7 +1,7 @@
 // Message to show at the top of all pages in cases where something important
 // needs to be communicated (e.g. disruption due to Covid 2)
 
-module.exports = function () {
+export default function () {
   // Write a message to show in the banner. Uncomment to make it visible.
   // Only supports a single line of plain text at the moment.
 

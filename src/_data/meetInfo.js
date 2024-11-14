@@ -1,3 +1,5 @@
+import { setDate, isSaturday, isFuture, isToday, addMonths, formatISO } from "date-fns"
+
 // Override dates where they don't happen on the first Saturday of the month
 //
 // e.g. If a meet is rescheduled to a different date:
@@ -9,7 +11,7 @@ const overrides = {
   "2023-05-06": "2023-05-13",
 }
 
-module.exports = function () {
+export default function () {
   return {
     schedule: [
       { startTime: "11am", title: "Pre-meet", subtitle: "at Starbucks Temple Quay" },
@@ -25,8 +27,6 @@ module.exports = function () {
 // Saturday. We can be sure it'll be in the first seven days by the nature
 // of the Gregorian calendar.
 const getFirstSaturdayOfMonth = function (dateObj) {
-  const { setDate, isSaturday } = require("date-fns")
-
   for (let i = 1; i <= 7; i++) {
     const date = setDate(dateObj, i)
     if (isSaturday(date)) {
@@ -36,7 +36,6 @@ const getFirstSaturdayOfMonth = function (dateObj) {
 }
 
 const getNextNMeetDates = function (iterations = 12, fromDate) {
-  const { addMonths, formatISO, isFuture, isToday } = require("date-fns")
   const results = []
 
   fromDate = fromDate || new Date()
