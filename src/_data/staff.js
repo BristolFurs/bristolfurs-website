@@ -30,9 +30,9 @@ module.exports = function () {
       {
         name: "Taylor",
         role: "Community lead, dog",
-        pronouns: "he/him",
+        pronouns: "he/it",
         avatar: "taylor.jpg",
-        avatarAttribution: "MouseNoises",
+        avatarAttribution: "Sijn",
       },
     ],
     meetModerators: [
@@ -54,7 +54,7 @@ module.exports = function () {
     chatModerators: [
       { name: "Nenna", pronouns: "she/her" },
       { name: "Pudge", pronouns: "he/him" },
-      { name: "Robyn", pronouns: "any" },
+      { name: "Robyn", pronouns: "he/she/they" },
     ],
     other: [
       {
