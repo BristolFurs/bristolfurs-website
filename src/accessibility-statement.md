@@ -4,7 +4,7 @@ layout: article.njk
 
 # Content
 title: Accessibility statement for BristolFurs website
-updated: 2024-01-31
+updated: 2024-11-14
 
 # SEO
 metadata:
@@ -32,7 +32,7 @@ The website is fully compliant with the [Web Content Accessibility Guidelines (W
 
 The content listed below is non-accessible for the following reasons.
 
-Some pages feature embedded, interactive maps from the Google Maps service. As this is content embedded from a third-party, we are unable to guarantee that it is accessible to all users.
+Some pages feature content embedded from Google Maps and Ko-fi. As this is content embedded from a third-party, we are unable to guarantee that it is accessible to all users.
 
 We are currently unaware of any additional accessibility concerns to add to this statement.
 
