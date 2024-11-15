@@ -45,7 +45,7 @@ export default function (config) {
       typographer: true,
     })
       .use(markdownItAttributesPlugin)
-      .use(markdownItAnchorPlugin)
+      .use(markdownItAnchorPlugin),
   )
 
   // Ignore files in these directories
@@ -59,6 +59,7 @@ export default function (config) {
   config.addWatchTarget(paths.srcAssets + "/**/*.mjs")
 
   // Copy over static assets
+  config.addPassthroughCopy(paths.srcAssets + "/fonts")
   config.addPassthroughCopy(paths.srcAssets + "/icons")
   config.addPassthroughCopy(paths.srcAssets + "/images")
   config.addPassthroughCopy(paths.srcAssets + "/all.mjs")
