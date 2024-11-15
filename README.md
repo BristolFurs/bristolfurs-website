@@ -6,7 +6,7 @@ The website for the BristolFurs. Built on [Eleventy](https://www.11ty.dev/), bec
 
 ### Prerequisites
 
-Most things run through [Node](https://nodejs.org/) and npm. Download and install Node 18 or newer from the Node website to get both.
+Most things run through [Node](https://nodejs.org/) and npm. Download and install Node 22 or newer from the Node website to get both.
 
 If you want or need to have multiple Node versions installed at the same time, install [nvm](https://github.com/nvm-sh/nvm) as well.
 
