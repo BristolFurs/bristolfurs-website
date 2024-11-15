@@ -18,7 +18,6 @@
 
 .bf-header__nav-toggle {
   @include reset.button;
-  @include theme.shadow;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,6 +29,7 @@
   position: absolute;
   inset-inline-end: var(--grid-gutter);
   inset-block-start: var(--space-xl);
+  @include theme.shadow;
   &[hidden] {
     display: none;
   }

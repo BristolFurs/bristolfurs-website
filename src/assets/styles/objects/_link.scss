@@ -9,10 +9,10 @@
 }
 
 .bf-link {
-  @include _common-styles;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
+  @include _common-styles;
   &:hover {
     text-decoration-thickness: 3px;
     text-underline-offset: 2px;
@@ -25,8 +25,8 @@
 }
 
 .bf-link-no-underline {
-  @include _common-styles;
   text-decoration: none;
+  @include _common-styles;
   &:hover {
     text-decoration: underline;
     text-decoration-thickness: 3px;
