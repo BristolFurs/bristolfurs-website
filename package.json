@@ -9,7 +9,7 @@
     "build-development": "ENVIRONMENT=development npx @11ty/eleventy",
     "build-production": "ENVIRONMENT=production npx @11ty/eleventy",
     "lint": "prettier --write \"**/*.{js,json,md,mjs,scss,yaml,yml}\"",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "author": "beeps <hi@berly.kim>",
   "license": "MIT",
