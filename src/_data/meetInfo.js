@@ -8,7 +8,7 @@ import { setDate, isSaturday, isFuture, isToday, addMonths, formatISO } from "da
 // e.g. If a meet is cancelled outright:
 // "2023-05-06": null
 const overrides = {
-  "2024-12-07": null,
+  "2023-05-06": "2023-05-13",
 }
 
 export default function () {
