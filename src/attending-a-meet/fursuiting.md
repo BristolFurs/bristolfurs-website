@@ -13,42 +13,9 @@ Fursuits are awesome, and we encourage you to fursuit at BristolFurs meets. Ther
 
 ## The fursuit walk
 
-We aim to do a fursuit walk around the centre of Bristol at every meet. This walk is in public spaces, guided by meet staff and volunteers wearing hi-vis vests in a snazzy purple.
+We aim to do a fursuit walk around the centre of Bristol at every meet, starting around 3pm and taking about an hour.
 
-The walk starts around 3pm and takes about an hour. Fursuiters are expected to be ready and outside of the venue 15 minutes prior to the walk beginning.
-
-If we are unable to hold a walk for some reason, such as due to wet weather, fursuiters are still encouraged to suit up within the venue.
-
-### Walking routes
-
-The walking route will usually change depending on the weather. The route of the walks are subject to change as required.
-
-#### Queen Square route (dry conditions)
-
-This route is typically used in dry and hot weather. It provides more open space and greenery with plentiful shaded areas. It's a shorter route, but includes walking on gravel and grass surfaces.
-
-The walk leads down St Nicholas Street and Clare Street, following Broad Quay southwards until the junction of Prince Street and King Street. We then cross over onto Queen Square, where we stop for a break, public schenanigans, and a group photoshoot.
-
-We return to the Boardroom via Welsh Back and High Street.
-
-#### Millennium Square route (wet conditions)
-
-This route is commonly used when it has recently rained and the ground is still damp or drying. The entire walking route is paved.
-
-The walk leads down St Nicholas Street and Clare Street, through The Centre onto Anchor Road and past the outside of We The Curious, stopping at Millennium Square for a break and public schenanigans.
-
-We will sometimes proceed to the Lloyds Amphitheatre for a photoshoot, depending on conditions.
-
-Afterwards, we return via Pero's Bridge and Narrow Quay, before rejoining the fountains and heading back to The Boardroom on the same route as before.
-
-### Fursuit walk rules
-
-When on the walk, please follow the following additional rules:
-
-- Always follow the instructions given by the meet staff and volunteer stewards, particularly when crossing roads and bicycle lanes.
-- Do not walk ahead of the lead steward or behind the trailing steward, unless doing so to take photographs.
-- Do not consume alcohol at any time during the walk. Bristol bylaws prohibit street drinking.
-- Do not play music when walking. You may do so at the stopping locations.
+[See the fursuit walk page]({{ '/attending-a-meet/fursuit-walk/' | url }}) for information on the routes and rules of the walk.
 
 ## Storage and changing space
 

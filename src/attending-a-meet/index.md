@@ -8,6 +8,8 @@ lede: Everything you need to know about attending a furmeet.
 subnavigation:
   - href: "/attending-a-meet/fursuiting/"
     text: Fursuiting guide
+  - href: "/attending-a-meet/fursuit-walk/"
+    text: Fursuit walk
   - href: "/attending-a-meet/faqs/"
     text: FAQs
   - href: "/code-of-conduct/"

@@ -1,9 +1,12 @@
 .bf-map {
   inline-size: 100%;
   block-size: clamp(12rem, 30vh, 30rem);
+  margin-block-end: var(--space-m);
 }
 
 .bf-map__marker {
+  --radius: 0.75rem;
+
   padding: var(--space-2xs) var(--space-xs);
   position: relative;
   color: var(--color-raw-white);
@@ -11,10 +14,13 @@
   font-family: var(--font-body);
   font-size: var(--font-size-m);
   font-weight: bold;
+
+  // Move the marker up slightly to account for the bottom 'pin'
+  transform: translateY(calc(0px - var(--radius)));
+
   &::after {
     // Not using logical properties here as the arrow should be on the bottom
     // of the box in all scenarios.
-    --radius: 0.75rem;
     content: "";
     width: 0;
     height: 0;
@@ -25,5 +31,15 @@
     top: 100%;
     left: 50%;
     transform: translate(-50%);
+  }
+}
+
+.bf-map--large {
+  block-size: auto;
+  aspect-ratio: 4 / 3;
+
+  .bf-map__marker {
+    padding: var(--space-3xs) var(--space-2xs);
+    font-size: var(--font-size-s);
   }
 }
