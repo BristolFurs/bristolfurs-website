@@ -10,7 +10,8 @@ $_shadow-thickness: 4px;
 
 @mixin focus-ring--input {
   outline: none;
-  box-shadow: 0 0 0 $_shadow-thickness var(--color-focus-text),
+  box-shadow:
+    0 0 0 $_shadow-thickness var(--color-focus-text),
     0 0 0 ($_shadow-thickness * 2) var(--color-focus-background);
 }
 
