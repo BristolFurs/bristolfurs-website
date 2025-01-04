@@ -8,7 +8,7 @@ export default function (content, question) {
   })
   return `<details class="bf-faq">
     <summary class="bf-faq__summary"><h2 class="bf-heading-l bf-link-no-underline">${md.renderInline(
-      question
+      question,
     )}</h2></summary>
     <div class="bf-prose">${md.render(content)}</div>
   </details>`
