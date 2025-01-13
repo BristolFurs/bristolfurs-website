@@ -29,10 +29,10 @@ export default function () {
       },
       {
         name: "Taylor",
-        role: "Community lead, dog",
+        role: "Community lead, dogdeer",
         pronouns: "he/it",
         avatar: "taylor.jpg",
-        avatarAttribution: "Sijn",
+        avatarAttribution: "Katsuke",
       },
     ],
     meetModerators: [
