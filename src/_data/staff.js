@@ -12,7 +12,8 @@ export default function () {
     committee: [
       {
         name: "Kipperil",
-        role: "Meet lead, treasurer, cat",
+        species: "cat",
+        role: "Meet lead, treasurer",
         pronouns: "they/them",
         avatar: "kipperil.png",
         avatarAttribution: "valleycore",
@@ -21,7 +22,8 @@ export default function () {
       },
       {
         name: "Taylor",
-        role: "Community lead, dogdeer",
+        species: "dogdeer",
+        role: "Community lead",
         pronouns: "he/it",
         avatar: "taylor.jpg",
         avatarAttribution: "Katsuke",
@@ -29,29 +31,38 @@ export default function () {
     ],
     meetModerators: [
       {
-        name: "Azure Goat",
+        name: "Azure",
+        species: "goat",
         pronouns: "he/him",
         avatar: "azure.jpg",
         avatarAttribution: "StormBlaze",
       },
       {
         name: "Eskelater",
+        species: "jackalope",
         pronouns: "he/him",
         avatar: "esk.jpg",
         avatarAttribution: "Superneonbuck",
       },
-      { name: "Jordon", pronouns: "he/him", avatar: "jordon.png", avatarAttribution: "cherrybrandy" },
-      { name: "Owen", pronouns: "he/him" },
+      {
+        name: "Jordon",
+        species: "opossum",
+        pronouns: "he/him",
+        avatar: "jordon.png",
+        avatarAttribution: "cherrybrandy",
+      },
+      { name: "Owen", species: "pony", pronouns: "he/him" },
     ],
     chatModerators: [
-      { name: "Nenna", pronouns: "she/her" },
-      { name: "Pudge", pronouns: "he/him" },
-      { name: "Robyn", pronouns: "he/she/they" },
-      { name: "Sijn", pronouns: "they/them", avatar: "sijn.png", avatarAttribution: "SijnCat" },
+      { name: "Nenna", species: "dragon", pronouns: "she/her" },
+      { name: "Pudge", species: "raccoon", pronouns: "he/him" },
+      { name: "Robyn", species: "cheetah", pronouns: "he/she/they" },
+      { name: "Sijn", species: "cat", pronouns: "they/them", avatar: "sijn.png", avatarAttribution: "SijnCat" },
     ],
     other: [
       {
         name: "beeps",
+        species: "amphimorpho",
         role: "Webmaster",
         pronouns: "it/its",
         avatar: "beeps.png",

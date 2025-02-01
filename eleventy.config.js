@@ -22,6 +22,7 @@ import shortcodeMarkdown from "./app/shortcodes/markdown.js"
 // Custom filters
 import filterCachebust from "./app/filters/cachebust.js"
 import filterFormatDate from "./app/filters/formatDate.js"
+import removeNullOrUndefinedFromArray from "./app/filters/removeNullOrUndefinedFromArray.js"
 
 export default function (config) {
   // Turn off default log output
@@ -74,6 +75,7 @@ export default function (config) {
   // Custom filters
   config.addFilter("cachebust", filterCachebust)
   config.addFilter("formatDate", filterFormatDate)
+  config.addFilter("removeNullOrUndefinedFromArray", removeNullOrUndefinedFromArray)
 
   return {
     markdownTemplateEngine: "njk",

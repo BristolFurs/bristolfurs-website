@@ -10,13 +10,11 @@
   <div class="bf-person__body">
     <h3 class="bf-heading-l bf-person__name">
       {{ params.name }}
-      {%- if params.pronouns %}
-        ({{ params.pronouns }})
-      {%- endif %}
     </h3>
-    {%- if params.role %}
-    <p class="bf-body bf-person__role">
-      {{ params.role }}
+    {%- set meta = [params.role, params.pronouns, params.species ] | removeNullOrUndefinedFromArray %}
+    {%- if meta | length > 0 %}
+    <p class="bf-body-s bf-person__role">
+      {{ meta | join(" &middot ") | safe }}
     </p>
     {% endif %}
   </div>
