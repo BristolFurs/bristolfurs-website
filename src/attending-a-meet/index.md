@@ -46,7 +46,7 @@ The meet ends at 6pm, though you are free to stay around longer.
 
 ## The fursuit walk
 
-The fursuit walk starts at 3pm and takes roughly an hour. We ask that fursuiters intending to join the walk be dressed and outside The Boardroom by 2:45pm.
+The [fursuit walk]({{ '/attending-a-meet/fursuit-walk/' | url }}) starts at 3pm and takes roughly an hour. We ask that fursuiters intending to join the walk be dressed and outside The Boardroom by 2:45pm.
 
 The fursuit walk may be cancelled or delayed due to inclement weather. (Because nothing smells worse than wet fur.) We try to give advance notice if the walk is unlikely to take place.
 
