@@ -11,6 +11,16 @@
     @extend .bf-body;
     max-inline-size: var(--grid-max-prose-width);
   }
+  > blockquote {
+    @extend .bf-body;
+    border-inline-start: var(--border-width-regular) solid var(--color-tertiary);
+    margin-inline-start: 0;
+    padding-inline-start: var(--space-m);
+
+    p {
+      @extend .bf-body;
+    }
+  }
   > ol:not([class]) {
     @extend .bf-list;
     @extend .bf-list--numbered;

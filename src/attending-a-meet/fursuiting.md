@@ -19,7 +19,7 @@ We aim to do a fursuit walk around the centre of Bristol at every meet, starting
 
 ## Storage and changing space
 
-Be aware that there is limited space for storage and changing at The Boardroom.
+Be aware that there is limited space for storage and changing.
 
 A small side room is available for changing. You must use this room if you need to remove any items of regular clothing in order to put on or take off your fursuit.
 

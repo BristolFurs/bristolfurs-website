@@ -6,8 +6,8 @@ export default function () {
   // Only supports a single line of plain text at the moment.
 
   return {
-    title: "The Boardroom has closed down.",
-    body: "Our normal meet venue has closed down at short notice. We're currently trying to find a new venue. Meets may be disrupted or cancelled until we secure a replacement.",
+    title: "Our venue has changed.",
+    body: "March's meet will be taking place at The Colosseum in Redcliffe. Information on the website will be updated in due course.",
   }
 
   return null

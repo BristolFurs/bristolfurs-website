@@ -1,0 +1,5 @@
+{% macro callout(params) %}
+<div class="bf-callout">
+{{- caller() if caller else (params.html | safe if params.html else params.text) -}}
+</div>
+{% endmacro %}

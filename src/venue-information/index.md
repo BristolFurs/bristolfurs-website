@@ -11,20 +11,20 @@ lede: How to get to our meeting spots and what to expect when you get there.
 
 {% call brochure({
   title: {
-    text: "The Boardroom"
+    text: "The Colosseum"
   },
-  href: "/venue-information/the-boardroom/",
+  href: "/venue-information/the-colosseum/",
   button: {
-    html: '<span class="bf-!-sr">The Boardroom</span> Venue information'
+    html: '<span class="bf-!-sr">The Colosseum</span> Venue information'
   },
   image: {
-    src: "boardroom.jpg",
-    alt: "The front of an old stone building, a pub, painted teal on the lower floor and white on the upper floors and decorated with hanging flower baskets and fairy lights.",
-    credit: "Taylor Erise"
+    src: "colosseum.jpg",
+    alt: "Photograph of a stone brick bar, behind which are a number of taps and a wall decorated with stone brick and a variety of shelves with bottles of spirits.",
+    credit: "The Colosseum"
   }
 }) %}
 
-  <p>The main venue where we do our meets.</p>
+  <p>Our current home away from home.</p>
 {% endcall %}
 
 {% call brochure({

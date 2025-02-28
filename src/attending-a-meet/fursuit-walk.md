@@ -9,6 +9,8 @@ backLink:
   href: /attending-a-meet/
 ---
 
+> This page hasn't been updated with information for our new venue. It will be updated soon.
+
 We aim to do a fursuit walk around the centre of Bristol at every meet.
 
 The walk starts around 3pm and takes about an hour. Fursuiters are expected to be ready and outside of the venue 15 minutes prior to the walk beginning. The walk isn't just for fursuiters; non-fursuiters are encouraged to join in too!
