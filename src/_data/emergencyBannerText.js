@@ -7,7 +7,7 @@ export default function () {
 
   return {
     title: "Our venue has changed.",
-    body: "March's meet will be taking place at The Colosseum in Redcliffe. Information on the website will be updated in due course.",
+    body: "We have changed venues to the Colosseum in Redcliffe. We are working on updating all pages to account for this change.",
   }
 
   return null

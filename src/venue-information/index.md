@@ -11,16 +11,16 @@ lede: How to get to our meeting spots and what to expect when you get there.
 
 {% call brochure({
   title: {
-    text: "The Colosseum"
+    text: "Colosseum"
   },
-  href: "/venue-information/the-colosseum/",
+  href: "/venue-information/colosseum/",
   button: {
-    html: '<span class="bf-!-sr">The Colosseum</span> Venue information'
+    html: '<span class="bf-!-sr">Colosseum</span> Venue information'
   },
   image: {
     src: "colosseum.jpg",
-    alt: "Photograph of a stone brick bar, behind which are a number of taps and a wall decorated with stone brick and a variety of shelves with bottles of spirits.",
-    credit: "The Colosseum"
+    alt: "Photograph of a rather plain, boxy brick building. Part of the outside is covered by a green and white veranda. The word 'Colosseum' is written in large, yellow letters on the side of the building.",
+    credit: "Colosseum"
   }
 }) %}
 

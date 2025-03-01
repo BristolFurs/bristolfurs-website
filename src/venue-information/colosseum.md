@@ -3,9 +3,9 @@
 layout: venue.njk
 
 # Content
-title: The Colosseum venue information
+title: Colosseum venue information
 venue:
-  name: The Colosseum
+  name: Colosseum
   addressLines:
     - Redcliff Hill
     - Bristol
@@ -14,23 +14,23 @@ venue:
   longitude: -2.591059515774799
 ---
 
-> This page is incomplete. More information will be provided when possible.
-
-A cosy bar lifted straight out of the 1980s, The Colosseum has been reinvented for the 21st Century, now serving cocktails and tapas close to the centre of Bristol's Harbourside.
+A cosy bar lifted straight out of the 1980s, the Colosseum has been recently reinvented for the 21st century, now serving cocktails and tapas close to the centre of Bristol's Harbourside.
 
 ## Fursuiting
 
-TBD.
+> We are currently making arrangements for fursuiting facilities at the Colosseum. More information on this will be available soon.
 
 ## Accessibility
 
 ### Mobility
 
-TBD.
+The Colosseum is located on top of a small hill, so some of the surrounding paths may be steep. There is a single step up from the pavement to the main entrance of the Colosseum.
+
+There is completely step-free access available by going via the terrace and through the side entrance, however, this is not always open. Please catch the attention of a member of meet or venue staff if the gate or terrace door is not accessible.
 
 ### Toilets
 
-TBD.
+Male toilets and a combined disabled and gender neutral toilet are located on the ground floor. Female toilets are located upstairs.
 
 ## Travel
 
@@ -50,4 +50,6 @@ The nearest car park is the [Redcliffe Parade car park](https://www.bristol.gov.
 
 ### By bike
 
-TBD.
+The nearest bicycle parking is four on-street bike racks located across the road from the Colosseum, next to St Mary Redcliffe Church.
+
+A number of other on-street bike racks are located further down Redcliffe Hill, as well as in Portwall Lane car park.
