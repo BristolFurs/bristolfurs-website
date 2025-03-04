@@ -60,6 +60,7 @@ export default function (config) {
   config.addWatchTarget(paths.srcAssets + "/**/*.mjs")
 
   // Copy over static assets
+  config.addPassthroughCopy(paths.src + "/.htaccess")
   config.addPassthroughCopy(paths.srcAssets + "/fonts")
   config.addPassthroughCopy(paths.srcAssets + "/icons")
   config.addPassthroughCopy(paths.srcAssets + "/images")
