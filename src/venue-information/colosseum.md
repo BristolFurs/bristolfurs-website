@@ -14,7 +14,11 @@ venue:
   longitude: -2.591059515774799
 ---
 
-A cosy bar lifted straight out of the 1980s, the Colosseum has been recently reinvented for the 21st century, now serving cocktails and tapas close to the centre of Bristol's Harbourside.
+A cosy bar lifted straight out of the 1980s, [the Colosseum](https://www.colosseumbristol.co.uk/) has been recently reinvented for the 21st century, now serving cocktails and tapas close to the centre of Bristol's Harbourside.
+
+We have exclusive use of the Colosseum until 4pm. Do not leave any belongings unattended after this time.
+
+Outside food and drinks are not permitted in the Colosseum.
 
 ## Fursuiting
 
