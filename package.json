@@ -22,13 +22,13 @@
     "eleventy-plugin-toc": "^1.1.5",
     "fs-extra": "^11.3.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.4.3",
+    "lint-staged": "^15.5.0",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-attrs": "^4.3.1",
     "postcss": "^8.5.3",
     "postcss-preset-env": "^10.1.5",
-    "prettier": "3.4.2",
+    "prettier": "3.5.3",
     "sass": "1.86.0"
   },
   "lint-staged": {
