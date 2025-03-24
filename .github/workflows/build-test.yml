@@ -1,0 +1,26 @@
+name: Test build
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: test-build-${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build website
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache-dependency-path: ${{ env.BUILD_PATH }}/package-lock.json
+      - name: Install dependencies
+        uses: ./.github/workflows/actions/install-dependencies
+      - name: Build Eleventy in production mode
+        run: npm run build-production
