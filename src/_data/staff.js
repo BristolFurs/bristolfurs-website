@@ -63,7 +63,7 @@ export default function () {
       {
         name: "beeps",
         species: "amphimorpho",
-        role: "Webmaster",
+        role: "Tech critter",
         pronouns: "it/its",
         avatar: "beeps.png",
         avatarAttribution: "TuxedoDragon",
