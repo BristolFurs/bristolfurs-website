@@ -20,7 +20,7 @@ lede: How to get to our meeting spots and what to expect when you get there.
   image: {
     src: "colosseum.jpg",
     alt: "Photograph of a rather plain, boxy brick building. Part of the outside is covered by a green and white veranda. The word 'Colosseum' is written in large, yellow letters on the side of the building.",
-    credit: "Colosseum"
+    credit: "beeps"
   }
 }) %}
 
@@ -38,7 +38,7 @@ lede: How to get to our meeting spots and what to expect when you get there.
   image: {
     src: "starbucks-placeholder.jpg",
     alt: "A Starbucks branded paper cup standing on a table and reflecting on the window behind it.",
-    credit: "Unsplash: introspectivedsgn"
+    credit: "introspectivedsgn (Unsplash)"
   }
 }) %}
 
