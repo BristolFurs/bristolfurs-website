@@ -33,5 +33,5 @@ Currently, we use donations to cover:
 
 In future we want to:
 
-- Consider the possibility of new merch for attendees to have nice stuff to take home, and to provide additional revenue for improving the meets further
-- consider different meet venues that are better for fursuiting and accessibility, but may come with hiring fees, new equipment requirements, or other costs
+- Consider the possibility of new merch for attendees to have nice stuff to take home, and to provide additional revenue for improving the meets further.
+- Consider different meet venues that are better for fursuiting and accessibility, but may come with hiring fees, new equipment requirements, or other costs.
