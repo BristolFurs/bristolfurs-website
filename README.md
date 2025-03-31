@@ -88,12 +88,12 @@ Only the `src/assets/all.mjs` file is compiled. Everything else should be includ
 
 ### Deployment to development environment
 
-There is a Continuous Integration (CI) pipeline set up to automatically build and deploy the website to [dev.bristolfurs.co.uk](https://dev.bristolfurs.co.uk/). Use this to ensure that content changes look good before pushing them to the live website.
+There is a Continuous Integration (CI) pipeline set up to automatically build and deploy the `main` branch to [dev.bristolfurs.co.uk](https://dev.bristolfurs.co.uk/) when changes are pushed or merged. Use this to ensure that content changes look good before pushing they go to the live website.
 
 This version of the site is publicly viewable, but is configured to not be indexed by search engines. It also shows a big banner at the top pointing out that this isn't the actual, proper website.
 
 ### Deployment to live (production) environment
 
-Deployments to live are not automated and must always be performed manually.
+Deployments to the live website happen automatically every day, between 4am and 6am.
 
-Do so from the 'Run workflow' dropdown menu in the ['Deploy to live' Action](https://github.com/BristolFurs/bristolfurs-website/actions/workflows/deploy-prod.yml).
+If you need to deploy sooner than this, do so from the 'Run workflow' dropdown menu in the ['Deploy to live' Action](https://github.com/BristolFurs/bristolfurs-website/actions/workflows/deploy-prod.yml).
