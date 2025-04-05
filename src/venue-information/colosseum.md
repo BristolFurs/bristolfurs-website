@@ -14,15 +14,21 @@ venue:
   longitude: -2.591059515774799
 ---
 
+{% from "../_includes/components/warning.njk" import warning %}
+
 A cosy bar lifted straight out of the 1980s, [the Colosseum](https://www.colosseumbristol.co.uk/) has been recently reinvented for the 21st century, now serving cocktails and tapas close to the centre of Bristol's Harbourside.
 
-We have exclusive use of the Colosseum until 4pm. Do not leave any belongings unattended after this time.
+We have exclusive use of the Colosseum until 4pm. Outside food and drinks are not permitted in the Colosseum.
 
-Outside food and drinks are not permitted in the Colosseum.
+{% call warning() %}
+Do not leave any belongings unattended after 4pm.
+{% endcall %}
 
 ## Fursuiting
 
-> We are currently making arrangements for fursuiting facilities at the Colosseum. More information on this will be available soon.
+{% call warning() %}
+We are currently making arrangements for fursuiting facilities at the Colosseum. More information on this will be available soon.
+{% endcall %}
 
 ## Accessibility
 

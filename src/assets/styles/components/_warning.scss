@@ -1,0 +1,24 @@
+.bf-warning {
+  display: flex;
+  gap: var(--space-m);
+}
+
+.bf-warning__symbol {
+  flex-shrink: 0;
+  padding-block-start: 0.25em;
+  inline-size: 1.75em;
+  block-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-raw-white);
+  background-color: var(--color-raw-red);
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+  line-height: 1.5em;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.bf-warning__text {
+  font-weight: bold;
+}

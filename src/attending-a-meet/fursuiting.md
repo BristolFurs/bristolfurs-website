@@ -19,15 +19,13 @@ We aim to do a fursuit walk around the centre of Bristol at every meet, starting
 
 ## Storage and changing space
 
-Be aware that there is limited space for storage and changing.
+{% from "../_includes/components/warning.njk" import warning %}
 
-A small side room is available for changing. You must use this room if you need to remove any items of regular clothing in order to put on or take off your fursuit.
+{% call warning() %}
+This section hasn't been updated with information for our new venue. Information will be added soon.
+{% endcall %}
 
-Partial suits that don't require removing clothes can be changed into in the main room or in the toilet.
-
-Travel cases and other large bags can be stored on and under the signposted table at the top of the stairs or on the tables in the changing room.
-
-**All items are stored at the owners own risk.**
+All items are stored at the owners own risk.
 
 ## General guidance
 

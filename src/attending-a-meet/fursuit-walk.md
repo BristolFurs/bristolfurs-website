@@ -9,7 +9,11 @@ backLink:
   href: /attending-a-meet/
 ---
 
-> This page hasn't been updated with information for our new venue. It will be updated soon.
+{% from "../_includes/components/warning.njk" import warning %}
+
+{% call warning() %}
+This page hasn't been updated with information for our new venue. It will be updated soon.
+{% endcall %}
 
 We aim to do a fursuit walk around the centre of Bristol at every meet.
 

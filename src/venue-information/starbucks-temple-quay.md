@@ -14,13 +14,17 @@ venue:
   longitude: -2.5818740347803906
 ---
 
+{% from "../_includes/components/warning.njk" import warning %}
+
 Starbucks at Temple Quay is where we have our pre-meet.
 
 Located just around the corner from Bristol Temple Meads railway station, it's a convenient spot for any out-of-towners to grab a drink and a seat before heading onward to our main venue together.
 
 It also provides a quieter and more relaxed experience for anyone who prefers to get to know people ahead of time.
 
-Please note: This is **not** the same Starbucks as the one inside of Temple Meads railway station.
+{% call warning() %}
+Note that map apps may direct you to the wrong Starbucks. This is not the Starbucks inside of Temple Meads railway station.
+{% endcall %}
 
 ## Accessibility
 
