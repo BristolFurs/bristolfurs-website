@@ -29,7 +29,7 @@
     "postcss": "^8.5.3",
     "postcss-preset-env": "^10.1.5",
     "prettier": "3.5.3",
-    "sass": "1.86.0"
+    "sass": "1.86.3"
   },
   "lint-staged": {
     "*.{js,json,md,mjs,scss,yaml,yml}": "prettier --write"
