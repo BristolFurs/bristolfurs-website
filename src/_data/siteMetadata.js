@@ -36,7 +36,7 @@ export default function () {
     socialLinks: [
       {
         text: "Bluesky",
-        href: "//bsky.app/profile/bristolfurs.bsky.social",
+        href: "//bsky.app/profile/bristolfurs.co.uk",
       },
       { text: "Discord", href: "//discord.gg/qw7reg8X4c" },
       {
