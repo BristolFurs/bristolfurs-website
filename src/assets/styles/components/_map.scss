@@ -31,6 +31,16 @@
     top: 100%;
     left: 50%;
     transform: translate(-50%);
+    forced-color-adjust: none;
+  }
+
+  @media (forced-colors: active) {
+    color: WindowText;
+    background-color: Background;
+
+    &::after {
+      border-top-color: Background;
+    }
   }
 }
 

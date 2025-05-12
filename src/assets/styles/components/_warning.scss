@@ -17,6 +17,13 @@
   font-weight: bold;
   line-height: 1.5em;
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  user-select: none;
+  forced-color-adjust: none;
+
+  @media (forced-colors: active) {
+    color: Background;
+    background-color: WindowText;
+  }
 }
 
 .bf-warning__text {

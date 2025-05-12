@@ -1,11 +1,18 @@
 $_shadow-thickness: 4px;
 
+@mixin -focus-ring-override {
+  @media (forced-colors: active) {
+    outline: 2px solid Highlight;
+  }
+}
+
 @mixin focus-ring--inline {
   outline: none;
   color: var(--color-focus-text);
   background-color: var(--color-focus-background);
   text-decoration: none;
   box-shadow: 0 $_shadow-thickness 0 0 var(--color-focus-text);
+  @include -focus-ring-override;
 }
 
 @mixin focus-ring--input {
@@ -13,6 +20,7 @@ $_shadow-thickness: 4px;
   box-shadow:
     0 0 0 $_shadow-thickness var(--color-focus-text),
     0 0 0 ($_shadow-thickness * 2) var(--color-focus-background);
+  @include -focus-ring-override;
 }
 
 @mixin focus-ring--button {
@@ -21,6 +29,7 @@ $_shadow-thickness: 4px;
   background-color: var(--color-focus-background);
   text-decoration: none;
   box-shadow: 0 0 0 $_shadow-thickness var(--color-focus-text);
+  @include -focus-ring-override;
 }
 
 @mixin visually-hidden($important: false) {

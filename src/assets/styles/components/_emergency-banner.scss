@@ -1,5 +1,6 @@
 .bf-emergency-banner {
   padding-block: var(--space-2xs);
+  border-block-end: var(--border-width-regular) solid var(--color-raw-black);
   background-color: var(--color-raw-yellow);
   background-image: repeating-linear-gradient(
     -45deg,
@@ -8,6 +9,7 @@
     rgba(0, 0, 0, 0.25) 1em,
     rgba(0, 0, 0, 0.25) 2em
   );
+
   @media (prefers-color-scheme: dark) {
     background-color: var(--color-raw-black);
     background-image: repeating-linear-gradient(

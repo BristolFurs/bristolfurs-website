@@ -7,6 +7,7 @@
 $_breakpoint: "mobile";
 
 .bf-subnavigation {
+  border-block: var(--border-width-hairline) solid transparent;
 }
 
 .bf-subnavigation__inner {
@@ -29,6 +30,7 @@ $_breakpoint: "mobile";
 .bf-subnavigation__link {
   display: block;
   padding-block: var(--space-xs);
+  margin-block: calc(var(--border-width-hairline) * -1);
   &[aria-current] {
     font-weight: bold;
   }

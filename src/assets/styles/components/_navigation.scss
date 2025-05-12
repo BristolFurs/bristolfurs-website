@@ -37,21 +37,25 @@ $_js-breakpoint: media-queries.value($_breakpoint);
   @include media-queries.query($to: $_breakpoint) {
     display: block;
     padding-block: var(--space-xs);
-    padding-inline: var(--space-s);
+    padding-inline-start: calc(var(--space-s) + var(--border-width-regular));
+    padding-inline-end: var(--space-s);
     margin-inline-start: calc(0px - var(--space-s));
-    border-inline-start: var(--border-width-regular) solid transparent;
+
     &:hover,
     &[aria-current] {
-      border-inline-start-color: currentcolor;
+      padding-inline-start: var(--space-s);
+      border-inline-start: var(--border-width-regular) solid currentcolor;
     }
   }
   @include media-queries.query($from: $_breakpoint) {
     display: inline-block;
-    padding-block: var(--space-s);
-    border-block-end: var(--border-width-regular) solid transparent;
+    padding-block-start: var(--space-s);
+    padding-block-end: calc(var(--space-s) + var(--border-width-regular));
+
     &:hover,
     &[aria-current] {
-      border-block-end-color: var(--color-canvas-background);
+      padding-block-end: var(--space-s);
+      border-block-end: var(--border-width-regular) solid currentcolor;
     }
   }
 }
