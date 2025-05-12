@@ -4,14 +4,12 @@ layout: article.njk
 
 # Content
 title: Accessibility statement for BristolFurs website
-updated: 2024-11-14
+updated: 2025-05-12
 
 # SEO
 metadata:
-  description:
+  description: Accessibility statement for the bristolfurs.co.uk website.
 ---
-
-Last updated: {{ updated | formatDate('d MMMM yyyy') }}.
 
 This accessibility statement applies to the BristolFurs website hosted at bristolfurs.co.uk. It does not include the furmeets themselves, any subdomains of the bristolfurs.co.uk domain, nor any BristolFurs presence on third-party websites or services.
 
@@ -32,12 +30,21 @@ The website is fully compliant with the [Web Content Accessibility Guidelines (W
 
 The content listed below is non-accessible for the following reasons.
 
-Some pages feature content embedded from Google Maps and Ko-fi. As this is content embedded from a third-party, we are unable to guarantee that it is accessible to all users.
+### Content not within the scope of the accessibility regulations
 
-We are currently unaware of any additional accessibility concerns to add to this statement.
+Some pages feature content embedded from Google Maps and Ko-fi. Whilst we've tried to ensure these embeds are accessible, as this is content embedded from a third-party, we are unable to guarantee that it is accessible to all users.
+
+### Other accessibility concerns
+
+These issues do not constitute a failure under WCAG 2.2 Level AA criteria, however may still represent a degraded experience or accessibility barrier to users.
+
+- The site header and page headers lack borders in forced colour modes, making the boundary between them and subsequent content difficult to see in forced colour modes.
+- The back link arrows on some pages are not visible in forced colour modes. The links themselves remain visible.
 
 ## Feedback and contact information
 
 We are always looking for ways to improve the accessibility of this website. If you find any problems not listed on this page, you can [open an issue in the website's repository on GitHub](https://github.com/BristolFurs/bristolfurs-website/issues) or [contact us directly]({{ '/contact-us/' | url }}).
 
 We will endeavour to review your request and to respond as quickly as possible.
+
+This document was last updated on {{ updated | formatDate('d MMMM yyyy') }}.
