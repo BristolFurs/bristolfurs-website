@@ -11,19 +11,24 @@ export default function () {
   return {
     committee: [
       {
+        name: "Eskelater",
+        species: "jackalope",
+        pronouns: "he/him",
+        avatar: "esk.jpg",
+        avatarAttribution: "Superneonbuck",
+      },
+      {
         name: "Kipperil",
         species: "cat",
         role: "Meet lead, treasurer",
         pronouns: "they/them",
         avatar: "kipperil.png",
         avatarAttribution: "valleycore",
-        biography:
-          "My name’s Kipperil, or Kip for short. I’m the cat responsible for the physical meets in terms of planning, venue liaising, and overseeing execution. I also handle the back-of house finances. You’ll most likely see me at the meets when I’m running the walks! ",
       },
       {
         name: "Taylor",
         species: "dogdeer",
-        role: "Community lead",
+        role: "Online lead",
         pronouns: "he/it",
         avatar: "taylor.jpg",
         avatarAttribution: "Katsuke",
@@ -36,13 +41,6 @@ export default function () {
         pronouns: "he/him",
         avatar: "azure.jpg",
         avatarAttribution: "StormBlaze",
-      },
-      {
-        name: "Eskelater",
-        species: "jackalope",
-        pronouns: "he/him",
-        avatar: "esk.jpg",
-        avatarAttribution: "Superneonbuck",
       },
       {
         name: "Jordon",
