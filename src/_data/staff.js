@@ -13,6 +13,7 @@ export default function () {
       {
         name: "Eskelater",
         species: "jackalope",
+        role: "Operations lead",
         pronouns: "he/him",
         avatar: "esk.jpg",
         avatarAttribution: "Superneonbuck",
@@ -49,7 +50,6 @@ export default function () {
         avatar: "jordon.png",
         avatarAttribution: "cherrybrandy",
       },
-      { name: "Owen", species: "pony", pronouns: "he/him" },
     ],
     chatModerators: [
       { name: "Nenna", species: "dragon", pronouns: "she/her" },
