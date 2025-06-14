@@ -1,3 +1,7 @@
+// These are repeated in a few places so keep them separate
+const discordLink = "//discord.gg/qw7reg8X4c"
+const telegramLink = "//t.me/bristolfurs"
+
 export default function () {
   return {
     // If the site is in development mode.
@@ -33,15 +37,17 @@ export default function () {
     ],
 
     // Social media links.
+    discordLink,
+    telegramLink,
     socialLinks: [
       {
         text: "Bluesky",
         href: "//bsky.app/profile/bristolfurs.co.uk",
       },
-      { text: "Discord", href: "//discord.gg/qw7reg8X4c" },
+      { text: "Discord", href: discordLink },
       {
         text: "Telegram",
-        href: "//t.me/bristolfurs",
+        href: telegramLink,
       },
       {
         text: "Support us on Ko-fi",

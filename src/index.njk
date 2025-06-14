@@ -42,6 +42,24 @@
       </ol>
       <p class="bf-small-print">Dates are subject to change. Keep an eye on our socials for any updates!</p>
     {% endcall %}
+    
+    {% call brochure({
+      title: {
+        text: "Gaming mini-meets"
+      },
+      href: "/venue-information/excelsior/",
+      button: {
+        html: 'More information <span class="bf-!-sr">about Excelsior</span>'
+      },
+      image: {
+        src: "gaming.jpg",
+        alt: "A stock photo of some board game tiles, dice and meeples.",
+        credit: "Robert Coelho (Unsplash)"
+      }
+    }) %}
+      <p>We hold occassional mini-meets centred around TCGs, board games, and wargaming at Excelsior in central Bristol.</p>
+      <p>Join our <a href="{{ siteMetadata.discordLink }}">Discord</a> or <a href="{{ siteMetadata.telegramLink }}">Telegram</a> groups for information on upcoming gaming mini-meets.</p>
+    {% endcall %}
   
   </div>
 {% endblock %}

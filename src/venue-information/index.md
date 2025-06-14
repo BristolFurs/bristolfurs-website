@@ -44,3 +44,21 @@ lede: How to get to our meeting spots and what to expect when you get there.
 
   <p>Home of the pre-meet, located conveniently next to Temple Meads Railway Station.</p>
 {% endcall %}
+
+{% call brochure({
+  title: {
+    text: "Excelsior"
+  },
+  href: "/venue-information/excelsior/",
+  button: {
+    html: '<span class="bf-!-sr">Excelsior</span> Venue information'
+  },
+  image: {
+    src: "gaming.jpg",
+    alt: "A stock photo of some board game tiles, dice and meeples.",
+    credit: "Robert Coelho (Unsplash)"
+  }
+}) %}
+
+  <p>Hosts of our occassional gaming mini-meets.</p>
+{% endcall %}
