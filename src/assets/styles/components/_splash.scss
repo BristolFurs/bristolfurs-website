@@ -6,6 +6,8 @@ $_breakpoint: "tablet";
 .bf-splash {
   padding-block-end: var(--space-l);
   background-color: var(--color-canvas-background-alt);
+  border-end-start-radius: var(--radius-regular);
+  border-end-end-radius: var(--radius-regular);
 }
 
 .bf-splash__media {
@@ -22,6 +24,8 @@ $_breakpoint: "tablet";
     inline-size: 100%;
     block-size: 100%;
     object-fit: cover;
+    border-start-start-radius: 0;
+    border-start-end-radius: 0;
   }
 }
 

@@ -4,14 +4,21 @@
   color: var(--color-header-text);
   background-color: var(--color-header-background);
   @include theme.shadow;
+
+  border-end-start-radius: var(--radius-regular);
+  border-end-end-radius: var(--radius-regular);
 }
 
 .bf-person__image {
   aspect-ratio: 1;
+
   img {
     inline-size: 100%;
     aspect-ratio: 1;
     object-fit: cover;
+
+    border-start-start-radius: 0;
+    border-start-end-radius: 0;
   }
 }
 
