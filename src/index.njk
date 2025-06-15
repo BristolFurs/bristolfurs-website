@@ -13,7 +13,7 @@
       },
       href: "/attending-a-meet/fursuiting/",
       button: {
-        html: 'More information <span class="bf-!-sr">about fursuiting</span>'
+        html: 'Fursuiting guide'
       },
       image: {
         src: "cookie-fursuit.jpg",
@@ -21,7 +21,7 @@
         credit: "Kirin Eldridge"
       }
     }) %}
-      <p>We love to see people bring their fursuits! We have changing facilities and storage space available.</p>
+      <p>We love to see people bring their fursuits! Find out more about fursuiting at BristolFurs meets.</p>
     {% endcall %}
     
     {% call brochure({
@@ -34,7 +34,7 @@
         credit: "Kirin Eldridge"
       }
     }) %}
-      <p>Our next meets are scheduled to take place on:</p>
+      <p>Our next furmeets are scheduled to take place on:</p>
       <ol class="bf-list bf-list--bulleted">
         {%- for date in meetInfo.next6MeetDates %}
           <li>{{ date | formatDate('do MMMM yyyy') }}</li>
@@ -45,11 +45,11 @@
     
     {% call brochure({
       title: {
-        text: "Gaming mini-meets"
+        text: "Tabletop meets"
       },
       href: "/venue-information/excelsior/",
       button: {
-        html: 'More information <span class="bf-!-sr">about Excelsior</span>'
+        html: 'About Excelsior'
       },
       image: {
         src: "gaming.jpg",
@@ -57,7 +57,7 @@
         credit: "Robert Coelho (Unsplash)"
       }
     }) %}
-      <p>We hold occassional mini-meets centred around TCGs, board games, and wargaming at Excelsior in central Bristol.</p>
+      <p>We hold occassional mini-meets centred around TCGs, RPGs, board games, and wargaming at Excelsior in central Bristol. They're great for getting to know people in a quieter, more structured environment!</p>
       <p>Join our <a href="{{ siteMetadata.discordLink }}">Discord</a> or <a href="{{ siteMetadata.telegramLink }}">Telegram</a> groups for information on upcoming gaming mini-meets.</p>
     {% endcall %}
   

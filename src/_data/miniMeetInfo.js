@@ -6,7 +6,7 @@ const meetDates = ["2025-06-15", "2025-07-20"]
 
 export default function () {
   return {
-    schedule: [{ startTime: "noon", title: "Gaming mini-meet", subtitle: "at Excelsior" }],
+    schedule: [{ startTime: "noon", title: "Tabletop meet", subtitle: "at Excelsior" }],
     nextMeetDate: getNextMeetDate(),
   }
 }

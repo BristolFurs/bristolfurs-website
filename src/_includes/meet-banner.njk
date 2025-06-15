@@ -30,14 +30,14 @@
     
     <div class="bf-splash__card">
       <h1 class="bf-heading-2xl bf-!-margin-block-start-0 bf-!-margin-block-end-m">
-        <div class="bf-body-l bf-!-margin-block-end-3xs">Next gaming mini-meet</div>
+        <div class="bf-body-l bf-!-margin-block-end-3xs">Next tabletop meet</div>
         {%- if miniMeetInfo.nextMeetDate %}
           {{ miniMeetInfo.nextMeetDate | formatDate('EEEE, do MMMM yyyy')}}
         {%- else %}
           Not scheduled yet
         {%- endif %}
       </h1>
-      <p class="bf-body-s">Mini-meets are smaller events centred around all things (physical) gaming: TCGs, RPGs, board games, and wargaming are all welcome here.</p>
+      <p class="bf-body-s">Tabletop meets are smaller events centred around all things tabletop gaming: TCGs, RPGs, board games, and wargaming are all welcome here.</p>
       {%- if miniMeetInfo.nextMeetDate and miniMeetInfo.schedule %}
         <dl class="bf-schedule">
           {%- for row in miniMeetInfo.schedule %}
