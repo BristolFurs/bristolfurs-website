@@ -10,6 +10,8 @@ subnavigation:
     text: Fursuiting guide
   - href: "/attending-a-meet/fursuit-walk/"
     text: Fursuit walk
+  - href: "/attending-a-meet/tabletop-meets/"
+    text: Tabletop meets
   - href: "/attending-a-meet/faqs/"
     text: FAQs
   - href: "/code-of-conduct/"

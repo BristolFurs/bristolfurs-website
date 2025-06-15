@@ -1,0 +1,43 @@
+---
+# Technical data
+layout: article.njk
+
+# Content
+title: Tabletop meets
+backLink:
+  text: Attending a meet
+  href: /attending-a-meet/
+
+# SEO
+metadata:
+  description: Our cosy little mini-meets about all things tabletop.
+---
+
+Tabletop meets are special mini-sized meets that focus on all things tabletop gaming. All things relating to trading card games, roleplaying games, wargaming, and board games are welcome, and it's a great way of meeting furries in a quieter, more structured environment.
+
+{%- if miniMeetInfo.nextMeetDate %}
+
+**The next tabletop meet is on {{ miniMeetInfo.nextMeetDate | formatDate('EEEE, do MMMM yyyy')}}** at [Excelsior]({{ '/venue-information/excelsior/'}}), from noon until 5pm.
+{%- endif %}
+
+Join our [Discord]({{ siteMetadata.discordLink }}) or [Telegram]({{ siteMetadata.telegramLink }}) groups for more information on upcoming tabletop meets.
+
+## The games
+
+A variety of games will be available for free play, from casual games like Uno to cult classics like Ticket to Ride. Dungeons & Dragons and Warhammer may also be available, conditional on availability.
+
+If you're not sure whether something you'd like to play will be available, you're free to bring whatever games you want, provided they don't contain explicit content. If you play trading card games, such as MTG, Pokémon, Lorcana, or Yu-Gi-Oh, bringing decks is also encouraged.
+
+If you're not a seasoned tabletop gamer, most games will have someone available to explain the rules and help you learn how to play.
+
+Video games, even ones that play like tabletop or party games, are discouraged.
+
+## Differences from furmeets
+
+Tabletop meets still let you hang out with your fellow furries, but there are a few differences:
+
+- Tabletop meets are smaller and centred around a particular social activity. If you're not planning to play games, this isn't for you.
+- Fursuiting, including the wearing of tails, is not allowed. Other furry accessories are fine, however.
+- Alcohol is strictly forbidden inside of the venue.
+
+Different people organise the tabletop meets than the regular furmeets, though some BristolFurs staff members will typically be present.
