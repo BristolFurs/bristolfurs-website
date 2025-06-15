@@ -6,6 +6,7 @@
   margin-block-end: var(--space-m);
   font-family: var(--font-heading);
   font-weight: bold;
+  line-height: 1.25;
   text-wrap: balance;
 }
 
@@ -13,21 +14,24 @@
   margin-block-start: 0;
   margin-block-end: var(--space-xl);
   font-size: var(--font-size-4xl);
-  line-height: 1;
   letter-spacing: -0.05em;
+
+  @supports (background-clip: text) {
+    color: transparent;
+    background-image: var(--gradient-primary);
+    background-clip: text;
+  }
 }
 
 .bf-heading-3xl {
   margin-block-start: var(--space-3xl);
   font-size: var(--font-size-3xl);
-  line-height: 1.1;
   letter-spacing: -0.025em;
 }
 
 .bf-heading-2xl {
   margin-block-start: var(--space-2xl);
   font-size: var(--font-size-2xl);
-  line-height: 1.25;
 }
 
 .bf-heading-xl {
