@@ -40,7 +40,7 @@
   --color-raw-black: #000;
   --color-raw-off-black: #202020;
   --color-raw-red: #bc0031;
-  --color-raw-red-alt: #fc7c77;
+  --color-raw-red-alt: #7d1f38;
   --color-raw-blue: #0032bc;
   --color-raw-green: #00bc8a;
   --color-raw-yellow: #f5c618;
@@ -53,6 +53,7 @@
 
   /** Colours (all modes) */
   --color-primary: var(--color-raw-red);
+  --color-primary-accent: var(--color-raw-red-alt);
   --color-secondary: var(--color-raw-blue);
   --color-tertiary: var(--color-raw-green);
   --color-focus-text: var(--color-raw-black);
@@ -62,6 +63,7 @@
 
   /** Border widths */
   --border-width-hairline: 1px;
+  --border-width-button: 4px;
   --border-width-regular: 0.5rem;
   --border-width-thick: 1rem;
 }
