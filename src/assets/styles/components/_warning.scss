@@ -1,6 +1,10 @@
 .bf-warning {
   display: flex;
   gap: var(--space-m);
+  margin-block-end: var(--space-m);
+  padding: calc(var(--space-m) - var(--border-width-hairline));
+  border: var(--border-width-hairline) solid var(--color-canvas-background-alt);
+  background-color: var(--color-canvas-background-alt);
 }
 
 .bf-warning__symbol {
