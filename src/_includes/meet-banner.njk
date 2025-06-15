@@ -1,11 +1,13 @@
 <div class="bf-splash">
-  {% image "homepage.jpg", "A group of people, some in fursuit, some not, standing in formation and smiling at the camera.", "", { class: "bf-splash__media", loading: "eager" } %}
-  <div class="bf-container">
-    <div class="bf-splash__content">
+  {% image "homepage.jpg", "A group of people, some in fursuit, some not, standing in formation and smiling at the camera.", "Kirin Eldridge", { class: "bf-splash__media", loading: "eager" } %}
+  
+  <div class="bf-container bf-splash__container">
+    <div class="bf-splash__card">
       <h1 class="bf-heading-2xl bf-!-margin-block-start-0 bf-!-margin-block-end-m">
-        <div class="bf-body-l bf-!-margin-block-end-3xs">Next furmeet:</div>
+        <div class="bf-body-l bf-!-margin-block-end-3xs">Next furmeet</div>
         {{ meetInfo.nextMeetDate | formatDate('EEEE, do MMMM yyyy') }}
       </h1>
+      <p class="bf-body-s">Our main event, a whole day of fun and games with furries and fursuits galore!</p>
       {%- if meetInfo.schedule %}
         <dl class="bf-schedule">
           {%- for row in meetInfo.schedule %}
@@ -20,6 +22,38 @@
             </dd>
           {%- endfor %}
         </dl>
+      {%- endif %}
+      <a class="bf-button bf-button--full-width" href="{{ '/attending-a-meet/' | url }}">
+        <span>Furmeet guide</span>
+      </a>
+    </div>
+    
+    <div class="bf-splash__card">
+      <h1 class="bf-heading-2xl bf-!-margin-block-start-0 bf-!-margin-block-end-m">
+        <div class="bf-body-l bf-!-margin-block-end-3xs">Next gaming mini-meet</div>
+        {%- if miniMeetInfo.nextMeetDate %}
+          {{ miniMeetInfo.nextMeetDate | formatDate('EEEE, do MMMM yyyy')}}
+        {%- else %}
+          Not scheduled yet
+        {%- endif %}
+      </h1>
+      <p class="bf-body-s">Mini-meets are smaller events centred around all things (physical) gaming: TCGs, RPGs, board games, and wargaming are all welcome here.</p>
+      {%- if miniMeetInfo.nextMeetDate and miniMeetInfo.schedule %}
+        <dl class="bf-schedule">
+          {%- for row in miniMeetInfo.schedule %}
+            <dt class="bf-schedule__time">
+              {{ row.startTime }}
+            </dt>
+            <dd class="bf-schedule__content">
+              {{ row.title }}
+              {%- if row.subtitle %}
+              <div class="bf-small-print">{{ row.subtitle }}</div>
+              {%- endif %}
+            </dd>
+          {%- endfor %}
+        </dl>
+      {%- else %}
+        <p class="bf-body">Check back soon for information on when the next mini-meet will be!</p>
       {%- endif %}
       <a class="bf-button bf-button--full-width" href="{{ '/attending-a-meet/' | url }}">
         <span>Furmeet guide</span>
