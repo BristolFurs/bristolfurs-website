@@ -61,6 +61,9 @@
   --color-header-text: var(--color-raw-white);
   --color-header-background: var(--color-raw-red);
 
+  /** Gradients */
+  --gradient-primary: linear-gradient(to bottom right in lch, var(--color-primary), var(--color-primary-accent));
+
   /** Border widths */
   --border-width-hairline: 2px;
   --border-width-button: 4px;

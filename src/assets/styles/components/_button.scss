@@ -15,15 +15,14 @@
   &:hover {
     text-decoration-skip-ink: none;
     text-decoration: underline;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 2px;
     text-underline-offset: 2px;
   }
 
   @supports (background-clip: border-area) {
     color: transparent;
     border-color: transparent;
-    background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-primary-accent)),
-      linear-gradient(to bottom right, var(--color-primary), var(--color-primary-accent));
+    background-image: var(--gradient-primary), var(--gradient-primary);
     background-clip: border-area, text;
     background-origin: border-box;
   }
