@@ -14,13 +14,11 @@ venue:
   longitude: -2.5897171030581565
 ---
 
-{% from "../_includes/components/warning.njk" import warning %}
-
 Bristol's largest independent comic book and tabletop gaming store has recently relocated to Broadmead, with a massive and shiny new store to boot.
 
 We use Excelsior for our gaming mini-meets, which take place on sporadic Sundays. Join our [Discord]({{ siteMetadata.discordLink }}) or [Telegram]({{ siteMetadata.telegramLink }}) groups for information on upcoming mini-meets.
 
-Outside drinks (except for bottled water) are not allowed at Excelsior and alcohol is strictly forbidden.
+Excelsior has a small cafe selling a variety of hot and cold beverages and snacks. Outside drinks (except for bottled water) are not allowed at Excelsior and alcohol is strictly forbidden. 
 
 ## Fursuiting
 
@@ -28,9 +26,15 @@ Fursuiting and furry accessories (like tails) are not permitted at Excelsior mee
 
 ## Accessibility
 
-{% call warning() %}
-This section is in the process of being updated.
-{% endcall %}
+### Mobility
+
+Although the shop area of Excelsior is step-free and wheelchair friendly, mini-meets are hosted in the gaming area of Excelsior, which is located up a flight of stairs and is not wheelchair accessible. Toilets are located up a further flight of stairs.
+
+### Toilets
+
+Excelsior has two gender neutral toilets located on the top floor—one floor above the gaming level, and two above the shop level.
+
+There are no wheelchair accessible toilets. 
 
 ## Travel
 
