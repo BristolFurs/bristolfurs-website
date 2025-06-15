@@ -22,7 +22,7 @@
   @supports (background-clip: border-area) {
     color: transparent;
     border-color: transparent;
-    background-image: var(--gradient-primary), var(--gradient-primary);
+    background-image: var(--gradient-primary), var(--gradient-primary-text);
     background-clip: border-area, text;
     background-origin: border-box;
   }

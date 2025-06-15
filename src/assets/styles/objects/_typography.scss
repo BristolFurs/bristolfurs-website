@@ -18,7 +18,7 @@
 
   @supports (background-clip: text) {
     color: transparent;
-    background-image: var(--gradient-primary);
+    background-image: var(--gradient-primary-text);
     background-clip: text;
   }
 }
