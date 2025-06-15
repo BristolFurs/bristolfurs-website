@@ -47,11 +47,11 @@ lede: How to get to our meeting spots and what to expect when you get there.
 
 {% call brochure({
   title: {
-    text: "Excelsior"
+    text: "Excelsior!"
   },
   href: "/venue-information/excelsior/",
   button: {
-    html: '<span class="bf-!-sr">Excelsior</span> Venue information'
+    html: '<span class="bf-!-sr">Excelsior!</span> Venue information'
   },
   image: {
     src: "gaming.jpg",
@@ -60,5 +60,5 @@ lede: How to get to our meeting spots and what to expect when you get there.
   }
 }) %}
 
-  <p>Hosts of our occassional gaming mini-meets.</p>
+  <p>The hosts of our tabletop mini-meets.</p>
 {% endcall %}

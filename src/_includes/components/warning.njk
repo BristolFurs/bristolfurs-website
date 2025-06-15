@@ -3,9 +3,7 @@
   <div class="bf-warning__symbol" aria-hidden="true">!</div>
   <div class="bf-warning__text">
     <span class="bf-!-sr">{{ params.title | default("Warning:") }}</span>
-    <div class="bf-prose">
-      {{ caller() if caller }}
-    </div>
+    <div class="bf-prose">{{ caller() if caller }}</div>
   </div>
 </div>
 {% endmacro %}

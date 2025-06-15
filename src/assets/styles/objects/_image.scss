@@ -3,6 +3,10 @@
   margin: 0;
   position: relative;
   line-height: 0;
+
+  img {
+    border-radius: var(--radius-regular);
+  }
 }
 
 .bf-image__attribution {
@@ -12,6 +16,7 @@
   position: absolute;
   inset-block-end: 0;
   inset-inline-end: 0;
+  border-end-end-radius: var(--radius-regular);
   color: var(--color-raw-white);
   background-color: var(--color-raw-off-black);
   font-size: var(--font-size-xs);

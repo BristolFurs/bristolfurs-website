@@ -17,7 +17,7 @@ export default function () {
     domainName: process.env.ENVIRONMENT === "production" ? "https://bristolfurs.co.uk" : "",
 
     // Copyright statement
-    copyright: "&copy; 2024 BristolFurs except where otherwise stated. All rights reserved.",
+    copyright: "&copy; 2025 BristolFurs except where otherwise stated. All rights reserved.",
 
     // The links that appear on the top of the site.
     navigationLinks: [

@@ -4,48 +4,50 @@
 $_breakpoint: "tablet";
 
 .bf-splash {
-  position: relative;
-
-  .bf-container {
-    position: relative;
-    @include media-queries.query($from: $_breakpoint) {
-      display: flex;
-      justify-content: end;
-      align-items: end;
-    }
-  }
+  padding-block-end: var(--space-l);
+  background-color: var(--color-canvas-background-alt);
+  border-end-start-radius: var(--radius-regular);
+  border-end-end-radius: var(--radius-regular);
 }
 
 .bf-splash__media {
   block-size: 100%;
   inline-size: 100%;
   aspect-ratio: 16 / 9;
-  background-color: var(--color-canvas-background-alt);
+  position: relative;
 
   @include media-queries.query($from: $_breakpoint) {
-    inline-size: 100%;
-    block-size: 100%;
-    position: absolute;
-    inset: 0;
+    aspect-ratio: 4 / 1;
   }
 
   img {
     inline-size: 100%;
     block-size: 100%;
     object-fit: cover;
+    border-start-start-radius: 0;
+    border-start-end-radius: 0;
   }
 }
 
-.bf-splash__content {
-  padding-block: var(--space-m);
+.bf-splash__container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--grid-gutter);
+  margin-block-start: calc(0px - var(--space-xl));
+  position: relative;
+
   @include media-queries.query($from: $_breakpoint) {
-    @include theme.shadow;
-    inline-size: 100%;
-    max-inline-size: 25rem;
-    margin-block-start: var(--space-3xl);
-    margin-block-end: calc(0px - var(--space-l));
-    padding: var(--space-m);
-    border-block-start: var(--border-width-thick) solid var(--color-primary);
-    background-color: var(--color-canvas-background);
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
   }
+}
+
+.bf-splash__card {
+  inline-size: 100%;
+  max-inline-size: 25rem;
+  padding: var(--space-m);
+  border-block-start: var(--border-width-thick) solid var(--color-primary);
+  background-color: var(--color-canvas-background);
+  @include theme.shadow;
 }

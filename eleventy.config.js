@@ -14,7 +14,6 @@ import markdownItAnchorPlugin from "markdown-it-anchor"
 import markdownItAttributesPlugin from "markdown-it-attrs"
 
 // Custom shortcodes
-import shortcodeFAQ from "./app/shortcodes/faq.js"
 import shortcodeIcon from "./app/shortcodes/icon.js"
 import shortcodeImage from "./app/shortcodes/image.js"
 import shortcodeMarkdown from "./app/shortcodes/markdown.js"
@@ -68,7 +67,6 @@ export default function (config) {
   config.addPassthroughCopy(paths.srcAssets + "/javascript")
 
   // Custom shortcodes
-  config.addPairedShortcode("faq", shortcodeFAQ)
   config.addShortcode("icon", shortcodeIcon)
   config.addShortcode("image", shortcodeImage)
   config.addPairedShortcode("markdown", shortcodeMarkdown)

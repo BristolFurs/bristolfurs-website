@@ -15,7 +15,6 @@ $_breakpoint: "tablet";
 .bf-brochure__image {
   inline-size: 100%;
   aspect-ratio: 1;
-  background-color: var(--color-canvas-background-alt);
   object-fit: cover;
   @include media-queries.query($from: $_breakpoint) {
     inline-size: 50%;
@@ -30,7 +29,7 @@ $_breakpoint: "tablet";
     inline-size: 50%;
     max-inline-size: var(--grid-max-prose-width);
     margin-block: var(--space-s);
-    margin-inline-start: calc(0px - var(--space-l));
+    margin-inline-start: calc(0px - var(--grid-gutter));
     padding: var(--space-m);
     position: relative;
     border-block-start: var(--border-width-thick) solid var(--color-primary);
@@ -43,7 +42,7 @@ $_breakpoint: "tablet";
     flex-direction: row-reverse;
     .bf-brochure__body {
       margin-inline-start: unset;
-      margin-inline-end: calc(0px - var(--space-l));
+      margin-inline-end: calc(0px - var(--grid-gutter));
     }
   }
 }

@@ -1,5 +1,7 @@
 .bf-landing {
   margin-block-end: var(--space-xl);
   padding-block: var(--space-xl);
+  border-end-start-radius: var(--radius-regular);
+  border-end-end-radius: var(--radius-regular);
   background-color: var(--color-canvas-background-alt);
 }

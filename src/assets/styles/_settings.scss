@@ -40,7 +40,8 @@
   --color-raw-black: #000;
   --color-raw-off-black: #202020;
   --color-raw-red: #bc0031;
-  --color-raw-red-alt: #fc7c77;
+  --color-raw-red-light: #fc7c77;
+  --color-raw-red-dark: #7d1f38;
   --color-raw-blue: #0032bc;
   --color-raw-green: #00bc8a;
   --color-raw-yellow: #f5c618;
@@ -53,6 +54,7 @@
 
   /** Colours (all modes) */
   --color-primary: var(--color-raw-red);
+  --color-primary-accent: var(--color-raw-red-dark);
   --color-secondary: var(--color-raw-blue);
   --color-tertiary: var(--color-raw-green);
   --color-focus-text: var(--color-raw-black);
@@ -60,10 +62,18 @@
   --color-header-text: var(--color-raw-white);
   --color-header-background: var(--color-raw-red);
 
+  /** Gradients */
+  --gradient-primary: linear-gradient(to bottom right in lch, var(--color-primary), var(--color-primary-accent));
+  --gradient-primary-text: linear-gradient(to bottom right in lch, var(--color-link), var(--color-primary));
+
   /** Border widths */
-  --border-width-hairline: 1px;
+  --border-width-hairline: 2px;
+  --border-width-button: 4px;
   --border-width-regular: 0.5rem;
   --border-width-thick: 1rem;
+
+  /** Border radii */
+  --radius-regular: 10px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -72,7 +82,7 @@
     --color-canvas-text: var(--color-raw-white);
     --color-canvas-background: var(--color-raw-black);
     --color-canvas-background-alt: var(--color-raw-off-black);
-    --color-link: var(--color-raw-red-alt);
+    --color-link: var(--color-raw-red-light);
   }
 }
 

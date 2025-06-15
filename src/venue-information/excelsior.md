@@ -3,9 +3,9 @@
 layout: venue.njk
 
 # Content
-title: Excelsior venue information
+title: Excelsior! venue information
 venue:
-  name: Excelsior
+  name: Excelsior!
   addressLines:
     - 51-53 Merchant Street
     - Bristol
@@ -16,9 +16,9 @@ venue:
 
 Bristol's largest independent comic book and tabletop gaming store has recently relocated to Broadmead, with a massive and shiny new store to boot.
 
-We use Excelsior for our gaming mini-meets, which take place on sporadic Sundays. Join our [Discord]({{ siteMetadata.discordLink }}) or [Telegram]({{ siteMetadata.telegramLink }}) groups for information on upcoming mini-meets.
+We use Excelsior for our [tabletop meets]({{ '/attending-a-meet/tabletop-meets/' | url }}), which take place on sporadic Sundays.
 
-Excelsior has a small cafe selling a variety of hot and cold beverages and snacks. Outside drinks (except for bottled water) are not allowed at Excelsior and alcohol is strictly forbidden. 
+Excelsior has a small cafe selling a variety of hot and cold beverages and snacks. Outside drinks (except for bottled water) are not allowed at Excelsior and alcohol is strictly forbidden.
 
 ## Fursuiting
 
@@ -34,7 +34,7 @@ Although the shop area of Excelsior is step-free and wheelchair friendly, mini-m
 
 Excelsior has two gender neutral toilets located on the top floor—one floor above the gaming level, and two above the shop level.
 
-There are no wheelchair accessible toilets. 
+There are no wheelchair accessible toilets.
 
 ## Travel
 
