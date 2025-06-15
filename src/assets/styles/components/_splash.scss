@@ -44,10 +44,10 @@ $_breakpoint: "tablet";
 }
 
 .bf-splash__card {
-  @include theme.shadow;
   inline-size: 100%;
   max-inline-size: 25rem;
   padding: var(--space-m);
   border-block-start: var(--border-width-thick) solid var(--color-primary);
   background-color: var(--color-canvas-background);
+  @include theme.shadow;
 }

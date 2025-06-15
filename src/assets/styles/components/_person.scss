@@ -3,10 +3,9 @@
 .bf-person {
   color: var(--color-header-text);
   background-color: var(--color-header-background);
-  @include theme.shadow;
-
   border-end-start-radius: var(--radius-regular);
   border-end-end-radius: var(--radius-regular);
+  @include theme.shadow;
 }
 
 .bf-person__image {
