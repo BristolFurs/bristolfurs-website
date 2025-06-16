@@ -4,21 +4,33 @@
   display: inline-block;
   padding-block: var(--space-xs);
   padding-inline: var(--space-s);
-  border: var(--border-width-hairline) solid currentcolor;
+  border: var(--border-width-button) solid currentcolor;
+  border-radius: var(--radius-regular);
   color: var(--color-link);
   font-weight: 600;
   text-decoration: none;
   text-align: center;
   letter-spacing: 0.02em;
+
   &:hover {
     text-decoration-skip-ink: none;
     text-decoration: underline;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 2px;
     text-underline-offset: 2px;
   }
+
+  @supports (background-clip: border-area) {
+    color: transparent;
+    border-color: transparent;
+    background-image: var(--gradient-primary), var(--gradient-primary-text);
+    background-clip: border-area, text;
+    background-origin: border-box;
+  }
+
   &:focus-visible {
     @include a11y.focus-ring--button;
   }
+
   &.bf-button--full-width {
     inline-size: 100%;
   }
