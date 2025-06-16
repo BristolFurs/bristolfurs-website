@@ -26,11 +26,21 @@ Join our [Discord]({{ siteMetadata.discordLink }}) or [Telegram]({{ siteMetadata
 
 A variety of games will be available for free play, from casual games like Uno to cult classics like Ticket to Ride. Dungeons & Dragons and Warhammer may also be available, conditional on availability.
 
-If you're not sure whether something you'd like to play will be available, you're free to bring whatever games you want, provided they don't contain explicit content. If you play trading card games, such as MTG, Pokémon, Lorcana, or Yu-Gi-Oh, bringing decks is also encouraged.
-
 If you're not a seasoned tabletop gamer, most games will have someone available to explain the rules and help you learn how to play.
 
-Video games, even ones that play like tabletop or party games, are discouraged.
+Feel free to bring:
+
+- Board games
+- Card games
+- Trading card game decks
+- Wargaming and TTRPG miniatures
+- Handheld games consoles (however, you are not allowed to charge these at Excelsior)
+
+Please don't bring:
+
+- Games with explicit themes or content
+- Beyblades, Bakugan, or other 'battle' games
+- Large electronics
 
 ## Differences from furmeets
 
