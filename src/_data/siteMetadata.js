@@ -29,7 +29,6 @@ export default function () {
 
     // The links that appear on the bottom of the site.
     footerLinks: [
-      { href: "/attending-a-meet/fursuiting/", text: "Fursuiting at BristolFurs" },
       { href: "/code-of-conduct/", text: "Code of conduct" },
       { href: "/privacy-policy/", text: "Privacy and cookies" },
       { href: "/accessibility-statement/", text: "Accessibility statement" },
