@@ -17,7 +17,7 @@ $_breakpoint: "tablet";
   position: relative;
 
   @include media-queries.query($from: $_breakpoint) {
-    aspect-ratio: 4 / 1;
+    aspect-ratio: 3 / 1;
   }
 
   img {
