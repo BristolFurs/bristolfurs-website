@@ -21,7 +21,7 @@ A cosy bar lifted straight out of the 1980s, [the Colosseum](https://www.colosse
 Outside food and drinks (except for bottled water) are not permitted in the Colosseum.
 
 {% call warning() %}
-Do not leave any belongings unattended after 4pm.
+We share the Colosseum with members of the public. Do not leave any belongings unattended. Neither we nor the Colosseum are not responsible for loss or theft.
 {% endcall %}
 
 ## Fursuiting
