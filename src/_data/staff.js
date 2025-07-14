@@ -11,14 +11,6 @@ export default function () {
   return {
     committee: [
       {
-        name: "Eskelater",
-        species: "jackalope",
-        role: "Operations lead",
-        pronouns: "he/him",
-        avatar: "esk.jpg",
-        avatarAttribution: "Superneonbuck",
-      },
-      {
         name: "Kipperil",
         species: "cat",
         role: "Meet lead, treasurer",
@@ -33,6 +25,14 @@ export default function () {
         pronouns: "he/it",
         avatar: "taylor.jpg",
         avatarAttribution: "Katsuke",
+      },
+      {
+        name: "Eskelater",
+        species: "jackalope",
+        role: "Operations lead",
+        pronouns: "he/him",
+        avatar: "esk.jpg",
+        avatarAttribution: "Superneonbuck",
       },
     ],
     meetModerators: [
