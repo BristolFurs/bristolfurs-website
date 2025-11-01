@@ -31,6 +31,7 @@ export default function () {
     footerLinks: [
       { href: "/code-of-conduct/", text: "Code of conduct" },
       { href: "/privacy-policy/", text: "Privacy and cookies" },
+      { href: "/gdpr-policy/", text: "GDPR policy" },
       { href: "/accessibility-statement/", text: "Accessibility statement" },
       { href: "/contact-us/", text: "Contact us" },
     ],
