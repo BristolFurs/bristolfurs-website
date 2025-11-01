@@ -40,7 +40,7 @@ We normally leave around 12:45pm to walk to the main venue as a group.
 
 ## The furmeet
 
-The main event starts at 1pm at the [Colosseum]({{ '/venue-information/colosseum/' }}) and consists of a mostly unstructured hangout space for you to get socialising with other local furs.
+The main event starts at midday at the [Colosseum]({{ '/venue-information/colosseum/' }}) and consists of a mostly unstructured hangout space for you to get socialising with other local furs.
 
 Stop by the bar for some social lubricant in the form of drinks or even a board game (but please be considerate in terms of table space.)
 

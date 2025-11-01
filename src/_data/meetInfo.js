@@ -15,7 +15,7 @@ export default function () {
   return {
     schedule: [
       { startTime: "11am", title: "Pre-meet", subtitle: "at Starbucks Temple Quay" },
-      { startTime: "1pm", title: "Furmeet", subtitle: "at the Colosseum" },
+      { startTime: "noon", title: "Furmeet", subtitle: "at the Colosseum" },
       { startTime: "3pm", title: "Fursuit walk", subtitle: "(weather permitting)" },
     ],
     nextMeetDate: getNextNMeetDates(1),
