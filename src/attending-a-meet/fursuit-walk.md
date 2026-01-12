@@ -9,12 +9,6 @@ backLink:
   href: /attending-a-meet/
 ---
 
-{% from "../_includes/components/warning.njk" import warning %}
-
-{% call warning() %}
-This page hasn't been updated with information for our new venue. It will be updated soon.
-{% endcall %}
-
 We aim to do a fursuit walk around the centre of Bristol at every meet.
 
 The walk starts around 3pm and takes about an hour. Fursuiters are expected to be ready and outside of the venue 15 minutes prior to the walk beginning. The walk isn't just for fursuiters; non-fursuiters are encouraged to join in too!
@@ -25,29 +19,43 @@ If we are unable to hold a walk for some reason, such as due to wet weather, fur
 
 ## Walking routes
 
-The walking route will usually change depending on the weather. The route of the walks are subject to change as required.
+The fursuit walk's route will usually change depending on the weather conditions and events taking place in the city. The route the walk takes is subject to change as required.
 
 ### Queen Square route (dry conditions)
 
-<div class="bf-map bf-map--large" data-route="queen-square" data-latitude="51.45383710282948" data-longitude="-2.593624741607833"></div>
+<div class="bf-map bf-map--large" data-route="queen-square" data-latitude="51.448345540109706" data-longitude="-2.5909471333321705"></div>
 
-This route is typically used in dry and hot weather. It's a shorter route that includes walking on gravel and grass surfaces, but it provides more open space and greenery with plentiful shaded areas.
+This route is typically used in dry and hot weather. It's a shorter route (about 1 kilometre, or two-thirds of a mile) that includes walking on gravel and grass surfaces, but it provides more open space and greenery with plentiful shaded areas.
 
-The walk leads down St Nicholas Street and Clare Street, following Broad Quay southwards until the junction of Prince Street and King Street. We then cross over onto Queen Square, where we stop for a break, public schenanigans, and a group photoshoot.
+From the Colosseum, we head north down Redcliffe Hill and turn left at the roundabout, changing to the other side of the road before crossing Redcliffe Bascule Bridge. Crossing the road at Welsh Back, we pass to the right of The Hole in the Wall pub, briefly crossing a road around Queen Square before ending in the green space of the square for rest and photographs.
 
-We return to the Boardroom via Welsh Back and High Street.
+The same route is taken in reverse to return to the Colosseum.
 
 ### Millennium Square route (wet conditions)
 
-<div class="bf-map bf-map--large" data-route="millenium-square" data-latitude="51.45383710282948" data-longitude="-2.593624741607833"></div>
+<div class="bf-map bf-map--large" data-route="millenium-square" data-latitude="51.448345540109706" data-longitude="-2.5909471333321705"></div>
 
-This route is commonly used when it has recently rained and the ground is still damp or drying. The entire walking route is paved.
+This route is used when it has recently rained and the ground is still damp or drying. The entire 2 kilometre (1.25 miles) walking route is paved.
 
-The walk leads down St Nicholas Street and Clare Street, through The Centre onto Anchor Road and past the outside of We The Curious, stopping at Millennium Square for a break and public schenanigans.
+From the Colosseum, we head north down Redcliffe Hill, turning left at the roundabout and crossing Redcliffe Bascule Bridge. We keep left of The Hole in the Wall pub, turning onto The Grove and following it until we pass Thekla, stopping outside of it for a brief rest and photos.
 
-We will sometimes proceed to the Lloyds Amphitheatre for a photoshoot, depending on conditions.
+Continuing on east through the car park, we cross Prince Street onto the pedestrianised part of the harbour at Narrow Quay. We go around the Arnolfini and following Narrow Quay up until Pero's Bridge, crossing the bridge and continuing straight ahead towards We The Curious before turning into Millenium Square for rest and photos.
 
-Afterwards, we return via Pero's Bridge and Narrow Quay, before rejoining the fountains and heading back to The Boardroom on the same route as before.
+The same route is taken in reverse to return to the Colosseum.
+
+### Harbourside route (wet conditions)
+
+<div class="bf-map bf-map--large" data-route="harbourside" data-latitude="51.448345540109706" data-longitude="-2.5909471333321705"></div>
+
+This shorter route is used when it's wet and there is a likeliness of further rain. It may also be used if there are events taking place in Queen Square or Millenium Square and we're unable to visit them.
+
+The route is around 1.3 kilometres (0.8 miles). The entire route is paved, however there are cobbled streets and a short, steep uphill section in the last half of the route.
+
+From the Colosseum, we head north down Redcliffe Hill, turning left at the roundabout and crossing Redcliffe Bascule Bridge. We keep left of The Hole in the Wall pub, turning onto The Grove and following it until we pass Thekla, stopping outside of it for a brief rest and photos.
+
+Continuing on east through the car park, we turn left onto Prince Street and cross the harbour over the Prince Street Bridge, turning left again to the pedestrianised Merchant's Quay. We hug the edge of the harbour here, turning into Trin Mills and approaching Bathurst Basin. We cross the habour again on the Bathurst Basin swing bridge, continuing to follow the edge of the harbour down Phoenix Wharf, where we stop again for rest and photos.
+
+We then return to the Colosseum by taking the steep footpath from Phoenix Wharf up to Redcliff Parade.
 
 ## Fursuit walk rules
 
@@ -55,5 +63,5 @@ When on the walk, please follow the following additional rules:
 
 - Always follow the instructions given by the meet staff and volunteer stewards, particularly when crossing roads and bicycle lanes.
 - Do not walk ahead of the lead steward or behind the trailing steward, unless doing so to take photographs.
-- Do not consume alcohol at any time during the walk. Bristol bylaws prohibit street drinking.
-- Do not play music when walking. You may do so at the stopping locations.
+- Do not consume alcohol at any time whilst walking. Bristol bylaws prohibit street drinking.
+- Do not play music when walking. You may do so at the marked stopping locations.
