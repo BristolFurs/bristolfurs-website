@@ -27,46 +27,47 @@ You can choose from a range of species that we feel best represent Bristol's cul
 
 <div class="page-species-grid">
   <div>
-    {% image "mc_snake.png", "Snake template." %}
+    {% image "mc_snake.png", "Snake template.", "", { isLink: true } %}
     Adder or grass snake
   </div>
   <div>
-    {% image "mc_owl.png", "Owl template." %}
+    {% image "mc_owl.png", "Owl template.", "", { isLink: true } %}
     Barn owl or tawny owl
   </div>
   <div>
-    {% image "mc_bat.png", "Bat template." %}
+    {% image "mc_bat.png", "Bat template.", "", { isLink: true } %}
     Bat
   </div>
   <div>
-    {% image "mc_beaver.png", "Beaver template." %}
+    {% image "mc_beaver.png", "Beaver template.", "", { isLink: true } %}
     Beaver
   </div>
   <div>
-    {% image "mc_cat.png", "Cat template." %}
+    {% image "mc_cat.png", "Cat template.", "", { isLink: true } %}
     Cat
   </div>
   <div>
-    {% image "mc_dog.png", "Dog template." %}
+    {% image "mc_dog.png", "Dog template.", "", { isLink: true } %}
     Collie dog
   </div>
   <div>
+    {% image "mc_fox.png", "Fox template.", "", { isLink: true } %}
     Fox
   </div>
   <div>
-    {% image "mc_falcon.png", "Falcon template." %}
+    {% image "mc_falcon.png", "Falcon template.", "", { isLink: true } %}
     Peregrine falcon
   </div>
   <div>
-    {% image "mc_otter.png", "Otter template." %}
+    {% image "mc_otter.png", "Otter template.", "", { isLink: true } %}
     Otter
   </div>
   <div>
-    {% image "mc_robin.png", "Robin template." %}
+    {% image "mc_robin.png", "Robin template.", "", { isLink: true } %}
     Robin
   </div>
   <div>
-    {% image "mc_unicorn.png", "Unicorn template." %}
+    {% image "mc_unicorn.png", "Unicorn template.", "", { isLink: true } %}
     Unicorn
   </div>
 </div>
