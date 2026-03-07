@@ -36,6 +36,9 @@ export default function (config) {
     wrapperClass: "bf-toc",
   })
 
+  // Add bundle for per-page CSS
+  config.addBundle("css")
+
   // Markdown-It configuration
   config.setLibrary(
     "md",

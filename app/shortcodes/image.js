@@ -13,6 +13,7 @@ export default function (src, alt, credit = "", options = {}) {
 
   // Create options object
   const defaultOptions = {
+    isLink: false,
     class: "",
     decoding: "async",
     loading: "lazy",
@@ -24,6 +25,7 @@ export default function (src, alt, credit = "", options = {}) {
 
   // Output string
   let pictureHtml
+  let metadata
 
   // If this is an external image, we ain't processing that
   // Just create some HTML and spit it out
@@ -54,7 +56,7 @@ export default function (src, alt, credit = "", options = {}) {
     eleventyImg(src, generatorOptions)
 
     // Get metadata of the generated image
-    const metadata = eleventyImg.statsSync(src, generatorOptions)
+    metadata = eleventyImg.statsSync(src, generatorOptions)
 
     // Generate the HTML needed to render out these lovely images
     pictureHtml = eleventyImg.generateHTML(metadata, {
@@ -65,8 +67,19 @@ export default function (src, alt, credit = "", options = {}) {
     })
   }
 
+  // Figure out the link if there's a link
+  let href = ""
+  if (typeof options.isLink === "boolean" && options.isLink === true) {
+    const image = Object.values(metadata)[0]
+    href = image[image.length - 1].url
+  } else if (typeof options.isLink === "string") {
+    href = options.isLink
+  }
+
   return `<figure class="bf-image${options.class ? ` ${options.class}` : ""}">
+    ${href ? `<a href="${href}">` : ""}
     ${pictureHtml}
+    ${href ? `</a>` : ""}
     ${credit ? `<figcaption class="bf-image__attribution">Credit: ${credit}</figcaption>` : ""}
   </figure>`
 }

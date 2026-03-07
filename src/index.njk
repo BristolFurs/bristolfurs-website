@@ -8,6 +8,23 @@
   {% include 'meet-banner.njk' %}
   
   <div class="bf-container">
+
+    {% call brochure({
+      title: {
+        text: "Mascot competition"
+      },
+      href: "/mascot-competition/",
+      button: {
+        html: 'Competition details'
+      },
+      image: {
+        src: "mc_bat.png",
+        alt: "A blank template image of an anthropomorphic bat.",
+        credit: "Valleycore"
+      }
+    }) %}
+      <p>One thing that's been missing in BristolFurs are some characters to call our own: mascots!</p>
+    {% endcall %}
   
     {% call brochure({
       title: {
