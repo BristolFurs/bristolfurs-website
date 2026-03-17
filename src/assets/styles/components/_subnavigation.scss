@@ -13,7 +13,8 @@ $_breakpoint: "mobile";
 .bf-subnavigation__inner {
   overflow-x: auto;
 
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to right,
       var(--color-canvas-background) 30%,
       color-mix(in lch, var(--color-canvas-background), transparent 100%)
