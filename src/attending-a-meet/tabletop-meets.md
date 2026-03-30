@@ -17,7 +17,7 @@ Tabletop meets are special mini-sized meets that focus on all things tabletop ga
 
 {%- if miniMeetInfo.nextMeetDate %}
 
-**The next tabletop meet is on {{ miniMeetInfo.nextMeetDate | formatDate('EEEE, do MMMM yyyy')}}** at [Excelsior]({{ '/venue-information/excelsior/'}}), from noon until 5pm.
+**The next tabletop meet is on {{ miniMeetInfo.nextMeetDate | formatDate('EEEE, do MMMM yyyy')}}** at [The Royal Oak]({{ '/venue-information/the-royal-oak/'}}), from noon until 8pm.
 {%- endif %}
 
 Join our [Discord]({{ siteMetadata.discordLink }}) or [Telegram]({{ siteMetadata.telegramLink }}) groups for more information on upcoming tabletop meets.
@@ -34,12 +34,13 @@ Feel free to bring:
 - Card games
 - Trading card game decks
 - Wargaming and TTRPG miniatures
-- Handheld games consoles (however, you are not allowed to charge these at Excelsior)
+- Handheld games consoles (however, you are not allowed to charge these at the venue)
 
 Please don't bring:
 
-- Games with explicit themes or content
-- Beyblades, Bakugan, or other 'battle' games
+- Games with explicit themes or content, such as Cards Against Humanity
+- Battle games like Beyblades or Bakugan
+- Ball games like boules or petanque
 - Large electronics
 
 ## Differences from furmeets
@@ -48,6 +49,5 @@ Tabletop meets still let you hang out with your fellow furries, but there are a 
 
 - Tabletop meets are smaller and centred around a particular social activity. If you're not planning to play games, this isn't for you.
 - Fursuiting, including the wearing of tails, is not allowed. Other furry accessories are fine, however.
-- Alcohol is strictly forbidden inside of the venue.
 
 Different people organise the tabletop meets than the regular furmeets, though some BristolFurs staff members will typically be present.

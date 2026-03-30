@@ -47,16 +47,16 @@ lede: How to get to our meeting spots and what to expect when you get there.
 
 {% call brochure({
   title: {
-    text: "Excelsior!"
+    text: "The Royal Oak"
   },
-  href: "/venue-information/excelsior/",
+  href: "/venue-information/the-royal-oak/",
   button: {
-    html: '<span class="bf-!-sr">Excelsior!</span> Venue information'
+    html: '<span class="bf-!-sr">The Royal Oak</span> Venue information'
   },
   image: {
-    src: "gaming.jpg",
-    alt: "A stock photo of some board game tiles, dice and meeples.",
-    credit: "Robert Coelho (Unsplash)"
+    src: "the-royal-oak.jpg",
+    alt: "Photo of a building with a publican sign of a squirrel wearing a crown, with 'Royal Oak' written below it.",
+    credit: "The Royal Oak"
   }
 }) %}
 
