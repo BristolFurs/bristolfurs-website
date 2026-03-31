@@ -13,10 +13,6 @@ We figured that we should sort this out, and we would like the community to help
 
 Creators of the winning submissions will receive free copies of any future BristolFurs merchandise featuring their mascot design, forever!
 
-<p class="bf-body"><a class="bf-button" href="https://tally.so/r/VL5g4a">
-  Submit an entry
-</a></p>
-
 **Entries close on 5th July 2026.**
 
 ## About the competition
@@ -93,6 +89,14 @@ Once entries have been closed, a shortlist will be created by a panel of Bristol
 4. We reserve the right not to shortlist entries that we consider to be 'joke' entries.
 5. No generative AI entries. Any entries using generative AI will not be shortlisted and will be publicly shamed.
 6. By entering, you agree that any winning entries will become the intellectual property of BristolFurs.
+
+## Ready to submit?
+
+Read all that? Cool, you're good to go.
+
+<p class="bf-body"><a class="bf-button" href="https://tally.so/r/VL5g4a">
+  Submit an entry
+</a></p>
 
 {% css %}
 .page-species-grid {
