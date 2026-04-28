@@ -17,15 +17,21 @@ We aim to do a fursuit walk around the centre of Bristol at every meet, starting
 
 [See the fursuit walk page]({{ '/attending-a-meet/fursuit-walk/' | url }}) for information on the routes and rules of the walk.
 
-## Storage and changing space
+## Storage space
 
-{% from "../_includes/components/warning.njk" import warning %}
+Unfortunately, our current venue doesn't have space available for dedicated fursuit storage.
 
-{% call warning() %}
-This section hasn't been updated with information for our new venue. Information will be added soon.
-{% endcall %}
+All items are kept at the owner's risk for the length of the meet, including the fursuit walk. You're encouraged to keep belongings with you whilst at the venue and to entrust them to someone who is not going on the walk if you're doing so.
 
-All items are stored at the owners own risk.
+**Do not leave your belongings unattended at any point.** The venue is open to the public, so anyone could come in and steal your stuff. You don't want that, we don't want that, so don't do it.
+
+## Changing rooms
+
+Our current venue doesn't have space dedicated to changing.
+
+If you have a partial fursuit that is worn with normal clothing, you are free to change in the public areas of the venue.
+
+If you have a full fursuit, or another type of suit that requires undressing, please change into under armour and body suits in a bathroom.
 
 ## General guidance
 
