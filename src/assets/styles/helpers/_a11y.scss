@@ -33,11 +33,11 @@ $_shadow-thickness: 4px;
 }
 
 @mixin visually-hidden($important: false) {
-  block-size: 1px if($important, !important, null);
-  inline-size: 1px if($important, !important, null);
-  position: absolute if($important, !important, null);
-  overflow: hidden if($important, !important, null);
-  white-space: nowrap if($important, !important, null);
-  clip: rect(0 0 0 0) if($important, !important, null);
-  clip-path: inset(50%) if($important, !important, null);
+  block-size: 1px if(sass($important): !important);
+  inline-size: 1px if(sass($important): !important);
+  position: absolute if(sass($important): !important);
+  overflow: hidden if(sass($important): !important);
+  white-space: nowrap if(sass($important): !important);
+  clip: rect(0 0 0 0) if(sass($important): !important);
+  clip-path: inset(50%) if(sass($important): !important);
 }

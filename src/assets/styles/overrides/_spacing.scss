@@ -3,11 +3,15 @@ $_directions: (all, block, block-start, block-end, inline, inline-start, inline-
 
 @each $size in $_scale {
   @each $dir in $_directions {
-    .bf-\!-margin#{if($dir != "all", "-" + $dir, null)}-#{$size} {
-      margin#{if($dir != "all", "-" + $dir, null)}: if($size == 0, 0, var(--space-#{$size})) !important;
+    $suffix: if(
+      sass($dir != "all"): "-" + $dir,
+    );
+
+    .bf-\!-margin#{$suffix}-#{$size} {
+      margin#{$suffix}: if(sass($size == 0): 0; else: var(--space-#{$size})) !important;
     }
-    .bf-\!-padding#{if($dir != "all", "-" + $dir, null)}-#{$size} {
-      padding#{if($dir != "all", "-" + $dir, null)}: if($size == 0, 0, var(--space-#{$size})) !important;
+    .bf-\!-padding#{$suffix}-#{$size} {
+      padding#{$suffix}: if(sass($size == 0): 0; else: var(--space-#{$size})) !important;
     }
   }
 }

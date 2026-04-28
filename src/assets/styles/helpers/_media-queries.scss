@@ -6,14 +6,14 @@
   $query: "";
 
   @if $from {
-    $query: "#{$query} (min-width: #{if(map.has-key($map, $from), map.get($map, $from), $from)})";
+    $query: "#{$query} (min-width: #{if(sass(map.has-key($map, $from)): map.get($map, $from); else: $from)})";
   }
 
   @if $to {
     @if $from {
       $query: "#{$query} and";
     }
-    $query: "#{$query} (max-width: #{if(map.has-key($map, $to), map.get($map, $to), $to) - 0.001rem})";
+    $query: "#{$query} (max-width: #{if(sass(map.has-key($map, $to)): map.get($map, $to); else: $to) - 0.001rem})";
   }
 
   @if $and {
