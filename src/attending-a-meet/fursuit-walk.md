@@ -13,9 +13,18 @@ We aim to do a fursuit walk around the centre of Bristol at every meet.
 
 The walk starts around 3pm and takes about an hour. Fursuiters are expected to be ready and outside of the venue 15 minutes prior to the walk beginning. The walk isn't just for fursuiters; non-fursuiters are encouraged to join in too!
 
-This walk takes place in public spaces, guided by meet staff and volunteers wearing snazzy purple hi-vis vests.
+This walk takes place in public spaces, guided by meet staff and volunteer stewards wearing snazzy purple hi-vis vests.
 
-If we are unable to hold a walk for some reason, such as due to wet weather, fursuiters are still encouraged to suit up within the venue.
+All walks have a trained first aider present.
+
+## Fursuit walk rules
+
+When on the walk, you must follow these rules in addition to those in [the code of conduct]({{ '/code-of-conduct/' | url }}):
+
+- Always follow the instructions given by the meet staff and volunteer stewards, particularly when crossing roads and bicycle lanes.
+- Fursuiters should not walk ahead of the lead steward or behind the trailing steward. Others may do so to take photographs.
+- Do not consume alcohol at any time whilst walking. Bristol bylaws prohibit street drinking.
+- Do not play loud music when walking. You may do so at the marked stopping locations.
 
 ## Walking routes
 
@@ -57,11 +66,8 @@ Continuing on east through the car park, we turn left onto Prince Street and cro
 
 We then return to the Colosseum by taking the steep footpath from Phoenix Wharf up to Redcliff Parade.
 
-## Fursuit walk rules
+## If we're unable to hold a walk
 
-When on the walk, please follow the following additional rules:
+In we're unable to hold a walk for any reason, we'll announce that the walk won't take place as soon as we can. You're encouraged to still suit up and hang around the venue.
 
-- Always follow the instructions given by the meet staff and volunteer stewards, particularly when crossing roads and bicycle lanes.
-- Do not walk ahead of the lead steward or behind the trailing steward, unless doing so to take photographs.
-- Do not consume alcohol at any time whilst walking. Bristol bylaws prohibit street drinking.
-- Do not play music when walking. You may do so at the marked stopping locations.
+If circumstances allow, we may organise a fursuiter photo shoot outside or in the area around the venue instead of a walk.
