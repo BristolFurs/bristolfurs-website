@@ -26,10 +26,10 @@
     "markdown-it": "^14.1.1",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-attrs": "^4.3.1",
-    "postcss": "^8.5.8",
-    "postcss-preset-env": "^11.2.0",
+    "postcss": "^8.5.13",
+    "postcss-preset-env": "^11.2.1",
     "prettier": "3.8.1",
-    "sass": "1.98.0"
+    "sass": "1.99.0"
   },
   "lint-staged": {
     "*.{js,json,md,mjs,scss,yaml,yml}": "prettier --write"
