@@ -56,7 +56,7 @@ lede: How to get to our meeting spots and what to expect when you get there.
   image: {
     src: "the-royal-oak.jpg",
     alt: "Photo of a building with a publican sign of a squirrel wearing a crown, with 'Royal Oak' written below it.",
-    credit: "The Royal Oak"
+    credit: "beeps"
   }
 }) %}
 
