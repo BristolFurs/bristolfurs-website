@@ -1,6 +1,6 @@
 // These are repeated in a few places so keep them separate
 const discordLink = "//discord.gg/qw7reg8X4c"
-const telegramLink = "//t.me/bristolfurs"
+const telegramLink = "//telegram.me/bristolfurs"
 
 export default function () {
   return {
