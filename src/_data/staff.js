@@ -36,13 +36,6 @@ export default function () {
       },
     ],
     meetModerators: [
-      {
-        name: "Azure",
-        species: "goat",
-        pronouns: "he/him",
-        avatar: "azure.jpg",
-        avatarAttribution: "StormBlaze",
-      },
       { name: "Ioaphiel", pronouns: "any pronouns" },
       {
         name: "Jordon",
