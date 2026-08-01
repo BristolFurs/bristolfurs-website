@@ -36,9 +36,9 @@ lede: How to get to our meeting spots and what to expect when you get there.
     html: '<span class="bf-!-sr">Starbucks Temple Quay</span> Venue information'
   },
   image: {
-    src: "starbucks-placeholder.jpg",
-    alt: "A Starbucks branded paper cup standing on a table and reflecting on the window behind it.",
-    credit: "introspectivedsgn (Unsplash)"
+    src: "starbucks-temple-quay.jpg",
+    alt: "Front on shot of a branch of Starbucks in a grey-ish looking office building. There are some tables and chairs outside.",
+    credit: "beeps"
   }
 }) %}
 
