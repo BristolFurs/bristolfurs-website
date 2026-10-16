@@ -22,7 +22,7 @@ export default function () {
         name: "Taylor",
         species: "dogdeer",
         role: "Online lead",
-        pronouns: "he/it",
+        pronouns: "any pronouns",
         avatar: "taylor.jpg",
         avatarAttribution: "Katsuke",
       },
@@ -36,7 +36,6 @@ export default function () {
       },
     ],
     meetModerators: [
-      { name: "Ioaphiel", pronouns: "any pronouns" },
       {
         name: "Jordon",
         species: "opossum",
@@ -44,19 +43,33 @@ export default function () {
         avatar: "jordon.png",
         avatarAttribution: "cherrybrandy",
       },
-      { name: "Snowy", pronouns: "he/him" },
+      {
+        name: "Lucah",
+        species: "cat",
+        pronouns: "she/he",
+        avatar: "lucah.png",
+        avatarAttribution: "aristoodle",
+      },
+      {
+        name: "Snowy",
+        species: "Siberian husky (red)",
+        pronouns: "he/him",
+        avatar: "snowy.png",
+        avatarAttribution: "Rowdy Reindeer",
+      },
+      { name: "Thea", species: "dragon", pronouns: "she/her", avatar: "thea.png", avatarAttribution: "Q" },
     ],
     chatModerators: [
       { name: "Nenna", species: "dragon", pronouns: "she/her" },
       { name: "Pudge", species: "raccoon", pronouns: "he/him" },
-      { name: "Robyn", species: "cheetah", pronouns: "he/she/they" },
       {
-        name: "Sijn",
-        species: "hyena",
-        pronouns: "they/them",
-        avatar: "sijn.png",
-        avatarAttribution: "dragonwithamustache",
+        name: "Reszo Rudvald",
+        species: "werewolf",
+        pronouns: "he/him",
+        avatar: "reszo.png",
+        avatarAttribution: "Sijn",
       },
+      { name: "Robyn", species: "cheetah", pronouns: "he/she/they" },
     ],
     other: [
       {
