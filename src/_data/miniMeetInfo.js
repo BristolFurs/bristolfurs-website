@@ -11,6 +11,7 @@ const meetDates = [
   "2026-06-21",
   "2026-07-26",
   "2026-08-16",
+  "2026-10-18",
 ]
 
 export default function () {
