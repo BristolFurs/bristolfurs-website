@@ -23,8 +23,8 @@ export default function () {
         species: "dogdeer",
         role: "Online lead",
         pronouns: "she/her",
-        avatar: "taylor.jpg",
-        avatarAttribution: "Katsuke",
+        avatar: "taylor.png",
+        avatarAttribution: "Timsplosion",
       },
       {
         name: "Eskelater",
