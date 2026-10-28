@@ -31,16 +31,16 @@
     <div class="bf-splash__card">
       <h2 class="bf-heading-2xl bf-!-margin-block-start-0 bf-!-margin-block-end-m">
         <div class="bf-body-l bf-!-margin-block-end-3xs">Next tabletop meet</div>
-        {%- if miniMeetInfo.nextMeetDate %}
-          {{ miniMeetInfo.nextMeetDate | formatDate('EEEE, do MMMM yyyy')}}
+        {%- if tabletopMeetInfo.nextMeetDate %}
+          {{ tabletopMeetInfo.nextMeetDate | formatDate('EEEE, do MMMM yyyy')}}
         {%- else %}
           Not scheduled yet
         {%- endif %}
       </h2>
       <p class="bf-body-s">Tabletop meets are smaller events centred around all things tabletop gaming.</p>
-      {%- if miniMeetInfo.nextMeetDate and miniMeetInfo.schedule %}
+      {%- if tabletopMeetInfo.nextMeetDate and tabletopMeetInfo.schedule %}
         <dl class="bf-schedule">
-          {%- for row in miniMeetInfo.schedule %}
+          {%- for row in tabletopMeetInfo.schedule %}
             <dt class="bf-schedule__time">
               {{ row.startTime }}
             </dt>
@@ -53,7 +53,7 @@
           {%- endfor %}
         </dl>
       {%- else %}
-        <p class="bf-body">Check back soon for information on when the next mini-meet will be!</p>
+        <p class="bf-body">Check back soon for information on when the next tabletop meet will be!</p>
       {%- endif %}
       <a class="bf-button bf-button--full-width" href="{{ '/attending-a-meet/tabletop-meets/' | url }}">
         About tabletop meets
