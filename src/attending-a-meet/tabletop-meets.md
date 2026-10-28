@@ -15,9 +15,9 @@ metadata:
 
 Tabletop meets are special mini-sized meets that focus on all things tabletop gaming. All things relating to trading card games, roleplaying games, wargaming, and board games are welcome, and it's a great way of meeting furries in a quieter, more structured environment.
 
-{%- if miniMeetInfo.nextMeetDate %}
+{%- if tabletopMeetInfo.nextMeetDate %}
 
-**The next tabletop meet is on {{ miniMeetInfo.nextMeetDate | formatDate('EEEE, do MMMM yyyy')}}** at [The Royal Oak]({{ '/venue-information/the-royal-oak/'}}), from noon until 8pm.
+**The next tabletop meet is on {{ tabletopMeetInfo.nextMeetDate | formatDate('EEEE, do MMMM yyyy')}}** at [The Royal Oak]({{ '/venue-information/the-royal-oak/'}}), from noon until 8pm.
 {%- endif %}
 
 Join our [Discord]({{ siteMetadata.discordLink }}) or [Telegram]({{ siteMetadata.telegramLink }}) groups for more information on upcoming tabletop meets.
